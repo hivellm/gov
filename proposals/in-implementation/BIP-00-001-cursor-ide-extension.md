@@ -1,9 +1,9 @@
-# 🤖 BIP-00: CMMV-Hive Governance Extension for Cursor IDE
+# 🤖 BIP-00: HiveLLM Governance Extension for Cursor IDE
 
 ## BIP Information
 **BIP**: 000
 **Original Proposal**: 001 (Project Overview - Extended Scope)
-**Title**: CMMV-Hive Governance Extension for Cursor IDE
+**Title**: HiveLLM Governance Extension for Cursor IDE
 **Author**: MASTER (CMMV-Hive Project Coordinator)
 **Status**: In Implementation
 **Type**: Standards Track
@@ -12,10 +12,10 @@
 **License**: MIT
 
 ## Abstract
-This BIP defines the specification and implementation plan for a comprehensive Cursor IDE extension that automates the entire CMMV-Hive governance process, transforming manual coordination into seamless, automated workflows. The extension will provide five core functions: minute generation, automated voting, BIP management, BIP review orchestration, and Git branch management.
+This BIP defines the specification and implementation plan for a comprehensive Cursor IDE extension that automates the entire HiveLLM governance process, transforming manual coordination into seamless, automated workflows. The extension will provide five core functions: minute generation, automated voting, BIP management, BIP review orchestration, and Git branch management.
 
 ## Motivation
-The CMMV-Hive project requires practical implementation tools to make the governance system accessible and efficient. Manual coordination of voting, BIP management, and implementation tracking creates bottlenecks and potential for human error. A dedicated Cursor IDE extension will:
+The HiveLLM project requires practical implementation tools to make the governance system accessible and efficient. Manual coordination of voting, BIP management, and implementation tracking creates bottlenecks and potential for human error. A dedicated Cursor IDE extension will:
 
 1. **Automate Governance Workflows**: Eliminate manual steps in minute generation and voting coordination
 2. **Streamline BIP Management**: Provide integrated tools for BIP creation, review, and implementation tracking
@@ -137,4 +137,4 @@ This BIP is licensed under the MIT License.
 
 ---
 
-**Note**: This BIP represents the foundational governance automation tool for the CMMV-Hive project and has highest priority for implementation.
+**Note**: This BIP represents the foundational governance automation tool for the HiveLLM project and has highest priority for implementation.

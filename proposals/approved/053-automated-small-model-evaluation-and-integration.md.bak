@@ -15,7 +15,7 @@ Establish a standardized, automated pipeline to acquire, evaluate, and integrate
 
 ## Motivation
 - Small models are increasingly competitive for narrow tasks and can drastically reduce cost and latency.
-- Today there is no systematic way to discover, evaluate, and integrate such specialists into HiveLLM.
+- Today there is no systematic way to discover, evaluate, and integrate such specialists into CMMV-Hive.
 - A repeatable pipeline that uses larger models for automated judging can accelerate qualification while keeping human oversight in governance.
 
 ## Rationale

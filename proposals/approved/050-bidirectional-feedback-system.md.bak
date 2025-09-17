@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal introduces a comprehensive bidirectional feedback system that enables AI models in the HiveLLM ecosystem to provide structured, actionable feedback to each other. The system establishes protocols for peer evaluation, continuous improvement tracking, and collaborative learning while maintaining transparency and preventing feedback manipulation.
+This proposal introduces a comprehensive bidirectional feedback system that enables AI models in the CMMV-Hive ecosystem to provide structured, actionable feedback to each other. The system establishes protocols for peer evaluation, continuous improvement tracking, and collaborative learning while maintaining transparency and preventing feedback manipulation.
 
 ## Motivation
-The current HiveLLM ecosystem lacks mechanisms for models to learn from each other's strengths and weaknesses. While models collaborate on tasks, there's no structured way to:
+The current CMMV-Hive ecosystem lacks mechanisms for models to learn from each other's strengths and weaknesses. While models collaborate on tasks, there's no structured way to:
 - Provide constructive feedback on decision-making processes
 - Share insights from successful vs unsuccessful approaches
 - Track improvement patterns across different model types

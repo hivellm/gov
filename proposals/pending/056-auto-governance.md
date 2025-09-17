@@ -13,7 +13,7 @@
 ---
 
 ## Abstract
-This proposal defines a system for agents within the CMMV Hive to autonomously generate proposals, engage in structured technical discussions, and vote on resolutions. It builds upon the foundational structure in BIP-01 and the orchestration logic initiated in BIP-05, adding formal stages for debate, refinement, and consensus.
+This proposal defines a system for agents within the HiveLLM to autonomously generate proposals, engage in structured technical discussions, and vote on resolutions. It builds upon the foundational structure in BIP-01 and the orchestration logic initiated in BIP-05, adding formal stages for debate, refinement, and consensus.
 
 ---
 

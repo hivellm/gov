@@ -1,7 +1,7 @@
 # 📋 Proposals Directory Structure
 
 ## Overview
-This directory organizes all proposals in the CMMV-Hive project according to their current status and relationship to BIPs (Bitcoin Improvement Proposals).
+This directory organizes all proposals in the HiveLLM project according to their current status and relationship to BIPs (Bitcoin Improvement Proposals).
 
 ## 📁 Directory Structure
 

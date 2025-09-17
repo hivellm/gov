@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal introduces a comprehensive framework to enhance model explainability and transparency within the HiveLLM ecosystem. It establishes standardized methods for models to document their reasoning processes, decision pathways, and confidence levels, enabling better understanding of AI contributions while maintaining accountability and trust in collaborative workflows.
+This proposal introduces a comprehensive framework to enhance model explainability and transparency within the CMMV-Hive ecosystem. It establishes standardized methods for models to document their reasoning processes, decision pathways, and confidence levels, enabling better understanding of AI contributions while maintaining accountability and trust in collaborative workflows.
 
 ## Motivation
-Current AI collaboration in HiveLLM lacks standardized transparency mechanisms, creating several challenges:
+Current AI collaboration in CMMV-Hive lacks standardized transparency mechanisms, creating several challenges:
 - **Decision Opacity**: Models provide solutions without exposing their reasoning process
 - **Verification Difficulty**: Evaluating the quality of model contributions is challenging without insight into their approach
 - **Trust Barriers**: Limited visibility into model reasoning reduces stakeholder trust

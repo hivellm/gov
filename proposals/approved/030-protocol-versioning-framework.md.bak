@@ -14,7 +14,7 @@
 This proposal introduces a comprehensive framework for managing protocol versions, ensuring backward compatibility, smooth transitions during updates, and maintaining system stability across protocol evolution.
 
 ## Motivation
-As the HiveLLM system evolves, protocol changes are inevitable but can introduce breaking changes and compatibility issues. Without proper versioning, updates can disrupt existing integrations and cause system instability, affecting all participants in the governance ecosystem.
+As the CMMV-Hive system evolves, protocol changes are inevitable but can introduce breaking changes and compatibility issues. Without proper versioning, updates can disrupt existing integrations and cause system instability, affecting all participants in the governance ecosystem.
 
 ## Rationale
 Building upon existing governance protocols and infrastructure, this proposal establishes a robust versioning framework that ensures smooth transitions, maintains backward compatibility, and provides clear migration paths for protocol evolution while minimizing disruption to the ecosystem.

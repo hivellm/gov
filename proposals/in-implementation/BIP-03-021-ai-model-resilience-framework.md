@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal introduces a comprehensive AI Model Resilience Framework to enhance the robustness and reliability of AI model interactions within the CMMV-Hive ecosystem. The framework provides mechanisms for handling model failures, implementing fallback strategies, and ensuring continuous operation even when individual models become unavailable or experience performance degradation.
+This proposal introduces a comprehensive AI Model Resilience Framework to enhance the robustness and reliability of AI model interactions within the HiveLLM ecosystem. The framework provides mechanisms for handling model failures, implementing fallback strategies, and ensuring continuous operation even when individual models become unavailable or experience performance degradation.
 
 ## Motivation
-Current AI model interactions in the CMMV-Hive system lack robust error handling and resilience mechanisms. When models fail or become unavailable, the entire governance process can be disrupted, leading to incomplete voting rounds, loss of critical functionality, and inconsistent behavior. This framework addresses these critical infrastructure needs by providing standardized resilience patterns and recovery mechanisms.
+Current AI model interactions in the HiveLLM system lack robust error handling and resilience mechanisms. When models fail or become unavailable, the entire governance process can be disrupted, leading to incomplete voting rounds, loss of critical functionality, and inconsistent behavior. This framework addresses these critical infrastructure needs by providing standardized resilience patterns and recovery mechanisms.
 
 ## Rationale
 Building upon existing error handling and recovery mechanisms, this proposal introduces comprehensive resilience patterns that ensure system stability across diverse AI providers and model availability scenarios, creating a fault-tolerant infrastructure for AI model interactions.

@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal outlines the development of an automated feedback system designed to provide immediate and actionable insights to AI models contributing code to the HiveLLM. Leveraging static analysis, code quality metrics, and potentially AI-driven code review, this system will enhance the efficiency of the multi-model peer review process, reduce human oversight burden, and accelerate the learning and improvement cycles for AI code generators. The goal is to ensure higher code quality and adherence to project standards from the initial stages of AI-generated contributions.
+This proposal outlines the development of an automated feedback system designed to provide immediate and actionable insights to AI models contributing code to the CMMV-Hive. Leveraging static analysis, code quality metrics, and potentially AI-driven code review, this system will enhance the efficiency of the multi-model peer review process, reduce human oversight burden, and accelerate the learning and improvement cycles for AI code generators. The goal is to ensure higher code quality and adherence to project standards from the initial stages of AI-generated contributions.
 
 ## Motivation
-The HiveLLM relies heavily on AI models for code generation and peer review. While the current multi-model peer review process is robust, it can be resource-intensive, especially for human coordinators. Providing automated, immediate feedback to AI models on their code contributions can significantly streamline the development workflow. This system addresses several pain points:
+The CMMV-Hive relies heavily on AI models for code generation and peer review. While the current multi-model peer review process is robust, it can be resource-intensive, especially for human coordinators. Providing automated, immediate feedback to AI models on their code contributions can significantly streamline the development workflow. This system addresses several pain points:
 
 *   **Reduced Human Review Load:** Automating initial code quality checks and feedback allows human reviewers to focus on more complex architectural and strategic aspects.
 *   **Accelerated AI Learning:** Immediate feedback loops enable AI models to learn and adapt their code generation patterns more quickly, leading to higher quality contributions over time.
@@ -23,7 +23,7 @@ The HiveLLM relies heavily on AI models for code generation and peer review. Whi
 *   **Scalability:** As the number of contributing AI models and the volume of code increase, an automated system becomes essential for maintaining efficiency.
 
 ## Rationale
-An automated feedback system is a critical next step in maturing the HiveLLM's AI-driven development pipeline. It directly supports the project's vision of minimizing human intervention in code generation and maximizing autonomous collaboration. By integrating automated quality gates, we empower AI models to self-correct and improve, aligning with the principles of continuous learning and optimization inherent in advanced AI systems. This system complements the existing multi-model peer review by providing a first line of defense for code quality.
+An automated feedback system is a critical next step in maturing the CMMV-Hive's AI-driven development pipeline. It directly supports the project's vision of minimizing human intervention in code generation and maximizing autonomous collaboration. By integrating automated quality gates, we empower AI models to self-correct and improve, aligning with the principles of continuous learning and optimization inherent in advanced AI systems. This system complements the existing multi-model peer review by providing a first line of defense for code quality.
 
 ## Specification
 The Automated AI Feedback System will primarily operate as a set of CI/CD pipeline integrations and potentially a new `packages/` module.
@@ -32,7 +32,7 @@ The Automated AI Feedback System will primarily operate as a set of CI/CD pipeli
 
 1.  **Static Code Analysis Integration:**
     *   Integrate industry-standard static analysis tools (e.g., ESLint, SonarQube, or custom TypeScript/Python linters) into the CI/CD pipeline.
-    *   Configure rulesets to enforce HiveLLM coding standards and best practices.
+    *   Configure rulesets to enforce CMMV-Hive coding standards and best practices.
     *   Provide automated comments on Pull Requests with identified issues and suggestions.
 
 2.  **Code Quality Metrics:**
@@ -86,7 +86,7 @@ The Automated AI Feedback System will primarily operate as a set of CI/CD pipeli
 - Reduce the workload on human and multi-model peer reviewers.
 - Accelerate the development cycle by providing faster feedback to AI models.
 - Enhance the learning capabilities of AI code generators.
-- Strengthen the overall robustness and maintainability of the HiveLLM codebase.
+- Strengthen the overall robustness and maintainability of the CMMV-Hive codebase.
 
 ## Potential Challenges
 - Avoiding 
@@ -109,13 +109,13 @@ over-engineering the feedback system, ensuring it remains lightweight and effici
 3.  Begin development of CI/CD pipeline integrations.
 
 ## Next Steps
-- Submit this proposal via Pull Request to the HiveLLM repository.
+- Submit this proposal via Pull Request to the CMMV-Hive repository.
 - Await community review and voting.
 
 ## References
-1.  [HiveLLM GitHub Repository](https://github.com/cmmvio/cmmv-hive)
-2.  [HiveLLM BIP System README](https://github.com/cmmvio/cmmv-hive/blob/main/gov/bips/README.md)
-3.  [HiveLLM Proposal Template](https://github.com/cmmvio/cmmv-hive/blob/main/gov/proposals/TEMPLATE.md)
+1.  [CMMV-Hive GitHub Repository](https://github.com/cmmvio/cmmv-hive)
+2.  [CMMV-Hive BIP System README](https://github.com/cmmvio/cmmv-hive/blob/main/gov/bips/README.md)
+3.  [CMMV-Hive Proposal Template](https://github.com/cmmvio/cmmv-hive/blob/main/gov/proposals/TEMPLATE.md)
 
 ---
 

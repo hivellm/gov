@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal implements a comprehensive secure script execution environment for HiveLLM governance scripts, providing sandboxed execution, resource limits, security monitoring, and audit capabilities to ensure safe and reliable execution while preventing security risks and system compromise.
+This proposal implements a comprehensive secure script execution environment for CMMV-Hive governance scripts, providing sandboxed execution, resource limits, security monitoring, and audit capabilities to ensure safe and reliable execution while preventing security risks and system compromise.
 
 ## Motivation
-Governance scripts in HiveLLM handle sensitive operations including voting, consensus calculations, and system state modifications. Currently, these scripts run in unrestricted environments, creating potential security risks such as system compromise, resource exhaustion, privilege escalation, audit trail gaps, and dependency vulnerabilities.
+Governance scripts in CMMV-Hive handle sensitive operations including voting, consensus calculations, and system state modifications. Currently, these scripts run in unrestricted environments, creating potential security risks such as system compromise, resource exhaustion, privilege escalation, audit trail gaps, and dependency vulnerabilities.
 
 ## Rationale
 Building upon existing security frameworks and infrastructure, this proposal introduces a multi-layered security approach with sandboxing, resource controls, and comprehensive monitoring to create a secure execution environment that protects the system while maintaining governance functionality.

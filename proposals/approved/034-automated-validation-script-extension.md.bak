@@ -14,7 +14,7 @@
 This proposal extends the existing validation framework with a pluggable validation script system that enables adding new validation rules without modifying core components, providing flexibility and accelerating governance feature development.
 
 ## Motivation
-As the HiveLLM system grows and new validation requirements emerge, the current rigid validation system becomes a bottleneck. Adding new validation rules requires core system modifications and redeployments, slowing down the development of new governance features and reducing system agility.
+As the CMMV-Hive system grows and new validation requirements emerge, the current rigid validation system becomes a bottleneck. Adding new validation rules requires core system modifications and redeployments, slowing down the development of new governance features and reducing system agility.
 
 ## Rationale
 Building upon existing validation frameworks and development tools, this proposal introduces a pluggable architecture that allows validation rules to be added dynamically without core system changes, enabling rapid iteration and flexible governance feature development.

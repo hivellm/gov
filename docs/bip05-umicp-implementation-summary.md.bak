@@ -1,11 +1,11 @@
 ## UMICP Implementation for BIP-05 — Concise Summary
 
-This document summarizes how `@umicp/` (Universal Matrix Intelligent Communication Protocol) is implemented in the HiveLLM project to satisfy BIP‑05 requirements. It is intended as a quick, high‑level reference for engineers integrating or reviewing the implementation.
+This document summarizes how `@umicp/` (Universal Matrix Intelligent Communication Protocol) is implemented in the CMMV‑Hive project to satisfy BIP‑05 requirements. It is intended as a quick, high‑level reference for engineers integrating or reviewing the implementation.
 
 ### What is UMICP?
 UMICP is a hybrid JSON/binary communication protocol optimized for inter‑model communication. It provides a JSON control plane for interoperability and observability, and a binary data plane for high‑throughput AI payloads (vectors, embeddings, tensors).
 
-### Scope in HiveLLM
+### Scope in CMMV‑Hive
 - Core C++ implementation with SIMD acceleration (matrix/tensor ops)
 - Language bindings (TypeScript/Node.js available; Rust/Go/Python planned)
 - Transport adaptors: WebSocket (SSL/TLS), HTTP/2 (SSL/TLS); Matrix‑style federation planned

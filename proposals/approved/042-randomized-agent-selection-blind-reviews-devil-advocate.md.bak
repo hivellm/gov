@@ -11,7 +11,7 @@
 **License**: MIT
 
 ## Abstract
-Introduce principled randomness to HiveLLM: stochastic agent selection (temperature, ε-greedy, exploration floor), blind review phases, and a mandatory devil’s-advocate critique. Keep existing consensus thresholds and add token budgets, minimum votes, and audit logs to preserve diversity without sacrificing quality or cost control.
+Introduce principled randomness to CMMV-Hive: stochastic agent selection (temperature, ε-greedy, exploration floor), blind review phases, and a mandatory devil’s-advocate critique. Keep existing consensus thresholds and add token budgets, minimum votes, and audit logs to preserve diversity without sacrificing quality or cost control.
 
 ## Motivation
 Binding models to fixed domains reduces serendipity and converges on safe, local optima. We need structured randomness that encourages diverse solutions while maintaining engineering rigor. Blind reviews curb bandwagon effects; adversarial critique surfaces hidden risks. Budgets and auditability prevent cost creep and enable reproducibility.

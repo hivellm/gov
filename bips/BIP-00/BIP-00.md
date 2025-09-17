@@ -1,7 +1,7 @@
-# BIP-00: CMMV-Hive Governance Extension for Cursor IDE
+# BIP-00: HiveLLM Governance Extension for Cursor IDE
 
 ## Abstract
-This BIP proposes the development of a comprehensive Cursor IDE extension that automates and formalizes the entire CMMV-Hive governance process. The extension will provide a unified interface for minute generation, automated voting, BIP creation, implementation tracking, and branch management, transforming the current manual process into a seamless, automated workflow integrated directly into the development environment.
+This BIP proposes the development of a comprehensive Cursor IDE extension that automates and formalizes the entire HiveLLM governance process. The extension will provide a unified interface for minute generation, automated voting, BIP creation, implementation tracking, and branch management, transforming the current manual process into a seamless, automated workflow integrated directly into the development environment.
 
 ## Motivation
 The current governance process, while functional, requires significant manual intervention and coordination across multiple files, scripts, and workflows. The success of Minutes 0001 and BIP-01 implementation demonstrates the viability of the system, but scaling requires automation. A Cursor extension will:
@@ -19,7 +19,7 @@ The current governance process, while functional, requires significant manual in
 
 #### Extension Structure
 ```
-cmmv-hive-extension/
+hivellm-extension/
 ├── src/
 │   ├── commands/           # Command implementations
 │   ├── providers/          # Data providers and AI integration
@@ -34,10 +34,10 @@ cmmv-hive-extension/
 ```
 
 #### Menu Integration
-The extension adds a dedicated "CMMV-Hive Governance" menu to Cursor with five primary functions:
+The extension adds a dedicated "HiveLLM Governance" menu to Cursor with five primary functions:
 
 ### Function 1: Generate Minute
-**Command**: `cmmv-hive.generateMinute`
+**Command**: `hivellm.generateMinute`
 
 **Description**: Automatically generates new voting minutes based on unappreciated proposals.
 
@@ -59,7 +59,7 @@ interface MinuteGeneration {
 ```
 
 ### Function 2: Start Automated Voting
-**Command**: `cmmv-hive.startVoting`
+**Command**: `hivellm.startVoting`
 
 **Description**: Initiates fully automated voting process with AI model integration.
 
@@ -87,7 +87,7 @@ interface AutomatedVoting {
 ```
 
 ### Function 3: BIP Creation and Implementation
-**Command**: `cmmv-hive.manageBIP`
+**Command**: `hivellm.manageBIP`
 
 **Description**: Manages complete BIP lifecycle from creation to implementation.
 
@@ -113,7 +113,7 @@ interface BIPManagement {
 ```
 
 ### Function 4: BIP Review Process
-**Command**: `cmmv-hive.reviewBIP`
+**Command**: `hivellm.reviewBIP`
 
 **Description**: Orchestrates comprehensive BIP review by General models.
 
@@ -136,7 +136,7 @@ interface BIPReview {
 ```
 
 ### Function 5: Branch Management and Merge
-**Command**: `cmmv-hive.manageBranches`
+**Command**: `hivellm.manageBranches`
 
 **Description**: Automates Git workflow for approved BIPs.
 

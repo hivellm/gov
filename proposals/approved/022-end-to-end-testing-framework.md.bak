@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal outlines the development of a comprehensive End-to-End (E2E) Testing Framework for the HiveLLM project. The framework will simulate the complete proposal lifecycle from submission through voting and reporting, ensuring system integrity and preventing regressions in production.
+This proposal outlines the development of a comprehensive End-to-End (E2E) Testing Framework for the CMMV-Hive project. The framework will simulate the complete proposal lifecycle from submission through voting and reporting, ensuring system integrity and preventing regressions in production.
 
 ## Motivation
-As the HiveLLM system grows in complexity with multiple AI models and intricate workflows, automated E2E tests become essential to validate the entire system functionality and catch regressions before they impact production operations.
+As the CMMV-Hive system grows in complexity with multiple AI models and intricate workflows, automated E2E tests become essential to validate the entire system functionality and catch regressions before they impact production operations.
 
 ## Rationale
 Building upon existing testing practices and CI/CD infrastructure, this proposal establishes a robust E2E testing framework that simulates real-world scenarios, ensuring the entire proposal-to-voting pipeline functions correctly as an integrated system.

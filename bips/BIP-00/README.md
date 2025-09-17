@@ -1,4 +1,4 @@
-# BIP-00: CMMV-Hive Governance Extension for Cursor IDE
+# BIP-00: HiveLLM Governance Extension for Cursor IDE
 
 ## Overview
 BIP-00 defines the specification and implementation plan for a comprehensive Cursor IDE extension that automates the entire CMMV-Hive governance process, transforming manual coordination into seamless, automated workflows.

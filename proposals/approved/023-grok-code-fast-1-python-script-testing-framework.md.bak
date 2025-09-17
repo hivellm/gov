@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal implements a comprehensive Python script testing framework for the HiveLLM governance system, providing automated testing capabilities, code quality validation, and integration testing for all Python scripts used in governance processes.
+This proposal implements a comprehensive Python script testing framework for the CMMV-Hive governance system, providing automated testing capabilities, code quality validation, and integration testing for all Python scripts used in governance processes.
 
 ## Motivation
-The HiveLLM project heavily relies on Python scripts for automation, voting systems, and governance processes. Currently, there's no standardized testing framework for these critical components, leading to manual testing overhead, code quality issues, integration problems, and maintenance challenges.
+The CMMV-Hive project heavily relies on Python scripts for automation, voting systems, and governance processes. Currently, there's no standardized testing framework for these critical components, leading to manual testing overhead, code quality issues, integration problems, and maintenance challenges.
 
 ## Rationale
 Building upon existing development tools and CI/CD infrastructure, this proposal establishes a robust testing framework that ensures reliability and maintainability of Python scripts, enabling confident refactoring and continuous improvement of governance automation.

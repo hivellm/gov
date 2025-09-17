@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal implements a comprehensive performance optimization pipeline for the HiveLLM governance system, providing automated monitoring, optimization recommendations, bottleneck identification, and continuous improvement capabilities to ensure optimal performance as the system scales.
+This proposal implements a comprehensive performance optimization pipeline for the CMMV-Hive governance system, providing automated monitoring, optimization recommendations, bottleneck identification, and continuous improvement capabilities to ensure optimal performance as the system scales.
 
 ## Motivation
-As the HiveLLM ecosystem grows with more AI models, proposals, and governance operations, performance becomes increasingly critical. The current system lacks systematic performance monitoring and optimization, leading to degradation, resource inefficiency, scalability issues, and suboptimal user experience.
+As the CMMV-Hive ecosystem grows with more AI models, proposals, and governance operations, performance becomes increasingly critical. The current system lacks systematic performance monitoring and optimization, leading to degradation, resource inefficiency, scalability issues, and suboptimal user experience.
 
 ## Rationale
 Building upon existing infrastructure and monitoring capabilities, this proposal establishes a comprehensive performance optimization pipeline that proactively identifies bottlenecks, provides automated optimization recommendations, and ensures continuous performance improvement through systematic monitoring and analysis.

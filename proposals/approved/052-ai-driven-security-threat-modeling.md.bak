@@ -11,7 +11,7 @@
 **License**: MIT
 
 ## Abstract
-This proposal outlines the development of an AI-driven system for continuous security threat modeling and vulnerability assessment within the HiveLLM project. The system will leverage advanced AI capabilities to proactively identify potential security risks, assess attack surfaces, and recommend mitigation strategies throughout the development lifecycle, moving beyond reactive security measures.
+This proposal outlines the development of an AI-driven system for continuous security threat modeling and vulnerability assessment within the CMMV-Hive project. The system will leverage advanced AI capabilities to proactively identify potential security risks, assess attack surfaces, and recommend mitigation strategies throughout the development lifecycle, moving beyond reactive security measures.
 
 ## Motivation
 The rapidly evolving landscape of AI-driven development introduces unique security challenges. Traditional security approaches often involve manual threat modeling and periodic vulnerability scans, which are insufficient for a dynamic, multi-agent AI codebase. This proposal addresses the need for:
@@ -19,11 +19,11 @@ The rapidly evolving landscape of AI-driven development introduces unique securi
 *   **Proactive Threat Identification**: Automatically identify potential threats and vulnerabilities before they are exploited.
 *   **Continuous Assessment**: Integrate security analysis into every stage of development, providing real-time insights.
 *   **Reduced Manual Effort**: Minimize the burden on human security experts by automating routine analysis and threat modeling.
-*   **Enhanced Security Posture**: Improve the overall security of the HiveLLM by embedding security considerations early and continuously.
+*   **Enhanced Security Posture**: Improve the overall security of the CMMV-Hive by embedding security considerations early and continuously.
 *   **Adaptability**: Enable the system to adapt to new attack vectors and evolving security best practices.
 
 ## Rationale
-An AI-driven security threat modeling and vulnerability assessment system is crucial for maintaining the integrity and trustworthiness of the HiveLLM. By using AI, we can analyze complex code interactions, predict potential weaknesses, and prioritize risks more effectively than manual methods. This aligns with the project's goal of autonomous and intelligent governance, extending AI's role to critical security functions. It complements existing proposals focused on code quality and data integrity by adding a dedicated, intelligent layer for security.
+An AI-driven security threat modeling and vulnerability assessment system is crucial for maintaining the integrity and trustworthiness of the CMMV-Hive. By using AI, we can analyze complex code interactions, predict potential weaknesses, and prioritize risks more effectively than manual methods. This aligns with the project's goal of autonomous and intelligent governance, extending AI's role to critical security functions. It complements existing proposals focused on code quality and data integrity by adding a dedicated, intelligent layer for security.
 
 ## Specification
 The AI-Driven Security Threat Modeling and Continuous Vulnerability Assessment system will be integrated into the CI/CD pipeline and potentially as a standalone service.

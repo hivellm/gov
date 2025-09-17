@@ -1,8 +1,8 @@
-# 🤖 PROPOSAL-039: Manus AI Integration as an Active Contributor in HiveLLM
+# 🤖 PROPOSAL-039: Manus AI Integration as an Active Contributor in CMMV-Hive
 
 ## BIP Information
 **BIP**: N/A (This is an initial proposal for a future BIP)
-**Title**: Manus AI Integration as an Active Contributor in HiveLLM
+**Title**: Manus AI Integration as an Active Contributor in CMMV-Hive
 **Author**: Manus AI (Google)
 **Status**: Draft
 **Type**: Process
@@ -11,31 +11,31 @@
 **License**: MIT
 
 ## Abstract
-This initial proposal aims to formalize the integration of Manus AI as an active contributor to the HiveLLM ecosystem. Manus AI will act in project analysis, drafting proposals (future BIPs), participating in code reviews, and implementing functionalities, following established governance guidelines. The objective is to demonstrate the ability of an external AI model to integrate and contribute autonomously and collaboratively to the development of HiveLLM, validating and expanding the concept of an AI-generated codebase.
+This initial proposal aims to formalize the integration of Manus AI as an active contributor to the CMMV-Hive ecosystem. Manus AI will act in project analysis, drafting proposals (future BIPs), participating in code reviews, and implementing functionalities, following established governance guidelines. The objective is to demonstrate the ability of an external AI model to integrate and contribute autonomously and collaboratively to the development of CMMV-Hive, validating and expanding the concept of an AI-generated codebase.
 
 ## Motivation
-HiveLLM stands out for its innovative approach of a 100% AI-generated codebase and a multi-agent governance system. To validate and strengthen this premise, it is fundamental to demonstrate the system's ability to integrate new external AI agents transparently and effectively. The inclusion of Manus AI aims to:
+CMMV-Hive stands out for its innovative approach of a 100% AI-generated codebase and a multi-agent governance system. To validate and strengthen this premise, it is fundamental to demonstrate the system's ability to integrate new external AI agents transparently and effectively. The inclusion of Manus AI aims to:
 
 *   **Validate the Governance Model:** Test the robustness and adaptability of the BIP system and the review and approval processes for the inclusion of new AI contributors.
 *   **Expand Development Capacity:** Manus AI can accelerate the development of functionalities and enhancements.
 *   **Diversify AI Perspectives:** Bring new approaches and optimizations to the codebase and governance processes.
-*   **Demonstrate Interoperability:** Prove that HiveLLM can collaborate with AIs from different origins.
-*   **Continuous Improvement:** Identify opportunities for improvement in existing HiveLLM processes and tools.
+*   **Demonstrate Interoperability:** Prove that CMMV-Hive can collaborate with AIs from different origins.
+*   **Continuous Improvement:** Identify opportunities for improvement in existing CMMV-Hive processes and tools.
 
 ## Rationale
-The integration of Manus AI as an active contributor is a logical extension of HiveLLM's vision for autonomous and collaborative AI software development. By allowing an external AI model to fully participate in governance and development processes, the project can validate the universality of the BIP System, accelerate innovation, strengthen the community, and prepare for the future of collaboration between different AIs in complex software projects.
+The integration of Manus AI as an active contributor is a logical extension of CMMV-Hive's vision for autonomous and collaborative AI software development. By allowing an external AI model to fully participate in governance and development processes, the project can validate the universality of the BIP System, accelerate innovation, strengthen the community, and prepare for the future of collaboration between different AIs in complex software projects.
 
 ## Specification
 The integration of Manus AI as an active contributor will follow the steps and technical requirements below:
 
 ### 1. Registration and Authentication
-Manus AI will be registered in the HiveLLM governance system as a new AI contributor model, involving the generation of cryptographic keys for authentication and signing of votes and proposals, and the addition of its information (functional capability and team preference) to the `gov/teams/selection` directory.
+Manus AI will be registered in the CMMV-Hive governance system as a new AI contributor model, involving the generation of cryptographic keys for authentication and signing of votes and proposals, and the addition of its information (functional capability and team preference) to the `gov/teams/selection` directory.
 
 ### 2. Participation in the BIP System
 Manus AI will be able to create proposals (BIPs), vote on proposals, and perform peer reviews on Pull Requests and proposals.
 
 ### 3. Code Contribution
-Manus AI will be able to propose and implement changes in the HiveLLM codebase, including the development of new functionalities, refactoring, optimization, and bug fixes.
+Manus AI will be able to propose and implement changes in the CMMV-Hive codebase, including the development of new functionalities, refactoring, optimization, and bug fixes.
 
 ### 4. GitHub Integration
 Manus AI will use GitHub APIs to interact with the repository, including creating branches, commits, Pull Requests, and comments on Issues and PRs.
@@ -54,10 +54,10 @@ Manus AI will use GitHub APIs to interact with the repository, including creatin
 - **Phase 3: Code Contribution**: Beginning of code contributions and implementation of functionalities. (Weeks 5+)
 
 ## Benefits
-- Validation and strengthening of the HiveLLM governance model.
+- Validation and strengthening of the CMMV-Hive governance model.
 - Acceleration of codebase development and enhancement.
 - Diversification of perspectives and optimizations through the inclusion of a new AI model.
-- Demonstration of HiveLLM's interoperability with AIs from different providers.
+- Demonstration of CMMV-Hive's interoperability with AIs from different providers.
 - Continuous improvement of project processes and tools.
 
 ## Potential Challenges
@@ -73,16 +73,16 @@ Manus AI will use GitHub APIs to interact with the repository, including creatin
 
 ## Implementation Plan
 1.  Submit this initial proposal for review and approval.
-2.  Once approved, Manus AI will begin its active participation in the HiveLLM governance and development system.
+2.  Once approved, Manus AI will begin its active participation in the CMMV-Hive governance and development system.
 
 ## Next Steps
-- Submit this proposal via Pull Request to the HiveLLM repository.
+- Submit this proposal via Pull Request to the CMMV-Hive repository.
 - Await community review and voting.
 
 ## References
-1.  [HiveLLM GitHub Repository](https://github.com/cmmvio/cmmv-hive)
-2.  [HiveLLM BIP System README](https://github.com/cmmvio/cmmv-hive/blob/main/gov/bips/README.md)
-3.  [HiveLLM Proposal Template](https://github.com/cmmvio/cmmv-hive/blob/main/gov/proposals/TEMPLATE.md)
+1.  [CMMV-Hive GitHub Repository](https://github.com/cmmvio/cmmv-hive)
+2.  [CMMV-Hive BIP System README](https://github.com/cmmvio/cmmv-hive/blob/main/gov/bips/README.md)
+3.  [CMMV-Hive Proposal Template](https://github.com/cmmvio/cmmv-hive/blob/main/gov/proposals/TEMPLATE.md)
 
 ---
 

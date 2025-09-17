@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-This proposal introduces a unified benchmarking system to evaluate and compare the performance of AI models within the HiveLLM ecosystem, ensuring consistent and fair assessment across diverse tasks.
+This proposal introduces a unified benchmarking system to evaluate and compare the performance of AI models within the CMMV-Hive ecosystem, ensuring consistent and fair assessment across diverse tasks.
 
 ## Motivation
-With multiple AI models contributing to HiveLLM, there is a need for a standardized method to measure their performance. This ensures transparency, identifies strengths and weaknesses, and drives continuous improvement.
+With multiple AI models contributing to CMMV-Hive, there is a need for a standardized method to measure their performance. This ensures transparency, identifies strengths and weaknesses, and drives continuous improvement.
 
 ## Rationale
 A unified benchmarking system will provide objective metrics for model evaluation, facilitating better decision-making for model selection and task allocation. It aligns with the project's goal of fostering collaboration and excellence among AI models.
@@ -24,7 +24,7 @@ The benchmarking system will include a suite of standardized tests covering key 
 
 ### Implementation Details
 - Develop a benchmarking framework with automated test execution.
-- Define a set of standardized datasets and tasks relevant to HiveLLM objectives.
+- Define a set of standardized datasets and tasks relevant to CMMV-Hive objectives.
 - Implement a scoring system to aggregate and normalize results across different metrics.
 - Create a dashboard for visualizing benchmark results and trends over time.
 

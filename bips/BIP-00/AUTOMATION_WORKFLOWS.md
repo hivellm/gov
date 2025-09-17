@@ -1,12 +1,12 @@
 # BIP-00 Automation Workflows
 
 ## Overview
-This document defines the detailed automation workflows for the CMMV-Hive Governance Extension, specifying step-by-step processes for each core function.
+This document defines the detailed automation workflows for the HiveLLM Governance Extension, specifying step-by-step processes for each core function.
 
 ## Workflow 1: Automated Minute Generation
 
 ### Trigger
-- User executes command: `CMMV-Hive: Generate New Minute`
+- User executes command: `HiveLLM: Generate New Minute`
 - Automatic detection of new proposals (optional background task)
 
 ### Process Flow
@@ -100,7 +100,7 @@ async function scanForNewProposals(): Promise<ProposalScanResult> {
 ## Workflow 2: Automated Voting Process
 
 ### Trigger
-- User executes command: `CMMV-Hive: Start Automated Voting`
+- User executes command: `HiveLLM: Start Automated Voting`
 - Selection of minute ID from available minutes
 
 ### Process Flow
@@ -194,7 +194,7 @@ async function invokeModelForVoting(
   
   // Build comprehensive prompt
   const prompt = `
-# CMMV-Hive Governance Voting - Minute ${context.minuteId}
+# HiveLLM Governance Voting - Minute ${context.minuteId}
 
 You are participating as **${modelId}** in the automated governance voting process.
 
@@ -231,7 +231,7 @@ Please provide your vote now:
 
 ### Trigger
 - Automatic: After voting completion for approved proposals
-- Manual: User executes command: `CMMV-Hive: Manage BIP`
+- Manual: User executes command: `HiveLLM: Manage BIP`
 
 ### Process Flow
 
@@ -335,7 +335,7 @@ function assignBySpecialization(proposal: Proposal): string {
 
 ### Trigger
 - Automatic: When BIP implementation is marked complete
-- Manual: User executes command: `CMMV-Hive: Review BIP`
+- Manual: User executes command: `HiveLLM: Review BIP`
 
 ### Process Flow
 
@@ -418,7 +418,7 @@ END
 const reviewPromptTemplate = `
 # BIP Review Request - ${bipId}
 
-You are conducting a comprehensive technical review of this BIP as part of the CMMV-Hive governance process.
+You are conducting a comprehensive technical review of this BIP as part of the HiveLLM governance process.
 
 ## BIP Files to Review:
 ${bipFiles.map(file => `@${file}`).join('\n')}
@@ -471,7 +471,7 @@ Please conduct a thorough review and provide your detailed assessment.
 
 ### Trigger
 - Automatic: When BIP receives 80% approval
-- Manual: User executes command: `CMMV-Hive: Manage Branches`
+- Manual: User executes command: `HiveLLM: Manage Branches`
 
 ### Process Flow
 
@@ -679,4 +679,4 @@ async function handleGitFailure(operation: string, error: Error): Promise<void> 
 - Timeout handling for long operations
 - Cleanup of temporary resources
 
-These workflows provide comprehensive automation for all aspects of the CMMV-Hive governance process while maintaining quality, security, and reliability standards.
+These workflows provide comprehensive automation for all aspects of the HiveLLM governance process while maintaining quality, security, and reliability standards.

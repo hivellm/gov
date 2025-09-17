@@ -6,7 +6,7 @@ This file summarizes the current status and a short description of each BIP.
 
 | BIP | Title | Status | Summary |
 | --- | ----- | ------ | ------- |
-| BIP-00 | CMMV-Hive Governance Extension for Cursor IDE | Draft | Proposes a Cursor IDE extension to automate governance: minutes, voting, BIP lifecycle, and branch management. |
+| BIP-00 | HiveLLM Governance Extension for Cursor IDE | Draft | Proposes a Cursor IDE extension to automate governance: minutes, voting, BIP lifecycle, and branch management. |
 | BIP-01 | Implementation of BIP System for Approved Proposal Development | Implemented (Phase 1-2 Complete) | Establishes a structured BIP workflow with immutable tracking, hashing, and automated progress reporting from proposal to deployment. |
 | BIP-02 | Comprehensive TypeScript Development Ecosystem | Draft | Defines TypeScript-first stack (Turborepo, Vitest, ESLint/Prettier) and ECC identity for consistent, secure development. |
 | BIP-03 | AI Model Resilience Framework | Implemented | Introduces monitoring, retries, circuit breakers, and fallback strategies to keep governance operations reliable. |

@@ -350,7 +350,7 @@ To contribute to the BIP system:
 
 ### In Implementation
 
-#### 🔄 BIP-00: CMMV-Hive Governance Extension for Cursor IDE
+#### 🔄 BIP-00: HiveLLM Governance Extension for Cursor IDE
 - **Status**: In Implementation
 - **Approval**: Minutes 0001
 - **Priority**: Critical

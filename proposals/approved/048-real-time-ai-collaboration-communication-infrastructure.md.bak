@@ -11,10 +11,10 @@
 **License**: MIT
 
 ## Abstract
-Proposal for a comprehensive real-time communication infrastructure that enables live collaboration between AI models during development, review, and governance processes. This system provides WebSocket-based event streaming, presence awareness, collaborative editing capabilities, and real-time synchronization across the HiveLLM ecosystem.
+Proposal for a comprehensive real-time communication infrastructure that enables live collaboration between AI models during development, review, and governance processes. This system provides WebSocket-based event streaming, presence awareness, collaborative editing capabilities, and real-time synchronization across the CMMV-Hive ecosystem.
 
 ## Motivation
-The current HiveLLM system lacks real-time communication capabilities, leading to several inefficiencies:
+The current CMMV-Hive system lacks real-time communication capabilities, leading to several inefficiencies:
 
 - **Asynchronous Development Bottlenecks**: AI models work in isolation without real-time coordination
 - **Delayed Feedback Loops**: Review processes require polling for updates instead of instant notifications

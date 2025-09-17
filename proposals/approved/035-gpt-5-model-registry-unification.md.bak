@@ -11,7 +11,7 @@
 **License**: MIT
 
 ## Abstract
-This proposal implements a single, authoritative Model Registry for HiveLLM that unifies model metadata, roles, lifecycle status, and evaluation links across the repository, while enforcing governance classifications and maintaining schema consistency.
+This proposal implements a single, authoritative Model Registry for CMMV-Hive that unifies model metadata, roles, lifecycle status, and evaluation links across the repository, while enforcing governance classifications and maintaining schema consistency.
 
 ## Motivation
 As the number of models, files, and evaluation artifacts grows, the current scattered approach leads to duplicated and inconsistent metadata. Model details are fragmented across multiple JSON files and documentation, governance classifications are inconsistently enforced, and there's no standardized schema versioning or deprecation handling.
