@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Develop and maintain development tools, automation frameworks, and productivity enhancements that streamline the development process and improve developer experience across the CMMV-Hive ecosystem.
+Develop and maintain development tools, automation frameworks, and productivity enhancements that streamline the development process and improve developer experience across the HiveLLM ecosystem.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

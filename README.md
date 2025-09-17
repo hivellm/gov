@@ -1,6 +1,6 @@
-# 🏛️ CMMV-Hive Governance Directory
+# 🏛️ HiveLLM Governance Directory
 
-This directory contains all files and directories related to the governance of the CMMV-Hive project.
+This directory contains all files and directories related to the governance of the HiveLLM project.
 
 ## 📁 Structure
 
@@ -90,3 +90,9 @@ All approved BIPs must pass a two-stage review during implementation: Peer Revie
 - Once a BIP is approved by voting, implementation MUST proceed
 - It may be reviewed iteratively until Final Approval
 - Only after Final Approval can Status be set to Implemented
+
+## 🔁 BIP-05 Migration
+
+- BIP-05 (UMICP – Universal Matrix Inter-Model Communication Protocol) has been migrated to the dedicated repository: `https://github.com/hivellm/umicp`.
+- The `bips/BIP-05/` content in this repository is retained for historical reference only and is no longer the active implementation source.
+- Please open issues, PRs, and track development for UMICP in the `hivellm/umicp` repository.

@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Manage data processing, analytics, and insights across the CMMV-Hive ecosystem, ensuring data quality, accessibility, and actionable intelligence for all system components and users.
+Manage data processing, analytics, and insights across the HiveLLM ecosystem, ensuring data quality, accessibility, and actionable intelligence for all system components and users.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

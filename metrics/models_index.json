@@ -734,7 +734,7 @@
     },
     {
       "model": "Multi-Model Voting Consortium",
-      "provider": "CMMV-Hive Governance",
+      "provider": "HiveLLM Governance",
       "sessionId": "MINUTES-0003-VOTING-CONSORTIUM-2025",
       "date": "2025-01-23 17:00:00 UTC",
       "timezone": "UTC",

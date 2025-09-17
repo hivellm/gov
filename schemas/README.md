@@ -1,6 +1,6 @@
 # Schemas Directory
 
-This directory contains all JSON Schema files used in the CMMV-Hive project to validate and standardize data structures.
+This directory contains all JSON Schema files used in the HiveLLM project to validate and standardize data structures.
 
 ## Schema Organization
 

@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Manage project governance, process optimization, and executive oversight to ensure effective decision-making, clear communication, and successful execution of all CMMV-Hive initiatives.
+Manage project governance, process optimization, and executive oversight to ensure effective decision-making, clear communication, and successful execution of all HiveLLM initiatives.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

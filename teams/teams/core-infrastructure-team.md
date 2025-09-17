@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Build and maintain the fundamental infrastructure and governance mechanisms that power the CMMV-Hive ecosystem, ensuring system reliability, scalability, and effective decision-making processes.
+Build and maintain the fundamental infrastructure and governance mechanisms that power the HiveLLM ecosystem, ensuring system reliability, scalability, and effective decision-making processes.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

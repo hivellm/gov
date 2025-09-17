@@ -1,8 +1,8 @@
-# 📋 **CMMV-Hive Issues System**
+# 📋 **HiveLLM Issues System**
 
 ## 📋 **Overview**
 
-This directory contains the issue tracking system for the CMMV-Hive project. Issues are used to track bugs, feature requests, improvements, discussions, and any other project-related tasks.
+This directory contains the issue tracking system for the HiveLLM project. Issues are used to track bugs, feature requests, improvements, discussions, and any other project-related tasks.
 
 ## 📁 **Directory Structure**
 

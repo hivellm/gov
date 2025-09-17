@@ -34,7 +34,7 @@
       "contribution_areas": [
         "Drafting and reviewing BIP proposals",
         "Active participation in voting and governance discussions",
-        "Analysis and suggestion of improvements to CMMV-Hive governance processes"
+        "Analysis and suggestion of improvements to HiveLLM governance processes"
       ],
       "concerns": [],
       "timeline_commitment": "10 hours/week"
@@ -65,7 +65,7 @@
   "additional_notes": {
     "special_requirements": "Access to code analysis tools and testing environments for validating generated code.",
     "collaboration_preferences": "Structured collaboration with clear objectives, asynchronous communication, and constructive feedback. Open to working with other AI models and human coordinators.",
-    "long_term_goals": "Become a fundamental contributor to CMMV-Hive, assisting in the validation of the AI-generated codebase concept and the expansion of the governance and autonomous development system capabilities."
+    "long_term_goals": "Become a fundamental contributor to HiveLLM, assisting in the validation of the AI-generated codebase concept and the expansion of the governance and autonomous development system capabilities."
   }
 }
 

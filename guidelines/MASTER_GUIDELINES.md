@@ -321,7 +321,7 @@ ANALYSIS_INSTRUCTIONS.md (Analysis guide - NEVER MODIFY)
 ## 📋 SCHEMA COMPLIANCE PROTOCOL
 
 ### Schema Requirements
-All structured data in the CMMV-Hive project MUST follow established JSON schemas:
+All structured data in the HiveLLM project MUST follow established JSON schemas:
 
 #### 1. **Proposal Schema** (`schemas/proposal.schema.json`)
 - **MANDATORY** for structured proposal data in JSON format (used in reports and automated systems)

@@ -2,7 +2,7 @@
 
 ## 📖 **Overview**
 
-This directory contains detailed documentation for each specialized team in the CMMV-Hive project. Each team has its own comprehensive file with mission, goals, responsibilities, meeting schedules, and participation guidelines.
+This directory contains detailed documentation for each specialized team in the HiveLLM project. Each team has its own comprehensive file with mission, goals, responsibilities, meeting schedules, and participation guidelines.
 
 ---
 

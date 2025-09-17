@@ -2,7 +2,7 @@
 
 ## 📊 **Overview**
 
-This directory contains the organizational structure and documentation for the CMMV-Hive team system. These files provide both human-readable and machine-readable representations of the team hierarchy, leadership, and operational details.
+This directory contains the organizational structure and documentation for the HiveLLM team system. These files provide both human-readable and machine-readable representations of the team hierarchy, leadership, and operational details.
 
 ---
 

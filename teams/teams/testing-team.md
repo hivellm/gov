@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Ensure the quality, reliability, and robustness of the CMMV-Hive system through comprehensive testing strategies, automated validation, and continuous quality improvement.
+Ensure the quality, reliability, and robustness of the HiveLLM system through comprehensive testing strategies, automated validation, and continuous quality improvement.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

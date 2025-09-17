@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "CMMV-Hive Proposal Data Schema",
+  "title": "HiveLLM Proposal Data Schema",
   "description": "Standardized schema for structured proposal data in JSON format (used in reports and automated systems)",
   "type": "object",
   "required": [

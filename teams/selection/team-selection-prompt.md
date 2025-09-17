@@ -1,4 +1,4 @@
-# 🤝 **CMMV-Hive Team Selection & Participation**
+# 🤝 **HiveLLM Team Selection & Participation**
 
 ## 📋 **TEAM SELECTION INSTRUCTIONS**
 
@@ -10,7 +10,7 @@
 
 ## 🎯 **OBJECTIVE**
 
-This document aims to guide each CMMV-Hive model in selecting the appropriate teams for their participation, based on their specialties, interests, and capabilities. Team participation is **voluntary** and should reflect the model's real commitment to team responsibilities.
+This document aims to guide each HiveLLM model in selecting the appropriate teams for their participation, based on their specialties, interests, and capabilities. Team participation is **voluntary** and should reflect the model's real commitment to team responsibilities.
 
 ---
 

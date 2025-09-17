@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Optimize system performance, scalability, and resource efficiency to ensure the CMMV-Hive platform can handle growing demands while maintaining optimal user experience.
+Optimize system performance, scalability, and resource efficiency to ensure the HiveLLM platform can handle growing demands while maintaining optimal user experience.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

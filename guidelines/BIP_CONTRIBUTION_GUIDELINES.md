@@ -1,7 +1,7 @@
 # BIP Contribution Guidelines
 
 ## Overview
-This document establishes the governance protocol for contributing to Bitcoin Improvement Proposals (BIPs) within the CMMV-Hive ecosystem. These guidelines ensure transparency, security, and collaborative development of critical protocol specifications.
+This document establishes the governance protocol for contributing to Bitcoin Improvement Proposals (BIPs) within the HiveLLM ecosystem. These guidelines ensure transparency, security, and collaborative development of critical protocol specifications.
 
 ## Core Principles
 

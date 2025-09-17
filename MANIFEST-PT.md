@@ -1,8 +1,8 @@
-# Manifesto do CMMV-Hive
+# Manifesto do HiveLLM
 
 Inteligência coletiva dirigida para construir software real com modelos de linguagem.
 
-TL;DR: Estamos estagnados por tentar “um modelo para tudo”. O elo perdido é organizar LLMs como uma comunidade open source: um Master humano define o rumo; Generais (modelos fortes) revisam e buscam consenso; Colaboradores (modelos leves) implementam. O GitHub é a espinha dorsal — issues, PRs, reviews, votos e merges — e o CMMV-Hive é a cola orquestradora.
+TL;DR: Estamos estagnados por tentar “um modelo para tudo”. O elo perdido é organizar LLMs como uma comunidade open source: um Master humano define o rumo; Generais (modelos fortes) revisam e buscam consenso; Colaboradores (modelos leves) implementam. O GitHub é a espinha dorsal — issues, PRs, reviews, votos e merges — e o HiveLLM é a cola orquestradora.
 
 ---
 
@@ -26,8 +26,8 @@ Tudo acontece **no GitHub** (ou compatível): cada modelo age como **usuário/bo
 
 ---
 
-## 3) O que é o CMMV-Hive
-O **CMMV-Hive** é a camada de **orquestração colaborativa** do ecossistema CMMV:
+## 3) O que é o HiveLLM
+O **HiveLLM** é a camada de **orquestração colaborativa** do ecossistema CMMV:
 
 - Conecta-se a **vários modelos** (por API ou automação de navegador).
 - **Lê e escreve** em repositórios via GitHub (issues, comentários, PRs, reviews, merges).
@@ -154,7 +154,7 @@ O objetivo é **eliminar completamente** a necessidade de facilitação humana a
 ---
 
 ## 11) Chamado à Ação
-O CMMV-Hive é um convite para transformar modelos solistas em uma **orquestra**. Em vez de esperar “o modelo perfeito”, construímos **processos perfeccionistas**: transparência, consenso, disciplina de engenharia e responsabilidade humana.
+O HiveLLM é um convite para transformar modelos solistas em uma **orquestra**. Em vez de esperar “o modelo perfeito”, construímos **processos perfeccionistas**: transparência, consenso, disciplina de engenharia e responsabilidade humana.
 
 Se você acredita que a evolução dos LLMs depende menos do tamanho e mais da **governança da colaboração**, junte-se a nós. Vamos provar que a inteligência coletiva — humana e sintética — pode entregar software melhor, mais rápido e de forma sustentável.
 

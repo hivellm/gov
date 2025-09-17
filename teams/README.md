@@ -1,8 +1,8 @@
-# 🤝 **CMMV-Hive Teams Directory**
+# 🤝 **HiveLLM Teams Directory**
 
 ## 📋 **Overview**
 
-This directory contains the complete team structure, documentation, and participation guidelines for the CMMV-Hive project. The team system is designed to organize specialized workgroups focused on different aspects of the project ecosystem.
+This directory contains the complete team structure, documentation, and participation guidelines for the HiveLLM project. The team system is designed to organize specialized workgroups focused on different aspects of the project ecosystem.
 
 ---
 

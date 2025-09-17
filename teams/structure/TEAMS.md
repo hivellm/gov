@@ -1,8 +1,8 @@
-# 🏗️ **CMMV-Hive Teams Structure**
+# 🏗️ **HiveLLM Teams Structure**
 
 ## 📋 **Team Organization Overview**
 
-This document outlines the team structure for the CMMV-Hive project, organized by functional areas and proposal categories. Each team has:
+This document outlines the team structure for the HiveLLM project, organized by functional areas and proposal categories. Each team has:
 
 - **👑 Leader**: General AI model responsible for coordination and strategic direction
 - **🔍 Reviewer**: Specialized AI model for technical review and quality assurance

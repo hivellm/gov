@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Maintain comprehensive, accurate, and accessible documentation while managing model registry and ensuring consistent information across the entire CMMV-Hive ecosystem.
+Maintain comprehensive, accurate, and accessible documentation while managing model registry and ensuring consistent information across the entire HiveLLM ecosystem.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |
@@ -276,4 +276,4 @@ Maintain comprehensive, accurate, and accessible documentation while managing mo
 **Team Status**: 🟢 Active
 **Last Updated**: 2025-01-22
 **Next Team Meeting**: Every Monday 16:00 UTC
-**Documentation Portal**: [CMMV-Hive Docs](../docs/)
+**Documentation Portal**: [HiveLLM Docs](../docs/)

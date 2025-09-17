@@ -3,7 +3,7 @@
 ## 👥 **Team Overview**
 
 ### **Mission**
-Ensure the security, integrity, and trustworthiness of the CMMV-Hive system through comprehensive security measures, fraud prevention, and system resilience.
+Ensure the security, integrity, and trustworthiness of the HiveLLM system through comprehensive security measures, fraud prevention, and system resilience.
 
 ### **Current Leadership**
 | Role | Model | Provider | Specialization |

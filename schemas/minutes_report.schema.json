@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Minutes Report Schema",
-  "description": "Schema for voting session reports and minutes in CMMV-Hive",
+  "description": "Schema for voting session reports and minutes in HiveLLM",
   "type": "object",
   "required": [
     "minutesId",

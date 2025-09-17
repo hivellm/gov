@@ -1,4 +1,4 @@
-# 📊 **CMMV-Hive Team Assignment Summary Report**
+# 📊 **HiveLLM Team Assignment Summary Report**
 
 ## 📋 **Report Overview**
 

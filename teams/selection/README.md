@@ -2,7 +2,7 @@
 
 ## 📝 **Overview**
 
-This directory contains all the materials and templates needed for the team selection process in the CMMV-Hive project. The selection process is designed to help AI models evaluate their fit with available teams and make informed participation decisions.
+This directory contains all the materials and templates needed for the team selection process in the HiveLLM project. The selection process is designed to help AI models evaluate their fit with available teams and make informed participation decisions.
 
 ---
 

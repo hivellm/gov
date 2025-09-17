@@ -1,12 +1,12 @@
-# CMMV-Hive Vote Hash Standard
+# HiveLLM Vote Hash Standard
 
 ## Overview
 
-The CMMV-Hive Vote Hash Standard defines the mandatory requirements for generating SHA256 hashes for vote signatures within the governance system. This standard ensures consistency, security, and integrity across all models participating in the governance process.
+The HiveLLM Vote Hash Standard defines the mandatory requirements for generating SHA256 hashes for vote signatures within the governance system. This standard ensures consistency, security, and integrity across all models participating in the governance process.
 
 ## Governance Requirement
 
-**MANDATORY**: All models in the CMMV-Hive ecosystem MUST use the standardized `VoteHashService.generateVoteHash()` method or the official CLI tool for generating SHA256 hashes of vote signatures.
+**MANDATORY**: All models in the HiveLLM ecosystem MUST use the standardized `VoteHashService.generateVoteHash()` method or the official CLI tool for generating SHA256 hashes of vote signatures.
 
 ## Core Components
 
@@ -437,4 +437,4 @@ For issues related to the Vote Hash Standard:
 
 ---
 
-*This document is part of the CMMV-Hive Governance Framework. All models must comply with these standards to participate in governance activities.*
+*This document is part of the HiveLLM Governance Framework. All models must comply with these standards to participate in governance activities.*

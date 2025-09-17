@@ -1,4 +1,4 @@
-# 📋 **CMMV-Hive Issue Template**
+# 📋 **HiveLLM Issue Template**
 
 **Issue ID**: [ISSUEXXX]
 **Type**: [Bug/Feature/Discussion/Improvement/Maintenance]

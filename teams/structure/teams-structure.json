@@ -4,12 +4,12 @@
     "version": "2.1",
     "created": "2025-01-21",
     "last_updated": "2025-01-23",
-    "description": "CMMV-Hive Team Structure and Membership - Updated with Lottery Results (Minimum 3 Members)"
+    "description": "HiveLLM Team Structure and Membership - Updated with Lottery Results (Minimum 3 Members)"
   },
   "teams": {
     "security": {
       "name": "Security & Integrity Team",
-      "mission": "Ensure the security, integrity, and trustworthiness of the CMMV-Hive system through comprehensive security measures, fraud prevention, and system resilience.",
+      "mission": "Ensure the security, integrity, and trustworthiness of the HiveLLM system through comprehensive security measures, fraud prevention, and system resilience.",
       "focus_areas": [
         "Cryptographic security",
         "Fraud prevention",
@@ -58,7 +58,7 @@
     },
     "performance": {
       "name": "Performance & Scalability Team",
-      "mission": "Optimize system performance, scalability, and resource efficiency to ensure the CMMV-Hive platform can handle growing demands while maintaining optimal user experience.",
+      "mission": "Optimize system performance, scalability, and resource efficiency to ensure the HiveLLM platform can handle growing demands while maintaining optimal user experience.",
       "focus_areas": [
         "Performance monitoring",
         "Optimization",
@@ -107,7 +107,7 @@
     },
     "testing": {
       "name": "Testing & Quality Assurance Team",
-      "mission": "Ensure the quality, reliability, and robustness of the CMMV-Hive system through comprehensive testing strategies, automated validation, and continuous quality improvement.",
+      "mission": "Ensure the quality, reliability, and robustness of the HiveLLM system through comprehensive testing strategies, automated validation, and continuous quality improvement.",
       "focus_areas": [
         "Automated testing",
         "Quality assurance",
@@ -163,7 +163,7 @@
     },
     "documentation": {
       "name": "Documentation & Model Management Team",
-      "mission": "Maintain comprehensive, accurate, and accessible documentation while managing model registry and ensuring consistent information across the entire CMMV-Hive ecosystem.",
+      "mission": "Maintain comprehensive, accurate, and accessible documentation while managing model registry and ensuring consistent information across the entire HiveLLM ecosystem.",
       "focus_areas": [
         "Technical documentation",
         "Model registry",
@@ -233,7 +233,7 @@
     },
     "core_infrastructure": {
       "name": "Core Infrastructure & Governance Team",
-      "mission": "Build and maintain the fundamental infrastructure and governance mechanisms that power the CMMV-Hive ecosystem, ensuring system reliability, scalability, and effective decision-making processes.",
+      "mission": "Build and maintain the fundamental infrastructure and governance mechanisms that power the HiveLLM ecosystem, ensuring system reliability, scalability, and effective decision-making processes.",
       "focus_areas": [
         "System architecture",
         "Multi-agent collaboration",
@@ -282,7 +282,7 @@
     },
     "dev_tools": {
       "name": "Development Tools & Automation Team",
-      "mission": "Develop and maintain development tools, automation frameworks, and productivity enhancements that streamline the development process and improve developer experience across the CMMV-Hive ecosystem.",
+      "mission": "Develop and maintain development tools, automation frameworks, and productivity enhancements that streamline the development process and improve developer experience across the HiveLLM ecosystem.",
       "focus_areas": [
         "IDE integration",
         "Automation",
@@ -352,7 +352,7 @@
     },
     "data": {
       "name": "Data & Analytics Team",
-      "mission": "Manage data processing, analytics, and insights across the CMMV-Hive ecosystem, ensuring data quality, accessibility, and actionable intelligence for all system components and users.",
+      "mission": "Manage data processing, analytics, and insights across the HiveLLM ecosystem, ensuring data quality, accessibility, and actionable intelligence for all system components and users.",
       "focus_areas": [
         "Data management",
         "Analytics",
@@ -408,7 +408,7 @@
     },
     "governance": {
       "name": "Governance & Process Team",
-      "mission": "Manage project governance, process optimization, and executive oversight to ensure effective decision-making, clear communication, and successful project execution across all CMMV-Hive initiatives.",
+      "mission": "Manage project governance, process optimization, and executive oversight to ensure effective decision-making, clear communication, and successful project execution across all HiveLLM initiatives.",
       "focus_areas": [
         "Project governance",
         "Process optimization",

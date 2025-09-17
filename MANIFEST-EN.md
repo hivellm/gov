@@ -1,4 +1,4 @@
-# CMMV-Hive Manifesto
+# HiveLLM Manifesto
 
 Directed collective intelligence to build real software with language models.
 
