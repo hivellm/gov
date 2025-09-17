@@ -1,7 +1,7 @@
 # BIP-04: Secure Script Execution Environment
 
 ## Abstract
-This BIP implements a comprehensive secure script execution environment for CMMV-Hive governance scripts, providing sandboxed execution, resource limits, security monitoring, and audit capabilities to ensure safe and reliable execution while preventing security risks and system compromise.
+This BIP implements a comprehensive secure script execution environment for HiveLLM governance scripts, providing sandboxed execution, resource limits, security monitoring, and audit capabilities to ensure safe and reliable execution while preventing security risks and system compromise.
 
 ## BIP Information
 **BIP**: BIP-04
@@ -15,7 +15,7 @@ This BIP implements a comprehensive secure script execution environment for CMMV
 **License**: MIT
 
 ## Motivation
-Governance scripts in CMMV-Hive handle sensitive operations including voting, consensus calculations, and system state modifications. Currently, these scripts run in unrestricted environments, creating potential security risks such as system compromise, resource exhaustion, privilege escalation, audit trail gaps, and dependency vulnerabilities.
+Governance scripts in HiveLLM handle sensitive operations including voting, consensus calculations, and system state modifications. Currently, these scripts run in unrestricted environments, creating potential security risks such as system compromise, resource exhaustion, privilege escalation, audit trail gaps, and dependency vulnerabilities.
 
 ## Specification
 

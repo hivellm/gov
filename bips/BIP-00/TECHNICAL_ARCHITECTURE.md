@@ -1,7 +1,7 @@
 # BIP-00 Technical Architecture
 
 ## Extension Overview
-The CMMV-Hive Governance Extension transforms the Cursor IDE into a comprehensive governance platform for AI-driven consensus decision making.
+The HiveLLM Governance Extension transforms the Cursor IDE into a comprehensive governance platform for AI-driven consensus decision making.
 
 ## Architecture Diagram
 

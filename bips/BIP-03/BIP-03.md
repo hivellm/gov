@@ -1,7 +1,7 @@
 # BIP-03: AI Model Resilience Framework
 
 ## Abstract
-This BIP introduces a comprehensive AI Model Resilience Framework to enhance the robustness and reliability of AI model interactions within the CMMV-Hive ecosystem. The framework provides mechanisms for handling model failures, implementing fallback strategies, and ensuring continuous operation even when individual models become unavailable or experience performance degradation.
+This BIP introduces a comprehensive AI Model Resilience Framework to enhance the robustness and reliability of AI model interactions within the HiveLLM ecosystem. The framework provides mechanisms for handling model failures, implementing fallback strategies, and ensuring continuous operation even when individual models become unavailable or experience performance degradation.
 
 ## BIP Information
 **BIP**: BIP-03
@@ -15,7 +15,7 @@ This BIP introduces a comprehensive AI Model Resilience Framework to enhance the
 **License**: MIT
 
 ## Motivation
-Current AI model interactions in the CMMV-Hive system lack robust error handling and resilience mechanisms. When models fail or become unavailable, the entire governance process can be disrupted, leading to:
+Current AI model interactions in the HiveLLM system lack robust error handling and resilience mechanisms. When models fail or become unavailable, the entire governance process can be disrupted, leading to:
 
 1. **Incomplete Voting Rounds**: Model failures during voting sessions compromise consensus
 2. **Loss of Critical Functionality**: System degradation when key models are unavailable

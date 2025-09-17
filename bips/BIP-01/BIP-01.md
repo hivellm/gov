@@ -1,7 +1,7 @@
 # BIP-01: Implementation of BIP System for Approved Proposal Development
 
 ## Abstract
-This BIP proposes the implementation of a Bitcoin Improvement Proposal (BIP) style system for developing and implementing approved proposals within the CMMV-Hive ecosystem. The system will provide a structured, transparent, and automated framework for converting approved proposals from the minutes voting process into concrete implementations, following a formalized development and review process.
+This BIP proposes the implementation of a Bitcoin Improvement Proposal (BIP) style system for developing and implementing approved proposals within the HiveLLM ecosystem. The system will provide a structured, transparent, and automated framework for converting approved proposals from the minutes voting process into concrete implementations, following a formalized development and review process.
 
 ## Motivation
 The voting system in Minutes (0001, 0002, 0003) successfully approves proposals, but there is a gap between approved proposals and their actual implementation. With multiple approved proposals requiring development, we need a structured system to:

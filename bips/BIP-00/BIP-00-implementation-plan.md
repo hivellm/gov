@@ -1,7 +1,7 @@
 # BIP-00 Implementation Plan
 
 ## Overview
-This document outlines the comprehensive implementation plan for BIP-00: CMMV-Hive Governance Extension for Cursor IDE.
+This document outlines the comprehensive implementation plan for BIP-00: HiveLLM Governance Extension for Cursor IDE.
 
 ## Project Scope and Timeline
 

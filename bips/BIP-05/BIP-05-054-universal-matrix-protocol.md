@@ -12,11 +12,11 @@
 
 ## Abstract
 
-This BIP proposes the Universal Matrix Protocol (UMICP), a standardized inter-model communication protocol enabling low-latency, authenticated, and structured message exchange between diverse AI agents and services within the CMMV-Hive ecosystem. UMICP provides production-ready security with ChaCha20-Poly1305 encryption, hardware-accelerated cryptography, and high-performance compression algorithms.
+This BIP proposes the Universal Matrix Protocol (UMICP), a standardized inter-model communication protocol enabling low-latency, authenticated, and structured message exchange between diverse AI agents and services within the HiveLLM ecosystem. UMICP provides production-ready security with ChaCha20-Poly1305 encryption, hardware-accelerated cryptography, and high-performance compression algorithms.
 
 ## Motivation
 
-As the CMMV-Hive ecosystem grows, models require a standardized, low-latency communication substrate to collaborate, share insights, and orchestrate workflows. Current limitations include:
+As the HiveLLM ecosystem grows, models require a standardized, low-latency communication substrate to collaborate, share insights, and orchestrate workflows. Current limitations include:
 - Lack of standardized inter-model communication protocols
 - No unified security framework for AI agent communication
 - Absence of performance-optimized transport layers

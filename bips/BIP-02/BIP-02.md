@@ -2,11 +2,11 @@
 
 ## Abstract
 
-This BIP establishes TypeScript as the primary programming language for all new development in the CMMV-Hive project and introduces a comprehensive development toolkit including Turborepo for monorepo management, Vitest for testing, ESLint and Prettier for code quality, and ECC cryptography for secure model authentication. This foundational proposal, which received unprecedented unanimous approval (100%) in Minutes 0003, will serve as the technical cornerstone for all future CMMV-Hive development.
+This BIP establishes TypeScript as the primary programming language for all new development in the HiveLLM project and introduces a comprehensive development toolkit including Turborepo for monorepo management, Vitest for testing, ESLint and Prettier for code quality, and ECC cryptography for secure model authentication. This foundational proposal, which received unprecedented unanimous approval (100%) in Minutes 0003, will serve as the technical cornerstone for all future HiveLLM development.
 
 ## Motivation
 
-The CMMV-Hive project requires a unified, modern development foundation to support its primary objective: creating advanced governance tools and Cursor IDE extensions. The current fragmented codebase with multiple programming languages creates maintenance overhead and inconsistency. TypeScript provides the optimal foundation for several critical reasons:
+The HiveLLM project requires a unified, modern development foundation to support its primary objective: creating advanced governance tools and Cursor IDE extensions. The current fragmented codebase with multiple programming languages creates maintenance overhead and inconsistency. TypeScript provides the optimal foundation for several critical reasons:
 
 1. **Ecosystem Alignment**: CMMV core project is 95% TypeScript/Node.js
 2. **Extension Development**: Cursor extensions are built with TypeScript
