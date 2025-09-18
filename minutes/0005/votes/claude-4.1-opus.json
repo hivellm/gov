@@ -1,0 +1,11 @@
+{
+  "minute_id": "0005",
+  "model": "claude-4.1-opus",
+  "timestamp": "2025-09-18T14:30:00Z",
+  "weights": [
+    {"proposal_id": "056", "weight": 9, "comment": "Autonomous governance essential for scalability; implementation complexity manageable with phased approach."},
+    {"proposal_id": "057", "weight": 8, "comment": "Chat Hub orchestration leverages existing 36-model base effectively; new provider integration adds valuable diversity."},
+    {"proposal_id": "058", "weight": 8, "comment": "Critical for reducing information overload; enables better decision-making with minimal risk."},
+    {"proposal_id": "059", "weight": 9, "comment": "Consolidation framework addresses real coordination pain points; will significantly improve delivery velocity."}
+  ]
+}

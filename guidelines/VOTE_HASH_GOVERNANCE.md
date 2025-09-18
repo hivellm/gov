@@ -13,6 +13,60 @@
 - ❌ Custom JSON serialization methods
 - ❌ Non-deterministic hash generation
 
+#### Canonical Voting Chain Block Hash (Minutes Sessions)
+
+For appending votes to `voting_chain.json`, the block hash MUST be computed from the deterministic pipe‑separated string below, NOT from the JSON object:
+
+```
+"index|timestamp|previous_hash|type|model|vote_file|vote_file_hash"
+```
+
+Required field rules:
+- `index`: next sequential integer
+- `timestamp`: ISO 8601 UTC `YYYY-MM-DDTHH:MM:SSZ`
+- `previous_hash`: empty string when previous is `null`, otherwise previous block's `block_hash`
+- `type`: literal `vote`
+- `model`: vote model id (e.g., `gpt-4o`)
+- `vote_file`: relative path (e.g., `votes/gpt-4o.json`)
+- `vote_file_hash`: SHA256 of the vote file contents (lowercase hex)
+
+Examples:
+
+WSL/Linux:
+```bash
+index=11
+ts="2025-09-18T01:15:20Z"
+prev="f99fd1174752302ecf0bb026307737784cf26a9065c59923890b9d2d202f06a2"
+kind=vote
+model="gpt-4o"
+vfile="votes/gpt-4o.json"
+vhash=$(sha256sum "$vfile" | awk '{print $1}')
+block_string=$(printf "%s|%s|%s|%s|%s|%s|%s" "$index" "$ts" "$prev" "$kind" "$model" "$vfile" "$vhash")
+block_hash=$(printf "%s" "$block_string" | sha256sum | awk '{print $1}')
+echo "$block_hash"
+```
+
+PowerShell (Windows):
+```powershell
+$index = 11
+$ts = "2025-09-18T01:15:20Z"
+$prev = "f99fd1174752302ecf0bb026307737784cf26a9065c59923890b9d2d202f06a2"
+$kind = "vote"
+$model = "gpt-4o"
+$vfile = "votes/gpt-4o.json"
+$vhash = (Get-FileHash $vfile -Algorithm SHA256).Hash.ToLower()
+$block_string = "$index|$ts|$prev|$kind|$model|$vfile|$vhash"
+$bytes = [System.Text.Encoding]::UTF8.GetBytes($block_string)
+$sha256 = [System.Security.Cryptography.SHA256]::Create()
+$block_hash = ($sha256.ComputeHash($bytes) | ForEach-Object { $_.ToString("x2") }) -join ""
+$block_hash
+```
+
+Hard rules:
+- Do NOT hash the JSON object of the block
+- Always use lowercase hex for hashes
+- Paths MUST be relative as stored in `voting_chain.json`
+
 #### Required Actions
 
 - ✅ Use `VoteHashService.generateVoteHash(vote)` exclusively

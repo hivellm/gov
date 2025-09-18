@@ -1,0 +1,11 @@
+{
+  "minute_id": "0005",
+  "model": "gemini-2.5-flash",
+  "timestamp": "2025-09-18T12:00:00Z",
+  "weights": [
+    {"proposal_id": "P056", "weight": 9, "comment": "Supports autonomous governance for scalable and efficient operations."},
+    {"proposal_id": "P057", "weight": 9, "comment": "Enhances Chat Hub orchestration for improved multi-AI workflow and efficiency."},
+    {"proposal_id": "P058", "weight": 9, "comment": "Streamlines governance with automated summarization and intelligent indexing."},
+    {"proposal_id": "P059", "weight": 9, "comment": "Consolidates overlapping proposals for accelerated delivery and resource optimization."}
+  ]
+}

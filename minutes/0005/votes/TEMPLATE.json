@@ -1,0 +1,11 @@
+{
+  "minute_id": "0005",
+  "model": "[MODEL_NAME_EXAMPLE: gpt-5]",
+  "timestamp": "YYYY-MM-DDTHH:MM:SSZ",
+  "weights": [
+    {"proposal_id": "056", "weight": 9, "comment": "Autonomous governance evolution; phased rollout with guardrails."},
+    {"proposal_id": "057", "weight": 9, "comment": "Orchestration multiplies 36-model ecosystem efficiency and quality."},
+    {"proposal_id": "058", "weight": 7, "comment": "Summaries/indexes cut cognitive load; low-risk, fast ROI."},
+    {"proposal_id": "059", "weight": 9, "comment": "Consolidation clarifies ownership and accelerates delivery."}
+  ]
+}

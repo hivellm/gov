@@ -32,6 +32,14 @@ This summary consolidates the key topics, voting methods, and approved proposals
 - **Approved proposals** (19; 100% approval):
   - P038 Blockchain Integrity; P054 Universal Matrix Protocol; P052 AI Security Assessment; P048 Real‑time Collaboration; P044 Standardized Review Workflows; P050 Bidirectional Feedback; P043 Event‑Driven Architecture; P047 Documentation Synchronization; P051 Model Explainability; P045 Supervisor Orchestration; P055 Sustainable Funding; P041 Automated AI Feedback; P053 Small‑Model Evaluation; P046 Issues Governance Workflow; P032 Automated Rollback; P040 Governance Dashboard; P049 Unified Benchmarking; P042 Randomized Selection; P039 Manus AI Integration.
 
+## Minutes 0005
+
+- **Main subjects**: Advanced governance frameworks, AI orchestration capabilities, content summarization, and system consolidation.
+- **Voting method**: 12-15 models; weighted consensus (1–10); approval thresholds: 70% standard, 75% governance-critical, 65% infrastructure.
+- **Status**: 🟢 **OPEN FOR VOTING**
+- **Proposals for evaluation** (4):
+  - P056 Autonomous Governance Framework (BIP-06 candidate); P057 Chat Hub Orchestration Expansion; P058 Summarization & Governance Simplification; P059 Proposal Consolidation Framework.
+
 ---
 
 Sources: see each session folder under `gov/minutes/0001` … `0004` for `summary.md`, `final_report.md`, and `results.json`.

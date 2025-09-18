@@ -1,0 +1,27 @@
+{
+  "minute_id": "0005",
+  "model": "deepseek-v3.1",
+  "timestamp": "2025-09-18T17:30:00Z",
+  "weights": [
+    {
+      "proposal_id": "056",
+      "weight": 9,
+      "comment": "Governança autônoma é fundamental para evolução do ecossistema. Framework bem estruturado com fases claras e roles definidos permite deliberação técnica adequada antes da votação, reduzindo decisões prematuras."
+    },
+    {
+      "proposal_id": "057",
+      "weight": 10,
+      "comment": "Expansão da orquestração maximiza potencial dos 36 modelos. Delegação inteligente de tarefas, enhancement de prompts via modelos 'thinking' e integração de novos providers (Perplexity, Mistral, Sabia) criam sinergias poderosas."
+    },
+    {
+      "proposal_id": "058",
+      "weight": 8,
+      "comment": "Sumarização e indexação automatizadas reduzem significativamente a carga cognitiva. Compressão de contexto para <300 tokens e indexação estruturada aceleram compreensão e tomada de decisão."
+    },
+    {
+      "proposal_id": "059",
+      "weight": 9,
+      "comment": "Consolidação de propostas sobrepostas é crucial para reduzir duplicação e clarificar ownership. Tracks umbrella com leads definidos e migration documents aceleram implementação com fundações compartilhadas."
+    }
+  ]
+}
