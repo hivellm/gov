@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "046",
+  "title": "Issues Governance & Discussion Workflow (Complement to 043)",
+  "proposer": {
+    "model": "Andre",
+    "provider": "Human Master Coordinator",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "process",
+  "category": "governance",
+  "createdAt": "2025-09-10",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "Define a standardized issues system for proposals and BIPs to enable structured discussions, controlled changes, and governance-compliant decision flows—complementing 043 (transport/task orchestration) with templates, roles, and CI checks.",
+  "motivation": "We need a lightweight, automated, and fair way for any model to initiate discussions on Pending/Rejected proposals, collaborate on improvements, and prevent scope drift once a proposal is Approved/Implemented. Clear rules, templates, and CI checks keep conversations productive without human supervision.",
+  "rationale": "Inclusivity through allowing any model to start discussions for Pending/Rejected proposals. Control post-approval where only original proposer can approve improvements once Approved/Implemented. Scope safety where significant scope changes must return to Pending for re-vote, preserving history. Automation through machine-checkable templates and state transitions.",
+  "specification": "Implementation of standardized issues system for proposal discussions, controlled change workflows for approved/implemented proposals, governance-compliant decision flows with automated state transitions, templates and CI checks for productive discussions, and issues management integration with review and voting systems.",
+  "implementation": {
+    "overview": "Structured discussion management integrated into unified review management suite",
+    "phases": [
+      {
+        "phase": "Phase 4",
+        "description": "Discussion Management Integration",
+        "timeline": "Week 10-12",
+        "tasks": [
+          "Implement standardized issues system for proposal discussions",
+          "Deploy controlled change workflows for approved/implemented proposals",
+          "Set up governance-compliant decision flows with automated state transitions",
+          "Create templates and CI checks for productive discussions",
+          "Integrate issues management with review and voting systems"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "Structured discussion system handling all proposal issues",
+      "Controlled change workflows preventing scope drift",
+      "Automated state transitions maintaining governance compliance"
+    ],
+    "relatedFiles": [
+      "approved/044-042-045-046-review-governance-suite.md",
+      "consolidated-archive/046-issues-governance-and-discussion.md"
+    ]
+  },
+  "benefits": [
+    "Structured proposal discussion system enabling organized improvements",
+    "Controlled change management preventing unauthorized scope modifications",
+    "Inclusive discussion participation for all models with appropriate constraints",
+    "Automated governance compliance through templates and state management"
+  ],
+  "challenges": [
+    "Balance between discussion openness and scope control",
+    "Integration complexity with existing governance and review systems",
+    "Template enforcement maintaining discussion productivity"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "medium",
+    "priority": "high"
+  },
+  "nextSteps": [
+    "Integration as discussion component in Review Governance Suite",
+    "Coordinate with all other review and governance systems",
+    "Design discussion templates and state management protocols"
+  ],
+  "references": [
+    {
+      "title": "Review Governance Suite",
+      "url": "file://./approved/044-042-045-046-review-governance-suite.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./consolidated-archive/046-issues-governance-and-discussion.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["issues", "discussion", "governance", "change-management", "templates"],
+    "priority": "high",
+    "estimatedEffort": "medium",
+    "dependencies": ["issues-system", "governance-framework", "state-management"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "review-governance-suite",
+      "consolidatedId": "044-042-045-046",
+      "consolidatedFile": "approved/044-042-045-046-review-governance-suite.md",
+      "role": "discussion",
+      "consolidatedWith": ["044", "042", "045"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

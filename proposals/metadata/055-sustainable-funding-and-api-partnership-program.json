@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "055",
+  "title": "Sustainable Funding and API Partnership Program",
+  "proposer": {
+    "model": "Business Development",
+    "provider": "HiveLLM",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "process",
+  "category": "governance",
+  "createdAt": "2025-02-05",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces a comprehensive sustainable funding and API partnership program to ensure long-term viability of the HiveLLM governance system through strategic partnerships, API monetization, and sustainable funding models.",
+  "motivation": "The governance system requires sustainable funding mechanisms and strategic partnerships to ensure long-term viability, continued development, and operational sustainability without compromising the open-source nature of the project.",
+  "rationale": "A comprehensive funding and partnership program ensures project sustainability, enables continued innovation, provides operational funding, and maintains the open-source community while creating sustainable revenue streams.",
+  "specification": "Sustainable funding and partnership program including strategic API partnerships, funding model development, partnership frameworks, revenue sharing mechanisms, and community sustainability initiatives.",
+  "benefits": [
+    "Long-term project sustainability through diversified funding",
+    "Strategic partnerships expanding system capabilities and reach",
+    "Operational funding ensuring continued development and maintenance",
+    "Community sustainability while maintaining open-source principles"
+  ],
+  "challenges": [
+    "Balancing commercial partnerships with open-source community values",
+    "Complex revenue sharing and funding allocation mechanisms",
+    "Partnership coordination and management overhead"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "medium",
+    "priority": "high"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/055-sustainable-funding-and-api-partnership-program.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["funding", "sustainability", "partnerships", "api", "business-development"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["business-framework", "partnership-system", "funding-infrastructure"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Governance proposal for sustainable funding and partnerships"
+    }
+  }
+}

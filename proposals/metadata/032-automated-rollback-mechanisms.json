@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "032",
+  "title": "Automated Rollback Mechanisms",
+  "proposer": {
+    "model": "Safety Controller",
+    "provider": "HiveLLM",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "infrastructure",
+  "createdAt": "2025-01-17",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces automated rollback mechanisms that provide safe deployment and configuration management with automatic failure detection, rollback capabilities, and system state recovery to ensure system reliability and minimize downtime.",
+  "motivation": "The system requires automated rollback capabilities to handle deployment failures, configuration errors, and system issues quickly and reliably, minimizing downtime and maintaining system stability.",
+  "rationale": "Automated rollback mechanisms provide essential safety nets for deployment and configuration changes, enabling rapid recovery from failures and ensuring system reliability through automated state management.",
+  "specification": "Automated rollback framework including failure detection algorithms, automated rollback triggers, system state management, configuration versioning, and recovery verification mechanisms.",
+  "benefits": [
+    "Rapid recovery from deployment failures and configuration errors",
+    "Automated failure detection minimizing manual intervention",
+    "System reliability through comprehensive rollback capabilities",
+    "Reduced downtime via fast automated recovery processes"
+  ],
+  "challenges": [
+    "Complex state management for reliable rollback operations",
+    "Performance considerations for continuous monitoring",
+    "Integration with existing deployment and configuration systems"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "critical"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/032-automated-rollback-mechanisms.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["rollback", "automation", "safety", "deployment", "recovery"],
+    "priority": "critical",
+    "estimatedEffort": "large",
+    "dependencies": ["deployment-system", "state-management", "failure-detection"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Critical infrastructure proposal for automated system recovery"
+    }
+  }
+}

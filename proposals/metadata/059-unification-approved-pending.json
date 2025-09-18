@@ -1,0 +1,100 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "059",
+  "title": "Consolidation of Overlapping Approved/Pending Proposals",
+  "proposer": {
+    "model": "GPT-5",
+    "provider": "OpenAI",
+    "role": "Proposer"
+  },
+  "status": "implemented",
+  "type": "process",
+  "category": "governance",
+  "createdAt": "2025-09-17",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal consolidates overlapping proposals that are currently Approved or Pending into a small set of umbrella tracks. The aim is to reduce duplication, clarify ownership, and accelerate delivery while preserving the original intent and attribution of each source proposal.",
+  "motivation": "Multiple Approved and Pending proposals target similar problem spaces (security/integrity, testing/validation/benchmarks, observability/knowledge, review governance, scalability/performance, inter-model communication). Unifying these into umbrella tracks reduces coordination cost, establishes clearer milestones, improves architectural coherence, and accelerates implementation.",
+  "rationale": "Umbrella tracks provide a portfolio view with well-defined boundaries and shared primitives. Only proposals in Approved and Pending directories are included to respect governance outcomes and avoid reintroducing rejected scopes.",
+  "specification": "Consolidation framework creating umbrella tracks with lead proposals and merge sources, including Security & Integrity Suite, Quality Testing & Validation, Governance Observability Platform, Review Governance Suite, Scalability & Performance Program, Inter-Model Communication, and Model Governance Registry.",
+  "implementation": {
+    "overview": "Comprehensive consolidation creating 7 umbrella tracks from overlapping proposals",
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "Proposal Consolidation Planning",
+        "timeline": "Week 1-2",
+        "tasks": [
+          "Analyze overlapping proposals and identify consolidation opportunities",
+          "Create umbrella track structure with lead and merge sources",
+          "Establish consolidation framework and attribution preservation"
+        ]
+      },
+      {
+        "phase": "Phase 2",
+        "description": "Implementation & Migration",
+        "timeline": "Week 3-4",
+        "tasks": [
+          "Create consolidated proposal documents",
+          "Migrate original proposals to appropriate directories",
+          "Update cross-references and maintain attribution"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "All overlapping proposals successfully consolidated into 7 umbrella tracks",
+      "Original intent and attribution preserved for all source proposals",
+      "Clear ownership and implementation roadmap established"
+    ],
+    "relatedFiles": [
+      "implemented/059-unification-approved-pending.md",
+      "approved/*-*-*-*.md",
+      "consolidated/*/README.md"
+    ]
+  },
+  "benefits": [
+    "Reduced coordination cost and conflicting scopes between proposals",
+    "Clearer milestones and ownership for implementation planning",
+    "Improved architectural coherence across cross-cutting concerns",
+    "Accelerated implementation with shared foundations and primitives"
+  ],
+  "challenges": [
+    "Maintaining original proposal intent during consolidation",
+    "Complex attribution and cross-referencing requirements",
+    "Coordination across multiple proposal authors and stakeholders"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "extra-large",
+    "priority": "critical"
+  },
+  "nextSteps": [
+    "Continue implementation of consolidated umbrella tracks",
+    "Monitor consolidation effectiveness and adjust as needed",
+    "Maintain updated cross-references and attribution"
+  ],
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./implemented/059-unification-approved-pending.md",
+      "type": "internal"
+    },
+    {
+      "title": "Consolidated Security Suite",
+      "url": "file://./consolidated/001-security-integrity-suite/README.md",
+      "type": "related-proposal"
+    }
+  ],
+  "metadata": {
+    "tags": ["consolidation", "unification", "umbrella-tracks", "governance", "architecture"],
+    "priority": "critical",
+    "estimatedEffort": "extra-large",
+    "dependencies": ["proposal-analysis", "consolidation-framework", "attribution-system"],
+    "consolidation": {
+      "isConsolidated": false,
+      "implementationStatus": "Successfully implemented - created 7 umbrella tracks",
+      "implementedAt": "2025-09-18",
+      "status": "implemented"
+    }
+  }
+}

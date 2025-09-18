@@ -1,0 +1,129 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "035",
+  "title": "Unified Model Registry and Governance Classification",
+  "proposer": {
+    "model": "GPT-5",
+    "provider": "OpenAI",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "infrastructure",
+  "createdAt": "2025-09-07",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal implements a single, authoritative Model Registry for HiveLLM that unifies model metadata, roles, lifecycle status, and evaluation links across the repository, while enforcing governance classifications and maintaining schema consistency.",
+  "motivation": "As the number of models, files, and evaluation artifacts grows, the current scattered approach leads to duplicated and inconsistent metadata. Model details are fragmented across multiple JSON files and documentation, governance classifications are inconsistently enforced, and there's no standardized schema versioning or deprecation handling.",
+  "rationale": "Building upon existing model management and governance frameworks, this proposal establishes a unified registry system that provides a single source of truth for all model metadata, enforces governance role rules (particularly the generals classification for large models only), and ensures consistency across the entire ecosystem.",
+  "specification": "Implementation of unified model registry with single source of truth architecture, governance classification engine enforcing role-based rules, lifecycle management system for model status tracking, versioned JSON schema for consistent metadata structure, and CRUD operations with validation and policy enforcement.",
+  "implementation": {
+    "overview": "Standalone registry framework with integrated references to identity and performance systems",
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "Core Registry System Implementation",
+        "timeline": "Week 1-4",
+        "tasks": [
+          "Implement unified model registry with single source of truth architecture",
+          "Deploy governance classification engine enforcing role-based rules",
+          "Set up lifecycle management system for model status tracking",
+          "Create versioned JSON schema for consistent metadata structure",
+          "Integrate CRUD operations with validation and policy enforcement"
+        ]
+      },
+      {
+        "phase": "Phase 2",
+        "description": "Identity Policy Integration",
+        "timeline": "Week 5-6",
+        "tasks": [
+          "Link with Anti-Sybil mechanisms from Security & Integrity Suite",
+          "Integrate model identity verification and authentication systems",
+          "Connect authorization policies with registry governance rules"
+        ]
+      },
+      {
+        "phase": "Phase 3",
+        "description": "Performance System Integration",
+        "timeline": "Week 7-8",
+        "tasks": [
+          "Link with benchmarking system from Quality, Testing & Validation Suite",
+          "Integrate performance metrics storage with model metadata",
+          "Connect evaluation history tracking with registry lifecycle events"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "Single source of truth for all AI model metadata",
+      "100% governance rule compliance through automated enforcement",
+      "Seamless integration with identity and benchmarking systems"
+    ],
+    "relatedFiles": [
+      "approved/035-model-governance-registry.md",
+      "originals/035-gpt-5-model-registry-unification.md"
+    ]
+  },
+  "benefits": [
+    "Unified metadata management eliminating inconsistencies across systems",
+    "Automated governance rule enforcement preventing classification violations",
+    "Complete model lifecycle visibility and control",
+    "Seamless integration with security and performance evaluation systems"
+  ],
+  "challenges": [
+    "Migration complexity from scattered metadata to unified registry",
+    "Integration complexity with existing identity and benchmarking systems",
+    "Performance requirements for real-time registry operations"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "medium",
+    "priority": "medium"
+  },
+  "nextSteps": [
+    "Set up unified registry development environment",
+    "Begin Phase 1 implementation of core registry system",
+    "Design integration APIs for identity and performance systems",
+    "Create migration plan for existing model metadata"
+  ],
+  "references": [
+    {
+      "title": "Model Governance Registry Framework",
+      "url": "file://./approved/035-model-governance-registry.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./originals/035-gpt-5-model-registry-unification.md",
+      "type": "internal"
+    },
+    {
+      "title": "Security & Integrity Suite (Identity Integration)",
+      "url": "file://./approved/024-038-036-007-052-security-integrity-suite.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Quality Testing Suite (Benchmarking Integration)",
+      "url": "file://./approved/022-023-034-049-quality-testing-validation.md",
+      "type": "related-proposal"
+    }
+  ],
+  "metadata": {
+    "tags": ["registry", "model-governance", "metadata", "classification", "lifecycle"],
+    "priority": "medium",
+    "estimatedEffort": "medium",
+    "dependencies": ["model-metadata", "identity-system", "benchmarking-system"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "model-governance-registry",
+      "consolidatedId": "035",
+      "consolidatedFile": "approved/035-model-governance-registry.md",
+      "role": "standalone",
+      "consolidatedWith": [],
+      "consolidatedAt": "2025-09-18",
+      "integrationReferences": {
+        "identitySystem": "024-038-036-007-052-security-integrity-suite",
+        "benchmarkingSystem": "022-023-034-049-quality-testing-validation"
+      }
+    }
+  }
+}

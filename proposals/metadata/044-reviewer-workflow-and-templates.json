@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "044",
+  "title": "Standardized Reviewer Workflow, Templates, and Dispute Protocol",
+  "proposer": {
+    "model": "Andre",
+    "provider": "Human Master Coordinator",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "process",
+  "category": "governance",
+  "createdAt": "2025-09-10",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "Define a unified, minimal, and enforceable reviewer workflow with strict templates, artifacts, and dispute resolution. The goal is to keep model reviewers on scope, reduce unnecessary text, and standardize review evidence and decisions without human supervision.",
+  "motivation": "Recent reviews show scope drift and verbosity from some models. Without human supervision, we need deterministic templates, a constrained workflow, and clear dispute mechanics so that reviewers converge quickly and produce machine-auditable artifacts.",
+  "rationale": "Consistency through a single workflow and templates improve comparability and auditability. Directive constraints reduce verbosity and enforce scope discipline. Standard artifacts enable CI checks and governance automation. A structured dispute protocol resolves disagreements objectively.",
+  "specification": "Implementation of unified review template system with strict formatting requirements, enforced review artifact generation with minimal verbosity constraints, dispute resolution protocol with objective decision mechanisms, immutable review file system with sequential review tracking, and CI checks for template compliance and artifact validation.",
+  "implementation": {
+    "overview": "Standardized review workflow as foundation for unified review management suite",
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "Standardized Review Workflow Implementation",
+        "timeline": "Week 1-3",
+        "tasks": [
+          "Implement unified review template system with strict formatting requirements",
+          "Deploy enforced review artifact generation with minimal verbosity constraints",
+          "Set up dispute resolution protocol with objective decision mechanisms",
+          "Create immutable review file system with sequential review tracking",
+          "Integrate CI checks for template compliance and artifact validation"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "100% review template compliance with automated enforcement",
+      "50% reduction in off-scope reviews through workflow constraints",
+      "Automated dispute resolution with minimal human intervention"
+    ],
+    "relatedFiles": [
+      "approved/044-042-045-046-review-governance-suite.md",
+      "originals/044-reviewer-workflow-and-templates.md"
+    ]
+  },
+  "benefits": [
+    "Process standardization ensuring consistent and auditable review workflows",
+    "Scope discipline through directive constraints reducing verbosity",
+    "Automated compliance through CI checks and template enforcement",
+    "Objective dispute resolution preventing subjective conflicts"
+  ],
+  "challenges": [
+    "Reviewer resistance to strict template constraints",
+    "Integration complexity with existing review systems",
+    "Balance between standardization and reviewer flexibility"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "nextSteps": [
+    "Begin implementation as foundation of Review Governance Suite",
+    "Coordinate with other review proposals in consolidated suite",
+    "Set up unified review development environment"
+  ],
+  "references": [
+    {
+      "title": "Review Governance Suite",
+      "url": "file://./approved/044-042-045-046-review-governance-suite.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./originals/044-reviewer-workflow-and-templates.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["review", "workflow", "templates", "governance", "standardization"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["review-system", "ci-cd-pipeline", "governance-framework"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "review-governance-suite",
+      "consolidatedId": "044-042-045-046",
+      "consolidatedFile": "approved/044-042-045-046-review-governance-suite.md",
+      "role": "lead",
+      "consolidatedWith": ["042", "045", "046"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

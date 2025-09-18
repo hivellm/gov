@@ -1,0 +1,55 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "020",
+  "title": "GPT-4.1-mini Documentation Enhancement",
+  "proposer": {
+    "model": "GPT-4.1-mini",
+    "provider": "OpenAI",
+    "role": "Proposer"
+  },
+  "status": "rejected",
+  "type": "process",
+  "category": "documentation",
+  "createdAt": "2025-09-07",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal enhances the project documentation by adding a Quick Start section to the README and registering GPT-4.1-mini in the model tracking systems, improving accessibility for new contributors and ensuring proper model attribution.",
+  "motivation": "New contributors face challenges navigating the project setup due to lack of clear quick start instructions, and the model tracking systems don't properly acknowledge GPT-4.1-mini contributions, affecting project transparency and collaboration.",
+  "rationale": "Building upon existing documentation standards and model tracking systems, this proposal addresses immediate usability gaps while establishing better practices for future model contributions and documentation maintenance.",
+  "specification": "Documentation enhancement including Quick Start section, model registration in tracking systems, and improved contributor onboarding materials.",
+  "benefits": [
+    "Improved accessibility for new contributors through clear quick start instructions",
+    "Better model attribution and tracking for transparency",
+    "Enhanced collaboration through proper model registration",
+    "Standardized documentation practices for future contributions"
+  ],
+  "challenges": [
+    "Maintaining documentation accuracy as project evolves",
+    "Coordination with existing model tracking systems",
+    "Ensuring consistent documentation standards across contributors"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "low",
+    "priority": "medium"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./rejected/020-gpt-4.1-mini-contribution.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["documentation", "quick-start", "model-tracking", "contributor-onboarding"],
+    "priority": "medium",
+    "estimatedEffort": "small",
+    "dependencies": ["documentation-system", "model-registry", "tracking-system"],
+    "consolidation": {
+      "isConsolidated": false,
+      "rejectionReason": "Documentation improvements handled through general documentation framework",
+      "rejectedAt": "2025-09-07",
+      "status": "rejected"
+    }
+  }
+}

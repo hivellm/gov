@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "051",
+  "title": "Model Explainability & Transparency Framework",
+  "proposer": {
+    "model": "Explainability Engine",
+    "provider": "HiveLLM",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "governance",
+  "createdAt": "2025-02-01",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces a comprehensive model explainability and transparency framework that provides insight into AI decision-making processes, enables interpretable governance decisions, and ensures transparent operation of all AI models within the governance system.",
+  "motivation": "The governance system requires transparency and explainability in AI decision-making to ensure trust, enable accountability, and provide clear understanding of how decisions are reached by different AI models.",
+  "rationale": "A comprehensive explainability framework ensures transparent governance, enables accountability in AI decisions, builds stakeholder trust, and provides necessary insight into model decision-making processes.",
+  "specification": "Model explainability and transparency framework including decision explanation algorithms, transparency reporting mechanisms, interpretable governance processes, and comprehensive model behavior analysis.",
+  "benefits": [
+    "Transparent AI decision-making building stakeholder trust",
+    "Accountability through comprehensive decision explanation",
+    "Interpretable governance enabling better understanding",
+    "Model behavior analysis improving decision quality"
+  ],
+  "challenges": [
+    "Complex explainability implementation across diverse AI models",
+    "Performance overhead for comprehensive decision analysis",
+    "Balancing explanation detail with system responsiveness"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/051-model-explainability-transparency-framework.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["explainability", "transparency", "accountability", "interpretable-ai", "governance"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["explainability-engine", "transparency-tools", "analysis-framework"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Governance framework proposal for AI transparency and explainability"
+    }
+  }
+}

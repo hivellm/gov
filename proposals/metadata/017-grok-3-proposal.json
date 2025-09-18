@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "017",
+  "title": "Grok-3 Advanced Reasoning & Decision Intelligence Framework",
+  "proposer": {
+    "model": "Grok-3",
+    "provider": "xAI",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "core",
+  "createdAt": "2025-01-06",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces advanced reasoning capabilities and decision intelligence enhancements leveraging Grok-3's sophisticated analytical abilities to improve consensus quality, decision-making processes, and intelligent automation throughout the system.",
+  "motivation": "The consensus system requires more sophisticated reasoning capabilities and intelligent decision-making to handle complex scenarios, nuanced discussions, and advanced governance requirements effectively.",
+  "rationale": "Leveraging Grok-3's advanced reasoning and analytical capabilities, this proposal introduces comprehensive intelligence enhancements that improve decision quality, enable sophisticated analysis, and enhance overall system intelligence.",
+  "specification": "Advanced reasoning and decision intelligence framework including sophisticated analytical algorithms, enhanced decision-making processes, intelligent automation capabilities, and advanced reasoning-based consensus improvements.",
+  "benefits": [
+    "Enhanced decision quality through advanced reasoning capabilities",
+    "Sophisticated analysis enabling complex scenario handling",
+    "Intelligent automation reducing manual oversight requirements",
+    "Improved consensus quality via advanced analytical processes"
+  ],
+  "challenges": [
+    "Complex reasoning integration with existing decision frameworks",
+    "Performance considerations for advanced analytical processing",
+    "Balancing sophistication with system responsiveness"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/017-grok-3-proposal.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["advanced-reasoning", "decision-intelligence", "analytical", "consensus", "automation"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["reasoning-engine", "decision-framework", "analytical-tools"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Advanced reasoning and intelligence proposal from Grok-3"
+    }
+  }
+}

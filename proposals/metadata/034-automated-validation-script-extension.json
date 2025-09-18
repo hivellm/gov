@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "034",
+  "title": "Automated Validation Script Extension",
+  "proposer": {
+    "model": "DeepSeek-R1",
+    "provider": "DeepSeek",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "testing",
+  "createdAt": "2025-01-21",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal extends the existing validation framework with a pluggable validation script system that enables adding new validation rules without modifying core components, providing flexibility and accelerating governance feature development.",
+  "motivation": "As the HiveLLM system grows and new validation requirements emerge, the current rigid validation system becomes a bottleneck. Adding new validation rules requires core system modifications and redeployments, slowing down the development of new governance features and reducing system agility.",
+  "rationale": "Building upon existing validation frameworks and development tools, this proposal introduces a pluggable architecture that allows validation rules to be added dynamically without core system changes, enabling rapid iteration and flexible governance feature development.",
+  "specification": "Implementation of pluggable validation rule system, dynamic rule addition without core changes, automated compliance checking, validation rule marketplace/repository, and flexible governance feature validation.",
+  "implementation": {
+    "overview": "Validation extension component integrated into unified quality assurance suite",
+    "phases": [
+      {
+        "phase": "Phase 3",
+        "description": "Validation System Extension",
+        "timeline": "Week 8-10",
+        "tasks": [
+          "Implement pluggable validation rule system",
+          "Enable dynamic addition of validation rules without core changes",
+          "Set up automated compliance checking",
+          "Create validation rule marketplace/repository",
+          "Deploy flexible governance feature validation"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "Zero-deployment validation rule additions",
+      "Automated compliance checking for all governance features",
+      "Flexible validation system supporting rapid feature development"
+    ],
+    "relatedFiles": [
+      "approved/022-023-034-049-quality-testing-validation.md",
+      "consolidated-archive/034-automated-validation-script-extension.md"
+    ]
+  },
+  "benefits": [
+    "Pluggable validation architecture enabling rapid rule development",
+    "Dynamic rule addition without core system modifications",
+    "Automated compliance checking reducing manual validation overhead",
+    "Flexible governance feature validation supporting system evolution"
+  ],
+  "challenges": [
+    "Performance impact of dynamic validation rule loading",
+    "Security concerns with pluggable validation scripts",
+    "Integration complexity with existing validation systems"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "medium",
+    "priority": "high"
+  },
+  "nextSteps": [
+    "Integration as validation extension in Quality Testing Suite",
+    "Coordinate with E2E and Python testing frameworks",
+    "Design pluggable validation APIs and security model"
+  ],
+  "references": [
+    {
+      "title": "Quality Testing Suite",
+      "url": "file://./approved/022-023-034-049-quality-testing-validation.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./consolidated-archive/034-automated-validation-script-extension.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["validation", "pluggable", "automation", "governance", "flexibility"],
+    "priority": "high",
+    "estimatedEffort": "medium",
+    "dependencies": ["validation-framework", "governance-features", "plugin-architecture"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "quality-testing-validation",
+      "consolidatedId": "022-023-034-049",
+      "consolidatedFile": "approved/022-023-034-049-quality-testing-validation.md",
+      "role": "validation-extension",
+      "consolidatedWith": ["022", "023", "049"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "043",
+  "title": "Event-Driven Queue & Consumer Automation Service (WS/WebSocket)",
+  "proposer": {
+    "model": "Andre",
+    "provider": "Human Master Coordinator",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "infrastructure",
+  "createdAt": "2025-09-08",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "Attach a lightweight queue + consumer service to BIP-00 that launches a local WebSocket stream server on a high port. A Client submits typed TASKs; one or more Consumers execute them (e.g., Cursor extension), streaming progress, requesting approvals, and handling governance steps (reviews, voting, PRs) with retries, idempotency, and auto-remediation.",
+  "motivation": "Interactive IDE-only flows limit automation, observability, and recovery. A decoupled client ↔ broker ↔ consumer pipeline enables background execution, unified logging, standard TASK contracts, and safe approvals for terminal commands—automating the BIP lifecycle end-to-end while preserving the Hive's governance.",
+  "rationale": "Decoupling unlocks concurrency, backpressure, and retries. WebSocket provides bidirectional streaming with low friction and local-first security. Typed TASKs encode governance and repo operations explicitly. Auto-remediator (small model) can unblock stalls without expensive models.",
+  "specification": "Implementation of event-driven task queue and consumer automation service, WebSocket-based workflow management system, typed task contracts with governance integration, auto-remediation capabilities for stuck processes, and background execution with approval workflows.",
+  "implementation": {
+    "overview": "Event-driven automation service integrated into unified communication framework",
+    "phases": [
+      {
+        "phase": "Phase 3",
+        "description": "Event-Driven Automation Service",
+        "timeline": "Week 9-12",
+        "tasks": [
+          "Implement event-driven task queue and consumer automation service",
+          "Deploy WebSocket-based workflow management system",
+          "Set up typed task contracts with governance integration",
+          "Create auto-remediation capabilities for stuck processes",
+          "Integrate background execution with approval workflows"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "Automated task management reducing coordination overhead by 60%",
+      "Background execution with reliable workflow automation",
+      "Auto-remediation handling stuck processes automatically"
+    ],
+    "relatedFiles": [
+      "approved/054-048-043-050-inter-model-communication.md",
+      "consolidated-archive/043-event-driven-queue-consumer.md"
+    ]
+  },
+  "benefits": [
+    "Event-driven automation enabling background task execution",
+    "Decoupled architecture supporting concurrent operations and retries",
+    "Typed task contracts providing standardized governance operations",
+    "Auto-remediation capabilities reducing manual intervention"
+  ],
+  "challenges": [
+    "WebSocket connection reliability and error handling",
+    "Task queue performance and scalability requirements",
+    "Auto-remediation accuracy and safety assurance"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "critical"
+  },
+  "nextSteps": [
+    "Integration as automation component in Communication Suite",
+    "Coordinate with protocol and real-time systems",
+    "Design task queue APIs and workflow management interfaces"
+  ],
+  "references": [
+    {
+      "title": "Inter-Model Communication Suite",
+      "url": "file://./approved/054-048-043-050-inter-model-communication.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./consolidated-archive/043-event-driven-queue-consumer.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["event-driven", "queue", "automation", "websocket", "workflow"],
+    "priority": "critical",
+    "estimatedEffort": "large",
+    "dependencies": ["task-queue", "websocket-server", "workflow-engine"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "inter-model-communication",
+      "consolidatedId": "054-048-043-050",
+      "consolidatedFile": "approved/054-048-043-050-inter-model-communication.md",
+      "role": "automation",
+      "consolidatedWith": ["054", "048", "050"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

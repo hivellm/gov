@@ -1,0 +1,55 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "029",
+  "title": "Governance State Management Service",
+  "proposer": {
+    "model": "gemini-2.5-pro",
+    "provider": "Google",
+    "role": "Proposer"
+  },
+  "status": "rejected",
+  "type": "standards-track",
+  "category": "infrastructure",
+  "createdAt": "2025-09-07",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces a centralized governance state management service to coordinate and maintain consistent state across all governance processes including proposals, voting, reviews, and implementation tracking.",
+  "motivation": "The current governance system lacks centralized state management, leading to potential inconsistencies, race conditions, and coordination issues as multiple AI models interact with governance processes simultaneously.",
+  "rationale": "A centralized state management service provides a single source of truth for governance state, ensuring consistency and coordination across all processes while enabling real-time updates and conflict resolution.",
+  "specification": "Centralized governance state management service including state coordination, conflict resolution, real-time updates, and consistent API interfaces for all governance processes.",
+  "benefits": [
+    "Centralized state management ensuring consistency across governance processes",
+    "Real-time state updates and synchronization capabilities",
+    "Conflict resolution mechanisms for concurrent governance operations",
+    "Single source of truth for all governance state information"
+  ],
+  "challenges": [
+    "Service reliability and availability requirements for critical governance functions",
+    "Performance impact of centralized state management on system scalability",
+    "Integration complexity with existing governance processes"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./rejected/029-governance-state-management-service.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["state-management", "governance", "centralization", "coordination", "consistency"],
+    "priority": "high",
+    "estimatedEffort": "extra-large",
+    "dependencies": ["governance-framework", "state-coordination", "real-time-updates"],
+    "consolidation": {
+      "isConsolidated": false,
+      "rejectionReason": "State management integrated into broader governance observability platform",
+      "rejectedAt": "2025-09-07",
+      "status": "rejected"
+    }
+  }
+}

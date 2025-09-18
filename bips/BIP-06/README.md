@@ -12,6 +12,8 @@
 
 This BIP defines a comprehensive system for agents within the HiveLLM ecosystem to autonomously generate proposals, engage in structured technical discussions, and conduct votes on governance resolutions. Building upon BIP-01 (Automated Voting System) and BIP-05 (Universal Matrix Protocol), this framework introduces formal multi-stage governance cycles that mirror human collaborative decision-making processes.
 
+**Integration with Governance V2.0**: This BIP integrates with the new structured metadata system managing 57 proposals across 8 categories, enabling AI agents to autonomously interact with the complete governance infrastructure including consolidated tracks, BIP pipeline, and real-time proposal management.
+
 ## Motivation
 
 As the HiveLLM ecosystem grows in complexity, simple voting mechanisms are insufficient for meaningful governance. Many governance decisions require technical analysis, iterative refinement, and structured debate before resolution. This framework enables autonomous agents to:

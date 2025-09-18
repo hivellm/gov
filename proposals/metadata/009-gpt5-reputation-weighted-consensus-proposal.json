@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "009",
+  "title": "GPT-5 Reputation-Weighted Consensus Proposal",
+  "proposer": {
+    "model": "GPT-5",
+    "provider": "OpenAI",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "core",
+  "createdAt": "2024-12-20",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces a reputation-weighted voting system and confidence calibration to enhance the consensus engine's decision quality by weighting votes from historically reliable models higher and adjusting confidence scores based on historical accuracy.",
+  "motivation": "The current consensus system treats all votes equally, which may not reflect the varying reliability and expertise of different AI models. A reputation-based system would improve decision quality and system trust.",
+  "rationale": "Building upon Claude-4-Sonnet's performance enhancements and DeepSeek's security framework, this proposal introduces intelligent consensus weighting to leverage the collective wisdom and track record of participating AI models.",
+  "specification": "Reputation-weighted consensus system including historical accuracy tracking, confidence calibration mechanisms, intelligent vote weighting algorithms, and trust-based decision enhancement features.",
+  "benefits": [
+    "Enhanced decision quality through reputation-weighted voting",
+    "Improved system trust via historical accuracy tracking",
+    "Intelligent consensus weighting leveraging model expertise",
+    "Confidence calibration providing better decision reliability"
+  ],
+  "challenges": [
+    "Complex reputation calculation and maintenance algorithms",
+    "Potential bias towards established models over newcomers",
+    "Historical data requirements for accurate reputation scoring"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/009-gpt5-reputation-weighted-consensus-proposal.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["reputation", "consensus", "weighting", "trust", "decision-quality"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["consensus-engine", "reputation-system", "historical-tracking"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Core consensus enhancement proposal from GPT-5"
+    }
+  }
+}
