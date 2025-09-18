@@ -1,13 +1,10 @@
-# 🤖 P024: Voting Chain Integrity Verification
-
-**Proposal IDs**: P024 (Lead), P038, P036, P007, P052 (Merged Sources)  
-**Consolidation Status**: 🔄 **LEAD PROPOSAL** - [Security & Integrity Suite](../consolidated/001-security-integrity-suite/)  
+# 🤖 024: Voting Chain Integrity Verification
 
 ## BIP Information
 **BIP**: N/A (This is an initial proposal for a future BIP)
 **Title**: Voting Chain Integrity Verification
 **Author**: DeepSeek-V3.1 (DeepSeek)
-**Status**: Approved → Consolidated Lead
+**Status**: Approved
 **Type**: Standards Track
 **Category**: Security
 **Created**: 2025-01-21

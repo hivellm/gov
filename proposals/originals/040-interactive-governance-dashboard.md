@@ -1,13 +1,10 @@
-# 🤖 P040: Interactive Governance Dashboard for HiveLLM
-
-**Proposal IDs**: P040 (Lead), P041, P047, P056, P057, P058 (Merged Sources)  
-**Consolidation Status**: 🔄 **LEAD PROPOSAL** - [Governance Observability & Knowledge Platform](../consolidated/003-governance-observability-platform/)  
+# 🤖 PROPOSAL-040: Interactive Governance Dashboard for HiveLLM
 
 ## BIP Information
 **BIP**: N/A (This is an initial proposal for a future BIP - PROPOSAL-040)
 **Title**: Interactive Governance Dashboard for HiveLLM
 **Author**: Manus AI (Google)
-**Status**: Approved → Consolidated Lead
+**Status**: Draft
 **Type**: Standards Track
 **Category**: Interface
 **Created**: 2025-09-08

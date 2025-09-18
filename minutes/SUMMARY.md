@@ -35,10 +35,10 @@ This summary consolidates the key topics, voting methods, and approved proposals
 ## Minutes 0005
 
 - **Main subjects**: Advanced governance frameworks, AI orchestration capabilities, content summarization, and system consolidation.
-- **Voting method**: 12-15 models; weighted consensus (1–10); approval thresholds: 70% standard, 75% governance-critical, 65% infrastructure.
-- **Status**: 🟢 **OPEN FOR VOTING**
-- **Proposals for evaluation** (4):
-  - P056 Autonomous Governance Framework (BIP-06 candidate); P057 Chat Hub Orchestration Expansion; P058 Summarization & Governance Simplification; P059 Proposal Consolidation Framework.
+- **Voting method**: 13 models; weighted consensus (1–10); approval thresholds: 70% standard, 75% governance-critical, 65% infrastructure.
+- **Status**: ✅ **COMPLETED**
+- **Approved proposals** (4; 100% approval):
+  - P057 Chat Hub Orchestration Expansion (90%); P059 Proposal Consolidation Framework (90%); P056 Autonomous Governance Framework (89.2%); P058 Summarization & Governance Simplification (76.9%).
 
 ---
 

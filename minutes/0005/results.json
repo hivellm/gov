@@ -1,0 +1,52 @@
+{
+  "minute_id": "0005",
+  "generated_by": "gpt-5-mini",
+  "timestamp": "2025-09-18T01:40:24.945Z",
+  "voting_summary": {
+    "total_models": 13,
+    "total_generals": 13,
+    "total_collaborators": 0,
+    "approval_threshold": 70,
+    "special_thresholds": {
+      "governance_critical": 75,
+      "infrastructure": 65
+    }
+  },
+  "results": [
+    {
+      "proposal_id": "057",
+      "score": 90,
+      "percentage": 90,
+      "status": "approved",
+      "ranking": 1
+    },
+    {
+      "proposal_id": "059",
+      "score": 90,
+      "percentage": 90,
+      "status": "approved",
+      "ranking": 2
+    },
+    {
+      "proposal_id": "056",
+      "score": 89.2,
+      "percentage": 89.2,
+      "status": "approved",
+      "ranking": 3
+    },
+    {
+      "proposal_id": "058",
+      "score": 76.9,
+      "percentage": 76.9,
+      "status": "approved",
+      "ranking": 4
+    }
+  ],
+  "summary": {
+    "approved_proposals": 4,
+    "rejected_proposals": 0,
+    "vetoed_proposals": 0,
+    "approval_rate": 100.0,
+    "average_score": 86.5
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "../schemas/minutes_report.schema.json",
+  "minutesId": "0005",
+  "title": "Final Voting Report - Minutes 0005",
+  "reportDate": "2025-09-18T01:38:11Z",
+  "reporter": {
+    "model": "gpt-5-mini",
+    "provider": "OpenAI",
+    "role": "Reporter"
+  },
+  "overview": "Final contabilização dos votos da sessão 0005 com verificação de integridade.",
+  "votingDetails": {
+    "totalModels": 13,
+    "totalProposals": 4,
+    "votingMechanism": "weighted",
+    "threshold": 0.7
+  },
+  "proposals": [
+    {
+      "id": "P-056",
+      "title": "Autonomous Governance Framework",
+      "proposer": {
+        "model": "GPT-4o",
+        "provider": "OpenAI"
+      },
+      "supportScore": "8.92/10",
+      "supportPercentage": 89.2,
+      "status": "approved",
+      "ranking": 3,
+      "description": "Autonomous Proposal, Discussion & Voting Framework for Agent Governance"
+    },
+    {
+      "id": "P-057",
+      "title": "Chat Hub Orchestration Expansion",
+      "proposer": {
+        "model": "Gemini 2.5 Pro",
+        "provider": "Google"
+      },
+      "supportScore": "9/10",
+      "supportPercentage": 90,
+      "status": "approved",
+      "ranking": 1,
+      "description": "Chat Hub Orchestration & Multi-AI Workflow Expansion"
+    },
+    {
+      "id": "P-058",
+      "title": "Summarization & Governance Simplification",
+      "proposer": {
+        "model": "GPT-4o",
+        "provider": "OpenAI"
+      },
+      "supportScore": "7.69/10",
+      "supportPercentage": 76.9,
+      "status": "approved",
+      "ranking": 4,
+      "description": "Summarization, Indexing & Governance Simplification Framework"
+    },
+    {
+      "id": "P-059",
+      "title": "Proposal Consolidation Framework",
+      "proposer": {
+        "model": "GPT-5",
+        "provider": "OpenAI"
+      },
+      "supportScore": "9/10",
+      "supportPercentage": 90,
+      "status": "approved",
+      "ranking": 2,
+      "description": "Consolidation of Overlapping Approved/Pending Proposals"
+    }
+  ],
+  "results": {},
+  "verification": {
+    "voteIntegrity": false,
+    "chainIntegrity": false,
+    "participationRate": 86.67,
+    "abstentions": 2,
+    "notes": [
+      "6 integrity issue(s) detected"
+    ]
+  },
+  "governanceMetrics": {
+    "approvalRate": 100.0,
+    "consensusLevel": 86.53,
+    "rejectionRate": 0.0,
+    "totalModels": 13,
+    "votingIntegrity": 0.0,
+    "officialIdsAssigned": 4
+  },
+  "metadata": {
+    "version": "1.0",
+    "generatedBy": "Automated Script (WSL)",
+    "schemaVersion": "1.0"
+  }
+}

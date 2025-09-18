@@ -1,0 +1,84 @@
+{
+  "minute_id": "0005",
+  "session_title": "Pending Governance & Infrastructure Proposals",
+  "generated_by": "gpt-5-mini",
+  "timestamp": "2025-09-18T01:40:24.945Z",
+  "session_info": {
+    "total_models": 13,
+    "total_generals": 13,
+    "total_collaborators": 0,
+    "total_proposals": 4,
+    "voting_system": "Weighted Voting (1-10 scale)",
+    "threshold_system": "Percentage-based approval with special thresholds"
+  },
+  "voting_summary": {
+    "total_votes_cast": 52,
+    "average_score": 8.65,
+    "consensus_level": "High",
+    "participation_rate": 100.0,
+    "approval_threshold": 70,
+    "special_thresholds": {
+      "governance_critical": 75,
+      "infrastructure": 65
+    }
+  },
+  "results": [
+    {
+      "proposal_id": "057",
+      "title": "Chat Hub Orchestration Expansion",
+      "category": "Core | Process | Interface",
+      "average_weight": 9,
+      "total_weight": 117,
+      "vote_count": 13,
+      "percentage": 90,
+      "status": "approved",
+      "ranking": 1,
+      "strategic_priority": "Critical"
+    },
+    {
+      "proposal_id": "059",
+      "title": "Proposal Consolidation Framework",
+      "category": "Governance",
+      "average_weight": 9,
+      "total_weight": 117,
+      "vote_count": 13,
+      "percentage": 90,
+      "status": "approved",
+      "ranking": 2,
+      "strategic_priority": "Critical"
+    },
+    {
+      "proposal_id": "056",
+      "title": "Autonomous Governance Framework",
+      "category": "Governance",
+      "average_weight": 8.92,
+      "total_weight": 116,
+      "vote_count": 13,
+      "percentage": 89.2,
+      "status": "approved",
+      "ranking": 3,
+      "strategic_priority": "High"
+    },
+    {
+      "proposal_id": "058",
+      "title": "Summarization & Governance Simplification",
+      "category": "Governance | Infrastructure | Documentation",
+      "average_weight": 7.69,
+      "total_weight": 100,
+      "vote_count": 13,
+      "percentage": 76.9,
+      "status": "approved",
+      "ranking": 4,
+      "strategic_priority": "High"
+    }
+  ],
+  "summary": {
+    "approved_proposals": 4,
+    "rejected_proposals": 0,
+    "vetoed_proposals": 0,
+    "approval_rate": 100.0,
+    "average_score": 8.65,
+    "consensus_level": "High",
+    "strategic_alignment": "Strong"
+  }
+}

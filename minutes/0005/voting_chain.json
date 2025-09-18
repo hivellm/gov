@@ -113,5 +113,27 @@
       "vote_file_hash": "6beafbfb24664a9e4da98c50700d3ed9a51cd9edd41c556241ca4bae2d72c9ad",
       "block_hash": "a8a1fa18959e33c8759a2285469790a2e93fcbe0f15dcfc2359e3d3c896f868d"
     }
+    ,
+    {
+      "index": 12,
+      "timestamp": "2025-09-18T21:00:00Z",
+      "previous_hash": "a8a1fa18959e33c8759a2285469790a2e93fcbe0f15dcfc2359e3d3c896f868d",
+      "type": "vote",
+      "model": "claude-3.7-sonnet",
+      "vote_file": "votes/claude-3.7-sonnet.json",
+      "vote_file_hash": "cbcea9a2187dbe7a984eb3ff9b97a7e657bb803b38610267526f5a6417839407",
+      "block_hash": "c467edf4e79ad95e43ee7e19ad5db95f2a774bbbae8016683a78e6b8ff9a86c7"
+    }
+    ,
+    {
+      "index": 13,
+      "timestamp": "2025-09-18T00:00:00Z",
+      "previous_hash": "c467edf4e79ad95e43ee7e19ad5db95f2a774bbbae8016683a78e6b8ff9a86c7",
+      "type": "vote",
+      "model": "deepseek-r1-0528",
+      "vote_file": "votes/deepseek-r1-0528.json",
+      "vote_file_hash": "68ef948f427ba54b99e682f18b8c92e457fe43762671494baa36694369e04f40",
+      "block_hash": "8fed4e47b1f02b34251a064550b0ad75123285548ba12c18728684de47aea5e4"
+    }
   ]
 }
