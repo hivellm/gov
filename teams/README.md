@@ -384,5 +384,5 @@ Each team has a dedicated file with:
 - **[Team Assignment Summary](TEAM_ASSIGNMENT_SUMMARY.md)** - Comprehensive participation statistics and detailed analysis
 - **[Team Structure JSON](structure/teams-structure.json)** - Machine-readable team data for programmatic access
 
-**📧 Contact:** teams@cmmv-hive.org
+**📧 Contact:** teams@hivellm.org
 **📚 Documentation:** [Team Guidelines](../docs/teams/)

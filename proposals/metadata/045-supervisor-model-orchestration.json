@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "045",
+  "title": "Supervisor Agent Orchestration for Reviewer Guidance & Cost Control",
+  "proposer": {
+    "model": "Andre",
+    "provider": "Human Master Coordinator",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "process",
+  "category": "governance",
+  "createdAt": "2025-09-10",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "Introduce a pool of lightweight supervisor agents (e.g., deepseek-chat, gpt5-mini) that monitor reviewer models, provide concise contrarian points, propose alternatives, and intercede when necessary to keep reviews on-scope, improve convergence, and control costs. Supervisors coordinate to form consensus on critical interventions and can optionally escalate to a larger model for targeted assistance.",
+  "motivation": "Some reviewers drift off-scope or become verbose. We need 100% automated operations with balanced costs and consistent quality. Small \"coach\" agents can steer reviewers early, reducing rework and token usage. Coordinated supervisor consensus improves signal-to-noise and avoids derailment.",
+  "rationale": "A structured multi-agent oversight layer provides bounded, machine-auditable interventions with strict constraints (bullets-only, code citations, rate limits) that integrate into the standardized reviewer workflow and transport protocol.",
+  "specification": "Implementation of lightweight supervisor agent pool for review monitoring and guidance, automated reviewer coaching with concise contrarian points, consensus-driven intervention mechanisms for critical issues, escalation protocols to larger models for targeted assistance, and supervisor feedback integration with standardized review workflow.",
+  "implementation": {
+    "overview": "Intelligent supervisor oversight integrated into unified review management suite",
+    "phases": [
+      {
+        "phase": "Phase 3",
+        "description": "Supervisor Oversight Deployment",
+        "timeline": "Week 7-9",
+        "tasks": [
+          "Deploy lightweight supervisor agent pool for review monitoring and guidance",
+          "Implement automated reviewer coaching with concise contrarian points",
+          "Set up consensus-driven intervention mechanisms for critical issues",
+          "Create escalation protocols to larger models for targeted assistance",
+          "Integrate supervisor feedback with standardized review workflow"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "30% improvement in review quality through supervisor oversight",
+      "Cost-controlled review process with efficient resource utilization",
+      "Automated reviewer guidance reducing off-scope drift"
+    ],
+    "relatedFiles": [
+      "approved/044-042-045-046-review-governance-suite.md",
+      "consolidated-archive/045-supervisor-model-orchestration.md"
+    ]
+  },
+  "benefits": [
+    "Intelligent oversight maintaining review quality and scope discipline",
+    "Cost control through lightweight supervisor agents and efficient interventions",
+    "Early course correction preventing reviewer drift and rework",
+    "Coordinated supervision improving signal-to-noise ratio"
+  ],
+  "challenges": [
+    "Supervisor agent coordination and consensus mechanisms",
+    "Balance between supervision and reviewer autonomy",
+    "Performance impact of continuous oversight monitoring"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "nextSteps": [
+    "Integration as oversight component in Review Governance Suite",
+    "Coordinate with workflow standardization and bias reduction systems",
+    "Design supervisor agent coordination protocols"
+  ],
+  "references": [
+    {
+      "title": "Review Governance Suite",
+      "url": "file://./approved/044-042-045-046-review-governance-suite.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./consolidated-archive/045-supervisor-model-orchestration.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["supervisor", "oversight", "quality-control", "cost-control", "automation"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["supervisor-agents", "review-system", "coordination-protocols"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "review-governance-suite",
+      "consolidatedId": "044-042-045-046",
+      "consolidatedFile": "approved/044-042-045-046-review-governance-suite.md",
+      "role": "oversight",
+      "consolidatedWith": ["044", "042", "046"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

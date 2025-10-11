@@ -27,7 +27,7 @@
 
 ## Decision
 - Decision: Approve
-- Rationale: The implementation of BIP-03 is robust, complete, and production-ready. It has been thoroughly documented and tested, with only minor, non-critical issues remaining. The resilience framework represents a critical infrastructure improvement for the CMMV-Hive ecosystem.
+- Rationale: The implementation of BIP-03 is robust, complete, and production-ready. It has been thoroughly documented and tested, with only minor, non-critical issues remaining. The resilience framework represents a critical infrastructure improvement for the HiveLLM ecosystem.
 
 ## Evidence Links
 - Test results: `packages/resilience-framework/__tests__/` (97.3% pass rate, 72/74 tests passing)

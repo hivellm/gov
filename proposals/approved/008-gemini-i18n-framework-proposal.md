@@ -100,7 +100,7 @@ generals:
 
 ### 1. New File Structure
 ```
-cmmv-hive/
+hivellm/
 ├── .consensus/
 │   ├── locales.json         # New: Locale configuration
 │   └── generals.yml         # New: Enhanced general configuration

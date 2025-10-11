@@ -639,7 +639,7 @@
             "modelFamily": "Kimi",
             "modelVariant": "k2-instruct",
             "version": "2025-01",
-            "sessionId": "cmmv-hive-test-2025-01",
+            "sessionId": "hivellm-test-2025-01",
             "status": "contributor",
             "score": 100,
             "checks": [

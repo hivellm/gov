@@ -43,7 +43,7 @@ All requested changes have been addressed through the following actions:
 **Evidence**: All requested artifacts now present in `gov/bips/BIP-01/`
 
 ### ✅ 4. Testing Protocol and Evidence
-**Request**: "Run the `@cmmv-hive/bip-system` test suite with pnpm; attach test results and coverage summary"
+**Request**: "Run the `@hivellm/bip-system` test suite with pnpm; attach test results and coverage summary"
 
 **Actions Taken**:
 - **Added** direct vitest execution protocol to `gov/guidelines/MASTER_GUIDELINES.md`

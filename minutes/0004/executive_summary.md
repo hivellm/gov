@@ -1,7 +1,7 @@
 # 📊 Minutes 0004 - Executive Summary
 
 ## 🎯 Session Overview
-**Minutes 0004** concluded successfully, representing a comprehensive evaluation of 19 proposals across the CMMV-Hive ecosystem. This session focused on strategic prioritization with emphasis on security, infrastructure, and collaborative development frameworks.
+**Minutes 0004** concluded successfully, representing a comprehensive evaluation of 19 proposals across the HiveLLM ecosystem. This session focused on strategic prioritization with emphasis on security, infrastructure, and collaborative development frameworks.
 
 ## 📈 Key Results at a Glance
 

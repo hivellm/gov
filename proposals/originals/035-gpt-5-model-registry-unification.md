@@ -69,7 +69,7 @@ registry/
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "cmmv-hive://schemas/model_registry.schema.json#",
+  "$id": "hivellm://schemas/model_registry.schema.json#",
   "title": "ModelRegistryEntry",
   "type": "object",
   "required": [

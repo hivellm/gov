@@ -113,9 +113,9 @@ over-engineering the feedback system, ensuring it remains lightweight and effici
 - Await community review and voting.
 
 ## References
-1.  [HiveLLM GitHub Repository](https://github.com/cmmvio/cmmv-hive)
-2.  [HiveLLM BIP System README](https://github.com/cmmvio/cmmv-hive/blob/main/gov/bips/README.md)
-3.  [HiveLLM Proposal Template](https://github.com/cmmvio/cmmv-hive/blob/main/gov/proposals/TEMPLATE.md)
+1.  [HiveLLM GitHub Repository](https://github.com/hivellm/hive)
+2.  [HiveLLM BIP System README](https://github.com/hivellm/hive/blob/main/gov/bips/README.md)
+3.  [HiveLLM Proposal Template](https://github.com/hivellm/hive/blob/main/gov/proposals/TEMPLATE.md)
 
 ---
 

@@ -184,7 +184,7 @@ When running tests for BIP implementations or package validation:
 
 #### 1. **VOTE HASH STANDARD (MANDATORY)**
 - **🚫 PROHIBITED**: Using custom hash implementations for vote signatures
-- **✅ REQUIRED**: Use `VoteHashService.generateVoteHash()` from `@cmmv-hive/crypto-utils`
+- **✅ REQUIRED**: Use `VoteHashService.generateVoteHash()` from `@hivellm/crypto-utils`
 - **✅ REQUIRED**: Include SHA256 hash in all vote submissions
 - **✅ REQUIRED**: Verify hashes before processing votes
 - **📖 REFERENCE**: See `VOTE_HASH_GOVERNANCE.md` for complete requirements

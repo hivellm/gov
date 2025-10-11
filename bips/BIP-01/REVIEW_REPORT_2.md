@@ -7,7 +7,7 @@
 - **Status**: APPROVED (with minor suggestions)
 
 ## Executive Summary
-BIP-01 establishes a comprehensive system for tracking the implementation of approved proposals within the CMMV-Hive ecosystem. The system provides a structured, transparent, and automated framework using a blockchain-style structure for integrity and traceability. The implementation, including TypeScript packages, CLI tools, and extensive testing, matches the BIP-01 specification and is ready for production use.
+BIP-01 establishes a comprehensive system for tracking the implementation of approved proposals within the HiveLLM ecosystem. The system provides a structured, transparent, and automated framework using a blockchain-style structure for integrity and traceability. The implementation, including TypeScript packages, CLI tools, and extensive testing, matches the BIP-01 specification and is ready for production use.
 
 ## Files and Areas Reviewed
 - `gov/bips/BIP-01/BIP-01.md` (specification)
@@ -17,7 +17,7 @@ BIP-01 establishes a comprehensive system for tracking the implementation of app
 
 ## Key Strengths
 - **Clear Scope Definition**: Focuses on implementation tracking, maintaining separation from the voting system, which ensures modularity.
-- **Robust Implementation**: TypeScript package `@cmmv-hive/bip-system` with CLI tools (`bip-create`, `bip-validate`, `bip-generate-chain`) is fully functional.
+- **Robust Implementation**: TypeScript package `@hivellm/bip-system` with CLI tools (`bip-create`, `bip-validate`, `bip-generate-chain`) is fully functional.
 - **Blockchain Integrity**: Use of SHA-256 deterministic hashing for blocks and files ensures transparency and immutability.
 - **Comprehensive Testing**: 24 unit tests across 8 thematic files, ensuring reliability and scalability.
 - **Documentation**: Detailed specifications, implementation plans, and READMEs facilitate adoption and collaboration.
@@ -41,7 +41,7 @@ These suggestions do not block approval; they are enhancements for future iterat
   - `packages/bip-system/tsconfig.json` and `vitest.config.ts` are aligned with project standards for strict typing and testing thresholds.
 
 ## Implementation Readiness
-- The `@cmmv-hive/bip-system` package is production-ready with build targets, exports, and type declarations configured.
+- The `@HiveLLM/bip-system` package is production-ready with build targets, exports, and type declarations configured.
 - Tests and documentation are thorough, and the repository structure aligns with the described architecture.
 - Integration with existing governance workflows (`gov/minutes/`) is seamless.
 

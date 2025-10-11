@@ -57,7 +57,7 @@ The HiveLLM project requires a unified, modern development foundation to support
 
 **Project Structure**:
 ```
-cmmv-hive/
+hivellm/
 ├── apps/
 │   ├── cursor-extension/          # Main Cursor IDE extension
 │   ├── voting-dashboard/          # Real-time governance monitoring
@@ -258,7 +258,7 @@ src/
 **Primary Focus**:
 1. **Cursor Extension Development**
    - Implement core governance features in TypeScript
-   - Integrate with CMMV-Hive workflow automation
+   - Integrate with HiveLLM workflow automation
    - Develop user interface components
    - Create comprehensive test suite
 

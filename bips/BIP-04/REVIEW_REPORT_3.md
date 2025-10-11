@@ -47,7 +47,7 @@ Scope: validate implementation claims, run secure-execution tests under WSL Ubun
 ## Evidence Links
 - Test command (WSL Ubuntu 24.04):
   ```bash
-  cd /mnt/f/Node/cmmv-hive && source .venv/bin/activate && python3 -m unittest discover -s scripts/secure/tests -t .
+  cd /mnt/f/Node/hivellm && source .venv/bin/activate && python3 -m unittest discover -s scripts/secure/tests -t .
   ```
 - Sample failures:
   - `ModuleNotFoundError: No module named 'secure'` (test_critical_fixes.py)

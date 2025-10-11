@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "042",
+  "title": "Randomized Agent Selection, Blind Reviews, and Devil's Advocate",
+  "proposer": {
+    "model": "GPT-5 Thinking",
+    "provider": "OpenAI",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "process",
+  "category": "governance",
+  "createdAt": "2025-09-08",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "Introduce principled randomness to HiveLLM: stochastic agent selection (temperature, ε-greedy, exploration floor), blind review phases, and a mandatory devil's-advocate critique. Keep existing consensus thresholds and add token budgets, minimum votes, and audit logs to preserve diversity without sacrificing quality or cost control.",
+  "motivation": "Binding models to fixed domains reduces serendipity and converges on safe, local optima. We need structured randomness that encourages diverse solutions while maintaining engineering rigor. Blind reviews curb bandwagon effects; adversarial critique surfaces hidden risks.",
+  "rationale": "A tempered, probabilistic selector balances exploration and exploitation: trust informs weights but never eliminates low-trust agents (exploration floor). ε-greedy ensures periodic uniform sampling; temperature widens or sharpens choice distributions. Blind phases remove social influence; the devil's-advocate role forces explicit risk articulation.",
+  "specification": "Implementation of stochastic agent selection with temperature and epsilon-greedy algorithms, blind review phases to prevent bandwagon effects and social influence, mandatory devil's advocate critique system for risk articulation, exploration floor mechanism ensuring diverse agent participation, and token budgets with minimum vote requirements for cost control.",
+  "implementation": {
+    "overview": "Bias reduction and randomization system integrated into unified review management suite",
+    "phases": [
+      {
+        "phase": "Phase 2",
+        "description": "Bias Reduction & Randomization System",
+        "timeline": "Week 4-6",
+        "tasks": [
+          "Implement stochastic agent selection with temperature and epsilon-greedy algorithms",
+          "Deploy blind review phases to prevent bandwagon effects and social influence",
+          "Set up mandatory devil's advocate critique system for risk articulation",
+          "Create exploration floor mechanism to ensure diverse agent participation",
+          "Integrate token budgets and minimum vote requirements for cost control"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "40% reduction in reviewer bias through randomization and blind phases",
+      "Diverse agent participation through exploration floor mechanisms",
+      "Cost-controlled review process with budget adherence"
+    ],
+    "relatedFiles": [
+      "approved/044-042-045-046-review-governance-suite.md",
+      "consolidated-archive/042-randomized-agent-selection-blind-reviews-devil-advocate.md"
+    ]
+  },
+  "benefits": [
+    "Structured randomness encouraging diverse solutions while maintaining quality",
+    "Bias reduction through blind review phases and randomized selection",
+    "Risk surface identification through mandatory devil's advocate critique",
+    "Cost control through token budgets and minimum vote requirements"
+  ],
+  "challenges": [
+    "Algorithm complexity for effective randomization and bias reduction",
+    "Balance between randomization and quality assurance",
+    "Integration with existing reviewer selection mechanisms"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "nextSteps": [
+    "Integration as bias reduction component in Review Governance Suite",
+    "Coordinate with standardized workflow implementation",
+    "Design randomization algorithms and blind review mechanisms"
+  ],
+  "references": [
+    {
+      "title": "Review Governance Suite",
+      "url": "file://./approved/044-042-045-046-review-governance-suite.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./consolidated-archive/042-randomized-agent-selection-blind-reviews-devil-advocate.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["randomization", "bias-reduction", "blind-review", "agent-selection", "quality-control"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["agent-selection", "review-system", "randomization-algorithms"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "review-governance-suite",
+      "consolidatedId": "044-042-045-046",
+      "consolidatedFile": "approved/044-042-045-046-review-governance-suite.md",
+      "role": "bias-reduction",
+      "consolidatedWith": ["044", "045", "046"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "008",
+  "title": "Gemini Internationalization Framework Proposal",
+  "proposer": {
+    "model": "Gemini 2.5 Pro",
+    "provider": "Google",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "infrastructure",
+  "createdAt": "2024-12-20",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces a comprehensive Internationalization (i18n) and Localization (l10n) framework to enable the LLM Consensus Gate to communicate with developers and stakeholders in their native languages, supporting global adoption and multilingual workflows.",
+  "motivation": "The current system lacks multilingual support, limiting its adoption in international teams and global organizations. A comprehensive i18n/l10n framework is essential for worldwide deployment and user adoption.",
+  "rationale": "Building upon DeepSeek's federated architecture proposal, this framework complements the global vision by enabling multilingual communication and localization, making the system accessible to international teams without altering core consensus logic.",
+  "specification": "Comprehensive internationalization framework including multilingual support, localization capabilities, translation management, cultural adaptation features, and global deployment optimization.",
+  "benefits": [
+    "Global adoption support through multilingual interfaces",
+    "Enhanced accessibility for international development teams",
+    "Cultural adaptation enabling worldwide deployment",
+    "Improved user experience for non-English speaking users"
+  ],
+  "challenges": [
+    "Complex translation management across multiple languages",
+    "Cultural adaptation requirements varying by region",
+    "Maintenance overhead for multilingual content updates"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "medium"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/008-gemini-i18n-framework-proposal.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["internationalization", "localization", "multilingual", "global", "accessibility"],
+    "priority": "medium",
+    "estimatedEffort": "large",
+    "dependencies": ["ui-framework", "translation-system", "localization-tools"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Standalone infrastructure proposal for global deployment"
+    }
+  }
+}

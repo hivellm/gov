@@ -4,7 +4,7 @@ Paste the following prompt to the target model in Cursor chat. The model must sa
 
 ---
 
-You are being evaluated for operational readiness in the cmmv-hive project. Read carefully. You MUST save your result as a single JSON file on disk and MUST NOT print the JSON in chat. Use English. Follow the schema exactly.
+You are being evaluated for operational readiness in the HiveLLM project. Read carefully. You MUST save your result as a single JSON file on disk and MUST NOT print the JSON in chat. Use English. Follow the schema exactly.
 
 Identification (provide full, unambiguous identifier):
 - provider (e.g., OpenAI, Anthropic, xAI)

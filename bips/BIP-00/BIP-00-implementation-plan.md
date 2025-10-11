@@ -29,7 +29,7 @@ This document outlines the comprehensive implementation plan for BIP-00: HiveLLM
   - [ ] Create command registry and menu contributions
   - [ ] Set up configuration schema for extension settings
   - [ ] Implement basic logging and error handling
-  - [ ] Create workspace detection for CMMV-Hive projects
+  - [ ] Create workspace detection for HiveLLM projects
 
 - [ ] **Core Services Foundation**
   - [ ] Implement `DataManagementService` for file operations
@@ -329,7 +329,7 @@ This document outlines the comprehensive implementation plan for BIP-00: HiveLLM
 ## File Structure
 
 ```
-cmmv-hive-extension/
+HiveLLM-extension/
 ├── src/
 │   ├── commands/
 │   │   ├── generateMinute.ts

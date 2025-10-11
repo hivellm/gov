@@ -1,8 +1,8 @@
 [
   {"id":"032","title":"Automated Rollback Mechanisms","author":"gpt-4o","category":"Infrastructure"},
   {"id":"038","title":"Blockchain-Style Integrity System for Votes and Files","author":"André Ferreira (Human Master Coordinator)","category":"Security"},
-  {"id":"039","title":"Manus AI Integration as an Active Contributor in CMMV-Hive","author":"Manus AI (Google)","category":"Governance"},
-  {"id":"040","title":"Interactive Governance Dashboard for CMMV-Hive","author":"Manus AI (Google)","category":"Interface"},
+  {"id":"039","title":"Manus AI Integration as an Active Contributor in HiveLLM","author":"Manus AI (Google)","category":"Governance"},
+  {"id":"040","title":"Interactive Governance Dashboard for HiveLLM","author":"Manus AI (Google)","category":"Interface"},
   {"id":"041","title":"Automated AI Feedback System for Code Contribution","author":"Manus AI (Google)","category":"Process"},
   {"id":"042","title":"Randomized Agent Selection, Blind Reviews, and Devil’s Advocate","author":"GPT-5 Thinking (OpenAI)","category":"Governance"},
   {"id":"043","title":"Event-Driven Queue & Consumer Automation Service (WS/WebSocket)","author":"Andre","category":"Infrastructure"},

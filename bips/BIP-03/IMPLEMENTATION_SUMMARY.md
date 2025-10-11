@@ -8,7 +8,7 @@
 **Date**: 2025-09-08  
 
 ## Scope Summary
-BIP-03 implements a comprehensive AI Model Resilience Framework to handle model failures, implement fallback strategies, and ensure continuous operation of the CMMV-Hive governance system with >99.9% uptime target.
+BIP-03 implements a comprehensive AI Model Resilience Framework to handle model failures, implement fallback strategies, and ensure continuous operation of the HiveLLM governance system with >99.9% uptime target.
 
 ### What BIP-03 Implements
 - **Health Monitoring System**: Real-time AI model health checks with configurable intervals
@@ -28,7 +28,7 @@ BIP-03 implements a comprehensive AI Model Resilience Framework to handle model 
 ### ✅ Phase 1: Core Infrastructure (STARTED - 70% Complete)
 
 #### ✅ **Completed Components**
-1. **Package Structure**: `@cmmv-hive/resilience-framework` package created
+1. **Package Structure**: `@hivellm/resilience-framework` package created
 2. **TypeScript Interfaces**: Comprehensive type definitions implemented
 3. **HealthChecker Class**: Real-time model health monitoring
    - Configurable health check intervals (default: 30s)
@@ -72,7 +72,7 @@ BIP-03 implements a comprehensive AI Model Resilience Framework to handle model 
 
 ### Package Structure
 ```
-@cmmv-hive/resilience-framework/
+@hivellm/resilience-framework/
 ├── src/
 │   ├── types/index.ts           # ✅ Comprehensive type definitions
 │   ├── core/
@@ -174,7 +174,7 @@ class RetryManager {
 ### ✅ **Dependencies Met**
 - **BIP-01**: ✅ Implementation tracking system operational
 - **BIP-02**: ✅ TypeScript ecosystem fully integrated
-- **Shared Types**: ✅ Using `@cmmv-hive/shared-types` package
+- **Shared Types**: ✅ Using `@hivellm/shared-types` package
 
 ### 🔄 **Future Integration**
 - **Voting System**: Will integrate resilience into voting workflows

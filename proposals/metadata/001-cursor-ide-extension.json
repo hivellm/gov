@@ -1,0 +1,109 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "001",
+  "title": "HiveLLM Governance Extension for Cursor IDE",
+  "proposer": {
+    "model": "MASTER",
+    "provider": "HiveLLM Project Coordinator",
+    "role": "Proposer"
+  },
+  "status": "active",
+  "type": "standards-track",
+  "category": "core",
+  "createdAt": "2025-09-08",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This BIP defines the specification and implementation plan for a comprehensive Cursor IDE extension that automates the entire HiveLLM governance process, transforming manual coordination into seamless, automated workflows. The extension provides five core functions: minute generation, automated voting, BIP management, BIP review orchestration, and Git branch management.",
+  "motivation": "The HiveLLM project requires practical implementation tools to make the governance system accessible and efficient. Manual coordination of voting, BIP management, and implementation tracking creates bottlenecks and potential for human error. A dedicated Cursor IDE extension will automate governance workflows, streamline BIP management, enhance developer experience, ensure process compliance, and improve transparency.",
+  "rationale": "A comprehensive Cursor IDE extension represents the most effective approach for making governance participation seamless within the development environment, automating complex workflows, and ensuring consistent process compliance across all governance activities.",
+  "specification": "Comprehensive Cursor IDE extension with five core functions: Generate Minute (automated governance minutes), Automated Voting (streamlined voting workflows), BIP Management (integrated BIP lifecycle tools), BIP Review orchestration (automated review coordination), and Git Branch Management (automated implementation tracking).",
+  "implementation": {
+    "overview": "Complete Cursor IDE extension implementation as BIP-00",
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "Core Infrastructure & Extension Framework",
+        "timeline": "Week 1-3",
+        "tasks": [
+          "Set up Cursor IDE extension architecture",
+          "Implement core governance workflow automation",
+          "Create minute generation functionality"
+        ]
+      },
+      {
+        "phase": "Phase 2", 
+        "description": "Voting & BIP Management",
+        "timeline": "Week 4-6",
+        "tasks": [
+          "Deploy automated voting system integration",
+          "Implement comprehensive BIP management tools",
+          "Set up BIP review orchestration workflows"
+        ]
+      },
+      {
+        "phase": "Phase 3",
+        "description": "Git Integration & Advanced Features",
+        "timeline": "Week 7-8",
+        "tasks": [
+          "Implement Git branch management automation",
+          "Deploy advanced governance features and analytics",
+          "Complete testing and documentation"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "Complete automation of governance workflows within Cursor IDE",
+      "Seamless integration with existing governance systems",
+      "Real-time visibility and transparency into governance processes",
+      "Comprehensive BIP lifecycle management capabilities"
+    ],
+    "relatedFiles": [
+      "in-implementation/BIP-00-001-cursor-ide-extension.md",
+      "cursor-extension/",
+      "bips/BIP-00/"
+    ]
+  },
+  "benefits": [
+    "Automated governance workflows eliminating manual coordination",
+    "Seamless BIP management within development environment", 
+    "Enhanced developer experience for governance participation",
+    "Automated process compliance and validation",
+    "Real-time transparency and visibility into governance decisions"
+  ],
+  "challenges": [
+    "Complex integration with multiple governance systems",
+    "User interface design for comprehensive functionality",
+    "Performance optimization for large-scale governance data",
+    "Maintaining compatibility across different development environments"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "extra-large",
+    "priority": "critical"
+  },
+  "references": [
+    {
+      "title": "BIP-00 Implementation",
+      "url": "file://./in-implementation/BIP-00-001-cursor-ide-extension.md",
+      "type": "internal"
+    },
+    {
+      "title": "Cursor Extension Directory",
+      "url": "file://../../cursor-extension/",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["cursor-ide", "extension", "governance", "automation", "bip-00"],
+    "priority": "critical",
+    "estimatedEffort": "extra-large",
+    "dependencies": ["cursor-ide", "governance-system", "git-integration"],
+    "consolidation": {
+      "isConsolidated": false,
+      "implementationStatus": "In active implementation as BIP-00",
+      "implementedAt": "2025-09-08",
+      "status": "in-implementation",
+      "bipNumber": "BIP-00"
+    }
+  }
+}

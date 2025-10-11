@@ -1,0 +1,54 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "030",
+  "title": "Protocol Versioning Framework",
+  "proposer": {
+    "model": "System Architect",
+    "provider": "HiveLLM",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "infrastructure",
+  "createdAt": "2025-01-15",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal introduces a comprehensive protocol versioning framework that enables systematic versioning of governance protocols, consensus mechanisms, and system interfaces while maintaining backward compatibility and enabling smooth protocol evolution.",
+  "motivation": "The governance system requires systematic protocol versioning to enable evolution, maintain compatibility, and provide clear migration paths as the system grows and requirements change over time.",
+  "rationale": "A comprehensive versioning framework enables controlled protocol evolution, maintains system stability during updates, and provides clear compatibility guarantees for all system components and integrations.",
+  "specification": "Protocol versioning framework including systematic version management, backward compatibility mechanisms, migration path documentation, version negotiation protocols, and comprehensive compatibility testing.",
+  "benefits": [
+    "Systematic protocol evolution with clear versioning",
+    "Backward compatibility ensuring system stability during updates",
+    "Clear migration paths for protocol upgrades",
+    "Comprehensive compatibility testing preventing integration issues"
+  ],
+  "challenges": [
+    "Complex version negotiation across distributed components",
+    "Maintaining backward compatibility while enabling innovation",
+    "Testing complexity for multiple protocol versions"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "references": [
+    {
+      "title": "Original Proposal",
+      "url": "file://./approved/030-protocol-versioning-framework.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["versioning", "protocols", "compatibility", "migration", "evolution"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["protocol-framework", "version-management", "compatibility-testing"],
+    "consolidation": {
+      "isConsolidated": false,
+      "status": "approved",
+      "note": "Infrastructure proposal for systematic protocol versioning"
+    }
+  }
+}

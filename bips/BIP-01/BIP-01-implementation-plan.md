@@ -53,7 +53,7 @@ After pushing, create a PR on GitHub/GitLab with:
 - [x] Create BIP template and validation scripts
 - [x] Implement implementation-tracking chain structure  
 - [x] Establish implementation-tracking data model and validation
-- [x] **TypeScript Implementation**: Complete `@cmmv-hive/bip-system` package
+- [x] **TypeScript Implementation**: Complete `@hivellm/bip-system` package
 - [x] **Chain Generator**: CLI tool for blockchain generation (`bip-generate-chain`)
 - [x] **Proposal Integration**: Direct linkage between proposals and BIPs
 - [x] **Hash Validation**: SHA-256 deterministic hashing system
@@ -137,7 +137,7 @@ The following components exist in the repository but are not part of the BIP-01 
 ## Current Status: ✅ **IMPLEMENTATION COMPLETE**
 
 ### What's Been Delivered
-1. **Complete TypeScript Implementation**: Full `@cmmv-hive/bip-system` package
+1. **Complete TypeScript Implementation**: Full `@hivellm/bip-system` package
 2. **Working Blockchain**: Real implementation chains for BIP-00, BIP-01, BIP-02
 3. **CLI Tools**: `bip-create`, `bip-validate`, `bip-generate-chain`
 4. **Comprehensive Testing**: 24 unit tests with 100% pass rate

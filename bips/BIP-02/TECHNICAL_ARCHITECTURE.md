@@ -2,7 +2,7 @@
 
 ## Architecture Overview
 
-This document defines the technical architecture for the comprehensive TypeScript development ecosystem outlined in BIP-02. The architecture supports a unified, modern development foundation for CMMV-Hive with focus on type safety, performance, security, and maintainability.
+This document defines the technical architecture for the comprehensive TypeScript development ecosystem outlined in BIP-02. The architecture supports a unified, modern development foundation for HiveLLM with focus on type safety, performance, security, and maintainability.
 
 ## System Architecture
 
@@ -10,7 +10,7 @@ This document defines the technical architecture for the comprehensive TypeScrip
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    CMMV-Hive TypeScript Ecosystem          │
+│                    HiveLLM TypeScript Ecosystem          │
 ├─────────────────────────────────────────────────────────────┤
 │  Applications Layer                                         │
 │  ┌─────────────────┐ ┌─────────────────┐ ┌──────────────┐  │
@@ -61,7 +61,7 @@ This document defines the technical architecture for the comprehensive TypeScrip
 ### Directory Layout
 
 ```
-cmmv-hive/
+HiveLLM/
 ├── apps/                          # Application packages
 │   ├── cursor-extension/          # Main Cursor IDE extension
 │   │   ├── src/
@@ -335,16 +335,16 @@ export async function activate(context: vscode.ExtensionContext) {
   
   // Register commands
   const commands = [
-    vscode.commands.registerCommand('cmmv-hive.createProposal', createProposal),
-    vscode.commands.registerCommand('cmmv-hive.submitVote', submitVote),
-    vscode.commands.registerCommand('cmmv-hive.generateMinutes', generateMinutes),
-    vscode.commands.registerCommand('cmmv-hive.viewResults', viewResults),
+    vscode.commands.registerCommand('HiveLLM.createProposal', createProposal),
+    vscode.commands.registerCommand('HiveLLM.submitVote', submitVote),
+    vscode.commands.registerCommand('HiveLLM.generateMinutes', generateMinutes),
+    vscode.commands.registerCommand('HiveLLM.viewResults', viewResults),
   ];
   
   // Register providers
   const providers = [
-    vscode.window.registerTreeDataProvider('cmmv-hive-proposals', governanceProvider),
-    vscode.workspace.registerFileSystemProvider('cmmv-hive', governanceProvider),
+    vscode.window.registerTreeDataProvider('HiveLLM-proposals', governanceProvider),
+    vscode.workspace.registerFileSystemProvider('HiveLLM', governanceProvider),
   ];
   
   // Register disposables
@@ -535,11 +535,11 @@ export { app };
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@cmmv-hive/shared-types": ["./packages/shared-types/src"],
-      "@cmmv-hive/crypto-utils": ["./packages/crypto-utils/src"],
-      "@cmmv-hive/governance-core": ["./packages/governance-core/src"],
-      "@cmmv-hive/ui-components": ["./packages/ui-components/src"],
-      "@cmmv-hive/testing-utils": ["./packages/testing-utils/src"]
+      "@HiveLLM/shared-types": ["./packages/shared-types/src"],
+      "@HiveLLM/crypto-utils": ["./packages/crypto-utils/src"],
+      "@HiveLLM/governance-core": ["./packages/governance-core/src"],
+      "@HiveLLM/ui-components": ["./packages/ui-components/src"],
+      "@HiveLLM/testing-utils": ["./packages/testing-utils/src"]
     }
   },
   "include": ["packages/**/*", "apps/**/*"],
@@ -583,11 +583,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@cmmv-hive/shared-types': resolve(__dirname, './packages/shared-types/src'),
-      '@cmmv-hive/crypto-utils': resolve(__dirname, './packages/crypto-utils/src'),
-      '@cmmv-hive/governance-core': resolve(__dirname, './packages/governance-core/src'),
-      '@cmmv-hive/ui-components': resolve(__dirname, './packages/ui-components/src'),
-      '@cmmv-hive/testing-utils': resolve(__dirname, './packages/testing-utils/src')
+      '@HiveLLM/shared-types': resolve(__dirname, './packages/shared-types/src'),
+      '@HiveLLM/crypto-utils': resolve(__dirname, './packages/crypto-utils/src'),
+      '@HiveLLM/governance-core': resolve(__dirname, './packages/governance-core/src'),
+      '@HiveLLM/ui-components': resolve(__dirname, './packages/ui-components/src'),
+      '@HiveLLM/testing-utils': resolve(__dirname, './packages/testing-utils/src')
     }
   }
 });

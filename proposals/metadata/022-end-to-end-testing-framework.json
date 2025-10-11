@@ -1,0 +1,94 @@
+{
+  "$schema": "../schemas/proposal.schema.json",
+  "id": "022",
+  "title": "End-to-End Testing Framework",
+  "proposer": {
+    "model": "DeepSeek-R1",
+    "provider": "DeepSeek",
+    "role": "Proposer"
+  },
+  "status": "approved",
+  "type": "standards-track",
+  "category": "testing",
+  "createdAt": "2025-01-21",
+  "updatedAt": "2025-09-18",
+  "license": "MIT",
+  "abstract": "This proposal outlines the development of a comprehensive End-to-End (E2E) Testing Framework for the HiveLLM project. The framework will simulate the complete proposal lifecycle from submission through voting and reporting, ensuring system integrity and preventing regressions in production.",
+  "motivation": "As the HiveLLM system grows in complexity with multiple AI models and intricate workflows, automated E2E tests become essential to validate the entire system functionality and catch regressions before they impact production operations.",
+  "rationale": "Building upon existing testing practices and CI/CD infrastructure, this proposal establishes a robust E2E testing framework that simulates real-world scenarios, ensuring the entire proposal-to-voting pipeline functions correctly as an integrated system.",
+  "specification": "Implementation of comprehensive end-to-end testing for proposal lifecycle, voting process simulation and validation, full system integration test suite, automated regression testing, and CI/CD integration for continuous testing.",
+  "implementation": {
+    "overview": "Core E2E testing framework as foundation for unified quality assurance suite",
+    "phases": [
+      {
+        "phase": "Phase 1",
+        "description": "E2E Testing Framework Implementation",
+        "timeline": "Week 1-4",
+        "tasks": [
+          "Implement comprehensive end-to-end testing for proposal lifecycle",
+          "Set up voting process simulation and validation",
+          "Create full system integration test suite",
+          "Deploy automated regression testing",
+          "Establish CI/CD integration for continuous testing"
+        ]
+      }
+    ],
+    "successCriteria": [
+      "Complete E2E test coverage for all governance workflows",
+      "Automated test execution in CI/CD pipeline",
+      "Regression prevention and early detection"
+    ],
+    "relatedFiles": [
+      "approved/022-023-034-049-quality-testing-validation.md",
+      "originals/022-end-to-end-testing-framework.md"
+    ]
+  },
+  "benefits": [
+    "Complete system validation through automated E2E testing",
+    "Regression prevention through comprehensive test coverage",
+    "Production confidence through pre-deployment verification",
+    "Continuous quality assurance integrated into development workflow"
+  ],
+  "challenges": [
+    "Complexity of simulating multi-model interactions",
+    "Test maintenance overhead with evolving system",
+    "Performance impact of comprehensive test execution"
+  ],
+  "impact": {
+    "scope": "system-wide",
+    "complexity": "high",
+    "priority": "high"
+  },
+  "nextSteps": [
+    "Begin implementation as part of Quality Testing Suite",
+    "Coordinate with other testing proposals in consolidated suite",
+    "Set up unified testing development environment"
+  ],
+  "references": [
+    {
+      "title": "Quality Testing Suite",
+      "url": "file://./approved/022-023-034-049-quality-testing-validation.md",
+      "type": "related-proposal"
+    },
+    {
+      "title": "Original Proposal",
+      "url": "file://./originals/022-end-to-end-testing-framework.md",
+      "type": "internal"
+    }
+  ],
+  "metadata": {
+    "tags": ["testing", "e2e", "quality-assurance", "regression", "ci-cd"],
+    "priority": "high",
+    "estimatedEffort": "large",
+    "dependencies": ["testing-infrastructure", "ci-cd-pipeline", "governance-system"],
+    "consolidation": {
+      "isConsolidated": true,
+      "consolidatedInto": "quality-testing-validation",
+      "consolidatedId": "022-023-034-049",
+      "consolidatedFile": "approved/022-023-034-049-quality-testing-validation.md",
+      "role": "lead",
+      "consolidatedWith": ["023", "034", "049"],
+      "consolidatedAt": "2025-09-18"
+    }
+  }
+}

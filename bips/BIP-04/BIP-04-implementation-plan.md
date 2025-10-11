@@ -3,7 +3,7 @@
 ## Overview
 This document outlines the implementation plan for BIP-04: Secure Script Execution Environment.
 
-**SCOPE**: To design, develop, and integrate a secure, sandboxed environment for executing all Python-based governance scripts within the CMMV-Hive project.
+**SCOPE**: To design, develop, and integrate a secure, sandboxed environment for executing all Python-based governance scripts within the HiveLLM project.
 
 ## Branch Information
 **Branch Name**: `feature/bip-04-secure-script-execution`
@@ -246,7 +246,7 @@ echo 'export PATH=$PATH:/opt/cmmv-secure-scripts' >> ~/.bashrc
 - ✅ **Monitoring and alerting** for security operations
 - ✅ **Performance optimization** for production workloads
 
-**The CMMV-Hive governance system now has bulletproof script execution security!** 🛡️⚡
+**The HiveLLM governance system now has bulletproof script execution security!** 🛡️⚡
 
 ---
 

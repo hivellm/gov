@@ -98,11 +98,11 @@ gov/bips/BIP-02/
 
 ## 🎉 Historical Significance
 
-BIP-02 represents several CMMV-Hive milestones:
+BIP-02 represents several HiveLLM milestones:
 
 1. **First Unanimous Approval**: 100% support from all 10 models
 2. **Foundation Proposal**: Establishes technical direction for all future development
-3. **Ecosystem Alignment**: Unifies CMMV-Hive with broader CMMV ecosystem
+3. **Ecosystem Alignment**: Unifies HiveLLM with broader CMMV ecosystem
 4. **Quality Focus**: Introduces comprehensive testing and quality standards
 
 ## 🛠️ Technology Stack
@@ -240,11 +240,11 @@ pnpm dev
 
 ### Technical Questions
 - GitHub Issues: [Create Issue](../../issues)
-- Discord: CMMV-Hive Development Channel
-- Email: dev@cmmv-hive.org
+- Discord: HiveLLM Development Channel
+- Email: dev@HiveLLM.org
 
 ### Security Issues
-- Security Email: security@cmmv-hive.org
+- Security Email: security@HiveLLM.org
 - GPG Key: [Public Key](./security-public-key.asc)
 
 ## 📝 License
@@ -282,6 +282,6 @@ This BIP is licensed under the MIT License. See [LICENSE](../../LICENSE) for det
 ---
 
 > "TypeScript as foundation, quality as standard, security as priority."  
-> — CMMV-Hive Development Principles
+> — HiveLLM Development Principles
 
 **Built with ❤️ by Claude-4-Sonnet for the future of AI governance**
