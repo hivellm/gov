@@ -80,6 +80,9 @@ manuals/
 ├── haskell/
 │   ├── AI_INTEGRATION_MANUAL_HASKELL.md
 │   └── BEST_PRACTICES.md
+├── sql/
+│   ├── AI_INTEGRATION_MANUAL_SQL.md
+│   └── BEST_PRACTICES.md
 ├── c/
 │   ├── AI_INTEGRATION_MANUAL_C.md
 │   └── BEST_PRACTICES.md
@@ -103,6 +106,9 @@ manuals/
 │   └── BEST_PRACTICES.md
 ├── elixir/
 │   ├── AI_INTEGRATION_MANUAL_ELIXIR.md
+│   └── BEST_PRACTICES.md
+├── erlang/
+│   ├── AI_INTEGRATION_MANUAL_ERLANG.md
 │   └── BEST_PRACTICES.md
 └── [language]/
     ├── AI_INTEGRATION_MANUAL_[LANGUAGE].md
@@ -435,6 +441,19 @@ Language-specific manuals:
   - Monad transformers and effect systems
   - Haddock documentation generation
   - Hackage publishing
+- **SQL**: `sql/AI_INTEGRATION_MANUAL_SQL.md` ✅ Complete
+  - PostgreSQL 14+, MySQL 8.0+, SQL Server 2019+, SQLite 3.35+
+  - Database schema design and normalization
+  - Flyway, Liquibase, Sqitch migration tools
+  - pgTAP testing framework (PostgreSQL)
+  - Stored procedures, functions, triggers
+  - Query optimization with EXPLAIN ANALYZE
+  - Index strategies (B-tree, partial, covering)
+  - Transaction management and isolation levels
+  - Security (parameterized queries, row-level security)
+  - Soft delete and audit trail patterns
+  - ER diagram generation (dbdiagram.io, SchemaSpy)
+  - Performance monitoring (pg_stat_statements)
 - **C**: `c/AI_INTEGRATION_MANUAL_C.md` ✅ Complete
   - C11/C17/C23 standards
   - CMake and Make build systems
@@ -498,6 +517,15 @@ Language-specific manuals:
   - JSON serialization with code generation
   - Async/await, streams, and futures
   - pub.dev publishing and pana compliance
+- **Common Lisp**: `lisp/AI_INTEGRATION_MANUAL_LISP.md` ✅ Complete
+  - SBCL 2.3+ (Steel Bank Common Lisp)
+  - Quicklisp package manager and ASDF build system
+  - FiveAM and Prove testing frameworks
+  - CLOS (Common Lisp Object System)
+  - Powerful macro system and metaprogramming
+  - Condition system with restarts
+  - Interactive REPL-driven development
+  - SLIME/SLY Emacs integration
 - **C++**: `cpp/AI_INTEGRATION_MANUAL_CPP.md` ✅ Complete
   - C++17/20/23 standards (modern C++)
   - CMake build system with Ninja
@@ -597,6 +625,7 @@ To contribute improvements:
 - R language manual with CRAN/Bioconductor guidelines
 - Swift language manual with iOS/macOS development and App Store guidelines
 - Dart language manual with Flutter and pub.dev publishing
+- Common Lisp manual with SBCL, macros, CLOS, and condition system
 
 **Improved**:
 - More detailed phase breakdowns with time estimates
