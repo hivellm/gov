@@ -1,0 +1,708 @@
+# CI/CD Workflow Template for GitHub Actions
+# Copy this template and adapt for your specific language and project
+
+name: CI/CD Pipeline
+
+# Trigger Configuration
+on:
+  push:
+    branches: 
+      - main
+      - develop
+      - 'feature/**'
+      - 'fix/**'
+      - 'hotfix/**'
+  pull_request:
+    branches: 
+      - main
+      - develop
+  schedule:
+    # Run nightly builds
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+# Environment Variables (Project-wide)
+env:
+  NODE_VERSION: '20.x'          # Adjust for your language
+  # PYTHON_VERSION: '3.12'
+  # RUST_VERSION: 'stable'
+  # JAVA_VERSION: '17'
+  
+  CACHE_KEY_PREFIX: 'v1'        # Increment to invalidate caches
+  
+  # Task Queue Integration
+  TASK_QUEUE_URL: ${{ secrets.TASK_QUEUE_URL }}
+  TASK_QUEUE_TOKEN: ${{ secrets.TASK_QUEUE_TOKEN }}
+  
+  # Vectorizer Integration
+  VECTORIZER_URL: ${{ secrets.VECTORIZER_URL }}
+  VECTORIZER_TOKEN: ${{ secrets.VECTORIZER_TOKEN }}
+  
+  # Metrics & Monitoring
+  METRICS_URL: ${{ secrets.METRICS_URL }}
+  METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+
+# Concurrency Control
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Job 1: Code Quality Checks
+  quality-check:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for better analysis
+      
+      # Setup language environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      # Alternative setups for other languages:
+      # - name: Setup Python
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version: ${{ env.PYTHON_VERSION }}
+      #     cache: 'pip'
+      
+      # - name: Setup Rust
+      #   uses: actions-rust-lang/setup-rust-toolchain@v1
+      #   with:
+      #     toolchain: ${{ env.RUST_VERSION }}
+      
+      # - name: Setup Java
+      #   uses: actions/setup-java@v4
+      #   with:
+      #     java-version: ${{ env.JAVA_VERSION }}
+      #     distribution: 'temurin'
+      #     cache: 'maven'
+      
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci
+        # Python: pip install -r requirements.txt
+        # Rust: cargo fetch
+        # Java: mvn dependency:resolve
+      
+      # Run linter
+      - name: Run linter
+        run: npm run lint
+        # Python: ruff check . || pylint src/
+        # Rust: cargo clippy -- -D warnings
+        # Java: mvn checkstyle:check
+      
+      # Check code formatting
+      - name: Check formatting
+        run: npm run format:check
+        # Python: black --check .
+        # Rust: cargo fmt -- --check
+        # Java: mvn formatter:validate
+      
+      # Type checking (if applicable)
+      - name: Type checking
+        run: npm run type-check
+        # Python: mypy src/
+        # TypeScript only
+      
+      # Analyze code complexity
+      - name: Code complexity analysis
+        run: |
+          npx complexity-report src/
+        continue-on-error: true
+      
+      # Upload linter results
+      - name: Upload lint results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lint-results
+          path: lint-report.json
+          retention-days: 7
+  
+  # Job 2: Unit Tests
+  unit-tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    needs: quality-check
+    timeout-minutes: 20
+    
+    strategy:
+      matrix:
+        # Test across multiple versions
+        node-version: ['18.x', '20.x', '22.x']
+        # Python: ['3.11', '3.12']
+        # Rust: ['stable', 'beta']
+        # Java: ['17', '21']
+        
+      fail-fast: false
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run unit tests
+        run: npm run test:unit -- --coverage
+        # Python: pytest tests/unit/ --cov=src --cov-report=xml
+        # Rust: cargo test --lib
+        # Java: mvn test
+      
+      - name: Generate coverage report
+        run: npm run coverage
+      
+      - name: Check coverage threshold
+        run: |
+          COVERAGE=$(cat coverage/coverage-summary.json | jq '.total.lines.pct')
+          echo "Coverage: $COVERAGE%"
+          if (( $(echo "$COVERAGE < 90" | bc -l) )); then
+            echo "❌ Coverage below 90%: $COVERAGE%"
+            exit 1
+          fi
+          echo "✅ Coverage meets threshold: $COVERAGE%"
+      
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: ./coverage/coverage-final.json
+          flags: unittests
+          name: codecov-${{ matrix.node-version }}
+          token: ${{ secrets.CODECOV_TOKEN }}
+        continue-on-error: true
+      
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.node-version }}
+          path: test-results/
+          retention-days: 7
+  
+  # Job 3: Integration Tests
+  integration-tests:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    needs: unit-tests
+    timeout-minutes: 30
+    
+    services:
+      # Setup required services
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_db
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+      
+      redis:
+        image: redis:7
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 6379:6379
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run database migrations
+        run: npm run db:migrate
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
+          REDIS_URL: redis://localhost:6379
+      
+      - name: Seed test data
+        run: npm run db:seed:test
+      
+      - name: Run integration tests
+        run: npm run test:integration
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
+          REDIS_URL: redis://localhost:6379
+          NODE_ENV: test
+      
+      - name: Upload integration test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: integration-test-results
+          path: test-results/integration/
+          retention-days: 7
+  
+  # Job 4: E2E Tests
+  e2e-tests:
+    name: E2E Tests
+    runs-on: ubuntu-latest
+    needs: integration-tests
+    timeout-minutes: 30
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Playwright (if applicable)
+        run: npx playwright install --with-deps
+      
+      - name: Build application
+        run: npm run build
+      
+      - name: Start application
+        run: |
+          npm run start &
+          npx wait-on http://localhost:3000
+      
+      - name: Run E2E tests
+        run: npm run test:e2e
+      
+      - name: Upload E2E artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-artifacts
+          path: |
+            test-results/e2e/
+            playwright-report/
+          retention-days: 7
+  
+  # Job 5: Security Scan
+  security-scan:
+    name: Security Analysis
+    runs-on: ubuntu-latest
+    needs: quality-check
+    timeout-minutes: 20
+    
+    permissions:
+      security-events: write
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      # Dependency vulnerability scan
+      - name: Run npm audit
+        run: npm audit --audit-level=moderate
+        continue-on-error: true
+        # Python: pip-audit
+        # Rust: cargo audit
+        # Java: mvn dependency-check:check
+      
+      # Dependency review (PRs only)
+      - name: Dependency Review
+        if: github.event_name == 'pull_request'
+        uses: actions/dependency-review-action@v4
+      
+      # SAST with CodeQL
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript-typescript
+          # python, rust, java, csharp, etc.
+      
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+      
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+      
+      # Additional security scanning
+      - name: Run Snyk security scan
+        uses: snyk/actions/node@master
+        continue-on-error: true
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      
+      # Secrets scanning
+      - name: Gitleaks scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+  # Job 6: Performance Tests
+  performance-tests:
+    name: Performance Tests
+    runs-on: ubuntu-latest
+    needs: integration-tests
+    timeout-minutes: 30
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build application
+        run: npm run build
+      
+      - name: Run performance benchmarks
+        run: npm run benchmark
+      
+      - name: Run load tests
+        run: |
+          npm run start &
+          npx wait-on http://localhost:3000
+          npm run test:load
+      
+      - name: Compare performance metrics
+        run: |
+          node scripts/compare-performance.js \
+            --baseline performance-baseline.json \
+            --current performance-results.json
+      
+      - name: Upload performance results
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-results
+          path: performance-results.json
+          retention-days: 30
+  
+  # Job 7: Build
+  build:
+    name: Build Application
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration-tests, security-scan]
+    timeout-minutes: 15
+    
+    strategy:
+      matrix:
+        platform: [linux, windows, macos]
+        # Adjust for your target platforms
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build application
+        run: npm run build
+        env:
+          NODE_ENV: production
+      
+      - name: Verify build artifacts
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "❌ Build directory not found"
+            exit 1
+          fi
+          echo "✅ Build successful"
+      
+      - name: Package application
+        run: npm pack
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts-${{ matrix.platform }}
+          path: |
+            dist/
+            *.tgz
+          retention-days: 30
+  
+  # Job 8: Update Task Queue
+  update-task-queue:
+    name: Update Task Queue
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: always()
+    timeout-minutes: 5
+    
+    steps:
+      - name: Extract task ID from commit
+        id: extract-task
+        run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          TASK_ID=$(echo "$COMMIT_MSG" | grep -oP 'TASK-\K\d+' || echo "")
+          echo "task_id=TASK-$TASK_ID" >> $GITHUB_OUTPUT
+          echo "Found task ID: TASK-$TASK_ID"
+      
+      - name: Update task status
+        if: steps.extract-task.outputs.task_id != 'TASK-'
+        run: |
+          STATUS="tests_passed"
+          if [ "${{ needs.build.result }}" != "success" ]; then
+            STATUS="tests_failed"
+          fi
+          
+          curl -X POST "${{ env.TASK_QUEUE_URL }}/api/tasks/${{ steps.extract-task.outputs.task_id }}/status" \
+            -H "Authorization: Bearer ${{ env.TASK_QUEUE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"status\": \"$STATUS\",
+              \"commit\": \"${{ github.sha }}\",
+              \"workflow_run\": \"${{ github.run_id }}\",
+              \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
+            }"
+  
+  # Job 9: Record Metrics
+  record-metrics:
+    name: Record Metrics
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: always()
+    timeout-minutes: 5
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Download coverage artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: test-results-*
+          path: artifacts/
+        continue-on-error: true
+      
+      - name: Calculate metrics
+        id: metrics
+        run: |
+          # Extract coverage
+          COVERAGE=$(cat artifacts/test-results-*/coverage-summary.json | jq '.total.lines.pct' | head -1 || echo "0")
+          
+          # Count tests
+          TOTAL_TESTS=$(cat artifacts/test-results-*/results.json | jq '.numTotalTests' | head -1 || echo "0")
+          PASSED_TESTS=$(cat artifacts/test-results-*/results.json | jq '.numPassedTests' | head -1 || echo "0")
+          
+          echo "coverage=$COVERAGE" >> $GITHUB_OUTPUT
+          echo "total_tests=$TOTAL_TESTS" >> $GITHUB_OUTPUT
+          echo "passed_tests=$PASSED_TESTS" >> $GITHUB_OUTPUT
+      
+      - name: Send metrics to monitoring
+        run: |
+          curl -X POST "${{ env.METRICS_URL }}/api/metrics" \
+            -H "Authorization: Bearer ${{ env.METRICS_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"project\": \"${{ github.repository }}\",
+              \"commit\": \"${{ github.sha }}\",
+              \"branch\": \"${{ github.ref_name }}\",
+              \"workflow_run\": \"${{ github.run_id }}\",
+              \"metrics\": {
+                \"coverage_percent\": ${{ steps.metrics.outputs.coverage }},
+                \"total_tests\": ${{ steps.metrics.outputs.total_tests }},
+                \"passed_tests\": ${{ steps.metrics.outputs.passed_tests }},
+                \"build_success\": ${{ needs.build.result == 'success' }},
+                \"duration_seconds\": ${{ github.event.workflow_run.updated_at - github.event.workflow_run.created_at }}
+              },
+              \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
+            }"
+        continue-on-error: true
+  
+  # Job 10: AI Review (PRs only)
+  ai-review:
+    name: AI Code Review
+    runs-on: ubuntu-latest
+    needs: [quality-check, security-scan]
+    if: github.event_name == 'pull_request'
+    timeout-minutes: 10
+    
+    permissions:
+      pull-requests: write
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Get changed files
+        id: changed-files
+        run: |
+          git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }} > changed_files.txt
+          echo "Changed files:"
+          cat changed_files.txt
+      
+      - name: Trigger AI review
+        run: |
+          curl -X POST "${{ secrets.AI_REVIEW_ENDPOINT }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"pr_number\": \"${{ github.event.pull_request.number }}\",
+              \"repository\": \"${{ github.repository }}\",
+              \"commit\": \"${{ github.sha }}\",
+              \"changed_files\": $(cat changed_files.txt | jq -R -s -c 'split(\"\n\") | map(select(length > 0))'),
+              \"author\": \"${{ github.event.pull_request.user.login }}\",
+              \"title\": \"${{ github.event.pull_request.title }}\",
+              \"description\": \"${{ github.event.pull_request.body }}\"
+            }"
+  
+  # Job 11: Deploy (main/develop only)
+  deploy:
+    name: Deploy Application
+    runs-on: ubuntu-latest
+    needs: [build, e2e-tests, performance-tests]
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+    timeout-minutes: 20
+    
+    environment:
+      name: ${{ github.ref == 'refs/heads/main' && 'production' || 'staging' }}
+      url: ${{ steps.deploy.outputs.url }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts-linux
+          path: dist/
+      
+      - name: Deploy to environment
+        id: deploy
+        run: |
+          # Your deployment logic here
+          echo "url=https://example.com" >> $GITHUB_OUTPUT
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      
+      - name: Update Vectorizer
+        run: |
+          npx vectorizer-cli upload \
+            --collection "${{ github.event.repository.name }}-docs" \
+            --path ./docs \
+            --token "${{ env.VECTORIZER_TOKEN }}"
+        continue-on-error: true
+      
+      - name: Notify deployment
+        run: |
+          curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"text\": \"✅ Deployment successful\",
+              \"blocks\": [
+                {
+                  \"type\": \"section\",
+                  \"text\": {
+                    \"type\": \"mrkdwn\",
+                    \"text\": \"*Deployment Complete*\n*Environment:* ${{ github.ref == 'refs/heads/main' && 'Production' || 'Staging' }}\n*Version:* ${{ github.sha }}\n*URL:* ${{ steps.deploy.outputs.url }}\"
+                  }
+                }
+              ]
+            }"
+        continue-on-error: true
+  
+  # Job 12: Release (tags only)
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: startsWith(github.ref, 'refs/tags/v')
+    timeout-minutes: 15
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: build-artifacts-*
+          path: artifacts/
+      
+      - name: Extract version from tag
+        id: get-version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+      
+      - name: Generate release notes
+        id: release-notes
+        run: |
+          # Extract CHANGELOG for this version
+          sed -n "/## \[${{ steps.get-version.outputs.version }}\]/,/## \[/p" CHANGELOG.md | \
+            sed '$d' > release-notes.md
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release v${{ steps.get-version.outputs.version }}
+          body_path: release-notes.md
+          files: |
+            artifacts/**/*
+          draft: false
+          prerelease: ${{ contains(steps.get-version.outputs.version, '-') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Publish package
+        run: |
+          # npm publish
+          # twine upload dist/*
+          # cargo publish
+          # mvn deploy
+          echo "Publishing package..."
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
