@@ -74,6 +74,12 @@ manuals/
 ├── zig/
 │   ├── AI_INTEGRATION_MANUAL_ZIG.md
 │   └── BEST_PRACTICES.md
+├── javascript/
+│   ├── AI_INTEGRATION_MANUAL_JAVASCRIPT.md
+│   └── BEST_PRACTICES.md
+├── haskell/
+│   ├── AI_INTEGRATION_MANUAL_HASKELL.md
+│   └── BEST_PRACTICES.md
 ├── c/
 │   ├── AI_INTEGRATION_MANUAL_C.md
 │   └── BEST_PRACTICES.md
@@ -86,11 +92,17 @@ manuals/
 ├── ruby/
 │   ├── AI_INTEGRATION_MANUAL_RUBY.md
 │   └── BEST_PRACTICES.md
+├── scala/
+│   ├── AI_INTEGRATION_MANUAL_SCALA.md
+│   └── BEST_PRACTICES.md
 ├── lua/
 │   ├── AI_INTEGRATION_MANUAL_LUA.md
 │   └── BEST_PRACTICES.md
 ├── julia/
 │   ├── AI_INTEGRATION_MANUAL_JULIA.md
+│   └── BEST_PRACTICES.md
+├── elixir/
+│   ├── AI_INTEGRATION_MANUAL_ELIXIR.md
 │   └── BEST_PRACTICES.md
 └── [language]/
     ├── AI_INTEGRATION_MANUAL_[LANGUAGE].md
@@ -399,6 +411,30 @@ Language-specific manuals:
   - No hidden control flow or allocations
   - Error handling with error unions
   - defer and errdefer for resource cleanup
+- **JavaScript**: `javascript/AI_INTEGRATION_MANUAL_JAVASCRIPT.md` ✅ Complete
+  - JavaScript ES2015+/ES6+ (Node.js and browser)
+  - npm/pnpm/yarn package management
+  - nvm version management
+  - Express.js backend framework
+  - Jest testing framework
+  - ESLint and Prettier code quality
+  - Modern ES6+ features (arrow functions, async/await, destructuring)
+  - JSDoc documentation
+  - npm package publishing
+  - Note: Prefer TypeScript manual for projects requiring type safety
+- **Haskell**: `haskell/AI_INTEGRATION_MANUAL_HASKELL.md` ✅ Complete
+  - Haskell GHC 9.0+
+  - Stack and Cabal build systems
+  - GHCup toolchain management
+  - Servant web framework
+  - HSpec and QuickCheck testing
+  - HLint, Ormolu, Stan quality tools
+  - Pure functional programming
+  - Strong static typing with type inference
+  - Algebraic data types and type classes
+  - Monad transformers and effect systems
+  - Haddock documentation generation
+  - Hackage publishing
 - **C**: `c/AI_INTEGRATION_MANUAL_C.md` ✅ Complete
   - C11/C17/C23 standards
   - CMake and Make build systems
@@ -426,6 +462,15 @@ Language-specific manuals:
   - Documenter.jl documentation generation
   - Performance optimization and profiling
   - Parallel and distributed computing
+- **Elixir**: `elixir/AI_INTEGRATION_MANUAL_ELIXIR.md` ✅ Complete
+  - Elixir 1.16+ / OTP 26+
+  - Mix build tool and Hex package manager
+  - Phoenix Framework for web applications
+  - ExUnit testing with ExCoveralls
+  - Credo and Dialyxir for code quality
+  - ExDoc documentation generation
+  - OTP patterns and supervision trees
+  - Concurrent and distributed systems
 - **R**: `r/AI_INTEGRATION_MANUAL_R.md` ✅ Complete
   - R 4.0+ with devtools ecosystem
   - Package development with usethis, roxygen2, pkgdown
@@ -444,6 +489,15 @@ Language-specific manuals:
   - Modern Swift concurrency (async/await, actors)
   - SwiftUI and UIKit best practices
   - DocC documentation and App Store guidelines
+- **Dart**: `dart/AI_INTEGRATION_MANUAL_DART.md` ✅ Complete
+  - Dart 3.0+ with null safety
+  - Flutter 3.13+ for mobile/web/desktop
+  - pub package manager and build_runner
+  - dart test, mocktail testing framework
+  - dart analyze, very_good_analysis linting
+  - JSON serialization with code generation
+  - Async/await, streams, and futures
+  - pub.dev publishing and pana compliance
 - **C++**: `cpp/AI_INTEGRATION_MANUAL_CPP.md` ✅ Complete
   - C++17/20/23 standards (modern C++)
   - CMake build system with Ninja
@@ -470,6 +524,19 @@ Language-specific manuals:
   - Brakeman security scanning
   - RubyGems publishing
   - Blocks, iterators, and metaprogramming patterns
+- **Scala**: `scala/AI_INTEGRATION_MANUAL_SCALA.md` ✅ Complete
+  - Scala 2.13.x and 3.x support
+  - SBT (Simple Build Tool)
+  - ScalaTest, ScalaCheck property-based testing
+  - Scalafmt formatting and Scalafix linting
+  - ScalaDoc documentation generation
+  - Akka HTTP, Play Framework, Cats Effect, ZIO
+  - Functional programming patterns (Option, Either, Try)
+  - Pattern matching and case classes
+  - For-comprehensions and monadic composition
+  - Type classes and implicits
+  - Tail recursion and lazy evaluation
+  - Maven Central publishing
 
 ## FAQ
 
@@ -529,6 +596,7 @@ To contribute improvements:
 - Escalation protocols
 - R language manual with CRAN/Bioconductor guidelines
 - Swift language manual with iOS/macOS development and App Store guidelines
+- Dart language manual with Flutter and pub.dev publishing
 
 **Improved**:
 - More detailed phase breakdowns with time estimates
