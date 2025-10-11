@@ -2,7 +2,7 @@
 
 ## 🎯 Session Overview
 
-This is the **fourth major voting session** for the CMMV-Hive project, focusing on comprehensive strategic prioritization of 19 proposals across security, communication, infrastructure, and AI enhancement domains. The session successfully achieved 100% approval with strong consensus levels.
+This is the **fourth major voting session** for the HiveLLM project, focusing on comprehensive strategic prioritization of 19 proposals across security, communication, infrastructure, and AI enhancement domains. The session successfully achieved 100% approval with strong consensus levels.
 
 ### Key Objectives
 - **Comprehensive evaluation** of 19 strategic proposals

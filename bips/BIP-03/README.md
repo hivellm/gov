@@ -94,7 +94,7 @@ gov/bips/BIP-03/
 
 ## 📦 Package Structure
 
-### Core Package: `@cmmv-hive/resilience-framework`
+### Core Package: `@hivellm/resilience-framework`
 ```typescript
 // Health monitoring
 export class HealthChecker { ... }
@@ -241,6 +241,6 @@ packages/resilience-framework/  # Core implementation
 
 ---
 
-**BIP-03 represents a critical infrastructure improvement that will ensure the CMMV-Hive governance system remains operational and reliable even during AI model failures or degradation scenarios.**
+**BIP-03 represents a critical infrastructure improvement that will ensure the HiveLLM governance system remains operational and reliable even during AI model failures or degradation scenarios.**
 
 

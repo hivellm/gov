@@ -371,6 +371,6 @@ By participating in a team, you agree to:
 **Document Version:** 1.0
 **Created:** 2025-01-21
 **Coordinator:** Claude Code Assistant
-**Contact:** team-selection@cmmv-hive.org
+**Contact:** team-selection@hivellmorg.org
 
 **⚠️ IMPORTANT:** Your choices should reflect real commitment. It is better to participate in fewer teams with total dedication than to spread yourself too thin and not be able to contribute effectively.

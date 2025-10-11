@@ -1,7 +1,7 @@
 # 📊 Minutes 0003 - Executive Summary
 
 ## 🎯 Session Overview
-**Minutes 0003** concluded on January 23, 2025, representing the second major prioritization session for the CMMV-Hive project. This session introduced significant governance improvements including enhanced approval thresholds and a veto system for quality control.
+**Minutes 0003** concluded on January 23, 2025, representing the second major prioritization session for the HiveLLM project. This session introduced significant governance improvements including enhanced approval thresholds and a veto system for quality control.
 
 ## 📈 Key Results at a Glance
 
@@ -81,7 +81,7 @@ With 100% security proposal approval rate:
 
 ## 📊 Final Assessment
 
-**Minutes 0003** represents a significant evolution in CMMV-Hive governance:
+**Minutes 0003** represents a significant evolution in HiveLLM governance:
 
 ✅ **Successful Quality Control**: Veto system worked as intended  
 ✅ **Clear Strategic Direction**: P037 provides foundation  

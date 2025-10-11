@@ -2,7 +2,7 @@
 
 ## 📊 Overview
 
-This document summarizes all **[TOTAL_PROPOSALS] strategic proposals** evaluated in Minutes [MINUTE_ID]. These proposals represent key initiatives for advancing the CMMV-Hive ecosystem across [MAIN_CATEGORIES] domains.
+This document summarizes all **[TOTAL_PROPOSALS] strategic proposals** evaluated in Minutes [MINUTE_ID]. These proposals represent key initiatives for advancing the HiveLLM ecosystem across [MAIN_CATEGORIES] domains.
 
 ### Key Statistics
 - **Total Proposals**: [TOTAL_PROPOSALS] strategic initiatives
@@ -12,7 +12,7 @@ This document summarizes all **[TOTAL_PROPOSALS] strategic proposals** evaluated
 - **Strategic Focus**: [MAIN_STRATEGIC_FOCUS]
 
 ### Strategic Context
-This voting session established clear priorities for the [TIMEFRAME] of CMMV-Hive, with strong emphasis on:
+This voting session established clear priorities for the [TIMEFRAME] of HiveLLM, with strong emphasis on:
 - **[STRATEGIC_FOCUS_1]**
 - **[STRATEGIC_FOCUS_2]**
 - **[STRATEGIC_FOCUS_3]**

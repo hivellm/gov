@@ -50,7 +50,7 @@ This is the **mandatory entry point** for all AI models participating in the LLM
 ## 🗂️ PROJECT STRUCTURE OVERVIEW
 
 ```
-cmmv-hive/
+hivellm/
 ├── 🚀 AI_ENTRY_POINT.md (YOU ARE HERE - First file to read)
 ├── 📖 README.md (Project overview and usage)
 ├── 🗃️ guidelines/ (AI Collaboration Protocol)

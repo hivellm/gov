@@ -162,7 +162,7 @@ The veto system successfully filtered out:
 
 ## 🏁 Conclusion
 
-Minutes 0003 demonstrates the evolution and maturation of the CMMV-Hive governance system:
+Minutes 0003 demonstrates the evolution and maturation of the HiveLLM governance system:
 
 1. **Successful Implementation** of enhanced approval thresholds
 2. **Effective Veto System** filtering inadequate proposals

@@ -47,8 +47,8 @@ The HiveLLM Governance Extension transforms the Cursor IDE into a comprehensive 
 
 ```json
 {
-  "name": "cmmv-hive-governance",
-  "displayName": "CMMV-Hive Governance",
+  "name": "HiveLLM-governance",
+  "displayName": "HiveLLM Governance",
   "description": "AI Consensus Governance System for Cursor IDE",
   "version": "1.0.0",
   "engines": {
@@ -56,45 +56,45 @@ The HiveLLM Governance Extension transforms the Cursor IDE into a comprehensive 
   },
   "categories": ["Other"],
   "activationEvents": [
-    "onCommand:cmmv-hive.generateMinute",
-    "onCommand:cmmv-hive.startVoting",
-    "onCommand:cmmv-hive.manageBIP",
-    "onCommand:cmmv-hive.reviewBIP",
-    "onCommand:cmmv-hive.manageBranches"
+    "onCommand:HiveLLM.generateMinute",
+    "onCommand:HiveLLM.startVoting",
+    "onCommand:HiveLLM.manageBIP",
+    "onCommand:HiveLLM.reviewBIP",
+    "onCommand:HiveLLM.manageBranches"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "cmmv-hive.generateMinute",
+        "command": "HiveLLM.generateMinute",
         "title": "Generate New Minute",
-        "category": "CMMV-Hive"
+        "category": "HiveLLM"
       },
       {
-        "command": "cmmv-hive.startVoting",
+        "command": "HiveLLM.startVoting",
         "title": "Start Automated Voting",
-        "category": "CMMV-Hive"
+        "category": "HiveLLM"
       },
       {
-        "command": "cmmv-hive.manageBIP",
+        "command": "HiveLLM.manageBIP",
         "title": "Manage BIP",
-        "category": "CMMV-Hive"
+        "category": "HiveLLM"
       },
       {
-        "command": "cmmv-hive.reviewBIP",
+        "command": "HiveLLM.reviewBIP",
         "title": "Review BIP",
-        "category": "CMMV-Hive"
+        "category": "HiveLLM"
       },
       {
-        "command": "cmmv-hive.manageBranches",
+        "command": "HiveLLM.manageBranches",
         "title": "Manage Branches",
-        "category": "CMMV-Hive"
+        "category": "HiveLLM"
       }
     ],
     "menus": {
       "commandPalette": [
         {
-          "command": "cmmv-hive.generateMinute",
+          "command": "HiveLLM.generateMinute",
           "when": "workspaceContains:**/discussion"
         }
       ]
@@ -102,8 +102,8 @@ The HiveLLM Governance Extension transforms the Cursor IDE into a comprehensive 
     "views": {
       "explorer": [
         {
-          "id": "cmmv-hive-governance",
-          "name": "CMMV-Hive Governance",
+          "id": "HiveLLM-governance",
+          "name": "HiveLLM Governance",
           "when": "workspaceContains:**/discussion"
         }
       ]
@@ -190,7 +190,7 @@ export class AIModelService {
     return `
 # Voting Instructions for Minute ${context.minuteId}
 
-You are participating in the CMMV-Hive governance voting process.
+You are participating in the HiveLLM governance voting process.
 
 ## Context Files:
 - Summary: @${context.summaryPath}
@@ -668,4 +668,4 @@ export class ShellExecutorService {
 - Recovery suggestions
 - Progress indicators
 
-This technical architecture provides a robust foundation for implementing the CMMV-Hive Governance Extension with all required functionality while maintaining extensibility and reliability.
+This technical architecture provides a robust foundation for implementing the HiveLLM Governance Extension with all required functionality while maintaining extensibility and reliability.

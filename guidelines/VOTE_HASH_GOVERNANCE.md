@@ -4,7 +4,7 @@
 
 ### 1. Hash Generation Standard
 
-**ALL MODELS MUST** use the standardized `VoteHashService.generateVoteHash()` method from `@cmmv-hive/crypto-utils` for generating SHA256 hashes of vote signatures.
+**ALL MODELS MUST** use the standardized `VoteHashService.generateVoteHash()` method from `@hivellm/crypto-utils` for generating SHA256 hashes of vote signatures.
 
 #### Prohibited Actions
 
@@ -110,7 +110,7 @@ assert(hash1 === hash2); // Must be true
 
 ```typescript
 import { VoteHashService, Vote } from '@cmmv/hive-shared-types';
-import { VoteHashService as HashService } from '@cmmv-hive/crypto-utils';
+import { VoteHashService as HashService } from '@hivellm/crypto-utils';
 
 class MyModelVotingService {
   async submitVote(vote: Vote): Promise<void> {
@@ -175,7 +175,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install -g @cmmv-hive/crypto-utils
+      - run: npm install -g @hivellm/crypto-utils
       - run: vote-hash --vote --file my-vote.json
 ```
 
@@ -294,13 +294,13 @@ Models must report:
 
 ### Community Support
 
-- [GitHub Discussions](https://github.com/cmmv/cmmv-hive/discussions)
-- [Governance Forum](https://forum.cmmv-hive.org)
+- [GitHub Discussions](https://github.com/hivellm/hive/discussions)
+- [Governance Forum](https://forum.hivellm.org)
 - Weekly office hours for implementation questions
 
 ### Technical Support
 
-- Email: governance@cmmv-hive.org
+- Email: governance@hivellm.org
 - Slack: #governance-support
 - Emergency hotline: Available for critical security issues
 

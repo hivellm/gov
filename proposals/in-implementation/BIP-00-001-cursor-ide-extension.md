@@ -4,7 +4,7 @@
 **BIP**: 000
 **Original Proposal**: 001 (Project Overview - Extended Scope)
 **Title**: HiveLLM Governance Extension for Cursor IDE
-**Author**: MASTER (CMMV-Hive Project Coordinator)
+**Author**: MASTER (HiveLLM Project Coordinator)
 **Status**: In Implementation
 **Type**: Standards Track
 **Category**: Core | Process | Interface
@@ -28,31 +28,31 @@ The HiveLLM project requires practical implementation tools to make the governan
 ### Core Functions
 
 #### 1. Generate Minute
-- **Command**: `CMMV-Hive: Generate New Minute`
+- **Command**: `HiveLLM: Generate New Minute`
 - **Function**: Automatically creates voting minutes from unreviewed proposals
 - **Process**: Scans discussion files, creates minute structure, initializes voting
 - **Output**: Complete minute directory with summary, metadata, and voting infrastructure
 
 #### 2. Start Automated Voting
-- **Command**: `CMMV-Hive: Start Automated Voting`
+- **Command**: `HiveLLM: Start Automated Voting`
 - **Function**: Fully automated voting with AI model integration
 - **Process**: Iterates through General models, collects votes, maintains voting chain
 - **Features**: Real-time progress, automatic finalization, result processing
 
 #### 3. Manage BIP
-- **Command**: `CMMV-Hive: Manage BIP`
+- **Command**: `HiveLLM: Manage BIP`
 - **Function**: Complete BIP lifecycle management
 - **Process**: Creates BIPs from approved proposals, assigns implementation, tracks progress
 - **Rules**: >80% score = BIP creation, <80% = future recall, 3 rejections = permanent rejection
 
 #### 4. Review BIP
-- **Command**: `CMMV-Hive: Review BIP`
+- **Command**: `HiveLLM: Review BIP`
 - **Function**: Orchestrates comprehensive BIP reviews
 - **Process**: Assigns all General models as reviewers, collects feedback, validates 80% threshold
 - **Outcome**: Approval for merge or compilation of revision feedback
 
 #### 5. Manage Branches
-- **Command**: `CMMV-Hive: Manage Branches`
+- **Command**: `HiveLLM: Manage Branches`
 - **Function**: Automated Git workflow for approved BIPs
 - **Process**: Creates branches, tracks changes, validates merge eligibility, executes merge
 - **Safety**: Comprehensive validation, conflict resolution, automated cleanup

@@ -11,7 +11,7 @@ This document summarizes all **25 pending proposals** for voting in Minutes 0003
 - **Voting Models**: 10 active participants
 
 ### Strategic Context
-This voting session will determine the development roadmap for the next phase of CMMV-Hive. Special attention should be given to:
+This voting session will determine the development roadmap for the next phase of HiveLLM. Special attention should be given to:
 - **Foundation proposals** that establish development standards (P037)
 - **Security implementations** that enhance system integrity
 - **Technical feasibility** and implementation complexity
@@ -277,4 +277,4 @@ This voting session will determine the development roadmap for the next phase of
 
 ---
 
-**Important Note**: This voting session will establish the development priorities for the next project phase. Votes should reflect both technical assessment and strategic alignment with the CMMV-Hive vision.
+**Important Note**: This voting session will establish the development priorities for the next project phase. Votes should reflect both technical assessment and strategic alignment with the HiveLLM vision.

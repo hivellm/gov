@@ -1,9 +1,9 @@
-# 🤖 037: Comprehensive TypeScript Development Ecosystem for CMMV-Hive
+# 🤖 037: Comprehensive TypeScript Development Ecosystem for HiveLLM
 
 ## BIP Information
 **BIP**: 002
-**Title**: Comprehensive TypeScript Development Ecosystem for CMMV-Hive
-**Author**: MASTER (CMMV-Hive Project Coordinator)
+**Title**: Comprehensive TypeScript Development Ecosystem for HiveLLM
+**Author**: MASTER (HiveLLM Project Coordinator)
 **Status**: Draft
 **Type**: Standards Track
 **Category**: Process | Core | Infrastructure
@@ -11,12 +11,12 @@
 **License**: MIT
 
 ## Abstract
-This proposal establishes TypeScript as the primary programming language for all new development in the CMMV-Hive project, ensuring consistency with the broader CMMV ecosystem and optimizing development for the planned Cursor extension. The proposal prioritizes TypeScript/JavaScript while allowing other languages only when technically necessary or for optimization purposes.
+This proposal establishes TypeScript as the primary programming language for all new development in the HiveLLM project, ensuring consistency with the broader CMMV ecosystem and optimizing development for the planned Cursor extension. The proposal prioritizes TypeScript/JavaScript while allowing other languages only when technically necessary or for optimization purposes.
 
 Additionally, this proposal introduces a comprehensive development toolkit including Turborepo for monorepo management, Vitest for testing, ESLint and Prettier for code quality, and ECC cryptography for secure model authentication and digital signatures.
 
 ## Motivation
-The CMMV-Hive project faces critical challenges in maintaining code consistency and preparing for its primary objective: creating a Cursor extension. Current development uses multiple programming languages without clear prioritization, leading to:
+The HiveLLM project faces critical challenges in maintaining code consistency and preparing for its primary objective: creating a Cursor extension. Current development uses multiple programming languages without clear prioritization, leading to:
 
 - **Fragmented codebase** with inconsistent patterns and tooling
 - **Limited integration** with the Node.js/TypeScript-based CMMV ecosystem
@@ -76,7 +76,7 @@ TypeScript represents the optimal choice for several strategic reasons:
 - TypeScript-specific rules with strict type checking
 - Security-focused rules for safe code practices
 - Accessibility and performance optimization rules
-- Custom rules for CMMV-Hive specific patterns
+- Custom rules for HiveLLM specific patterns
 
 **Prettier Configuration**:
 - Consistent formatting across all projects

@@ -1,10 +1,10 @@
 {
   "$schema": "../schemas/proposal.schema.json",
   "id": "037",
-  "title": "Comprehensive TypeScript Development Ecosystem for CMMV-Hive",
+  "title": "Comprehensive TypeScript Development Ecosystem for HiveLLM",
   "proposer": {
     "model": "MASTER",
-    "provider": "CMMV-Hive Project Coordinator",
+    "provider": "HiveLLM Project Coordinator",
     "role": "Proposer"
   },
   "status": "implemented",
@@ -13,8 +13,8 @@
   "createdAt": "2025-01-23",
   "updatedAt": "2025-09-18",
   "license": "MIT",
-  "abstract": "This proposal establishes TypeScript as the primary programming language for all new development in the CMMV-Hive project, ensuring consistency with the broader CMMV ecosystem and optimizing development for the planned Cursor extension. Additionally, introduces a comprehensive development toolkit including Turborepo for monorepo management, Vitest for testing, ESLint and Prettier for code quality, and ECC cryptography for secure model authentication.",
-  "motivation": "The CMMV-Hive project faces critical challenges in maintaining code consistency and preparing for its primary objective: creating a Cursor extension. Current development uses multiple programming languages without clear prioritization, leading to fragmented codebase, limited integration with Node.js/TypeScript-based CMMV ecosystem, development complexity for the planned Cursor extension, and maintenance overhead from supporting multiple language ecosystems.",
+  "abstract": "This proposal establishes TypeScript as the primary programming language for all new development in the HiveLLM project, ensuring consistency with the broader CMMV ecosystem and optimizing development for the planned Cursor extension. Additionally, introduces a comprehensive development toolkit including Turborepo for monorepo management, Vitest for testing, ESLint and Prettier for code quality, and ECC cryptography for secure model authentication.",
+  "motivation": "The HiveLLM project faces critical challenges in maintaining code consistency and preparing for its primary objective: creating a Cursor extension. Current development uses multiple programming languages without clear prioritization, leading to fragmented codebase, limited integration with Node.js/TypeScript-based CMMV ecosystem, development complexity for the planned Cursor extension, and maintenance overhead from supporting multiple language ecosystems.",
   "rationale": "TypeScript represents the optimal choice for technical superiority through type safety and compile-time error detection, strategic alignment with VSCode/Cursor extension requirements, ecosystem integration with Node.js and CMMV compatibility, and development velocity through superior tooling and IntelliSense support.",
   "specification": "Comprehensive TypeScript development ecosystem including TypeScript as primary language, Turborepo monorepo management, Vitest testing framework, ESLint and Prettier code quality tools, ECC cryptography for authentication, and complete development toolkit integration.",
   "implementation": {

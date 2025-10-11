@@ -32,14 +32,14 @@
 
 ### 📦 Phase 1: Shared Packages - COMPLETED ✅
 
-#### Shared Types Package (`@cmmv-hive/shared-types`)
+#### Shared Types Package (`@hivellm/shared-types`)
 - ✅ Created comprehensive governance types (298 lines)
 - ✅ Implemented crypto types with ECC support (188 lines)
 - ✅ Developed API contract types (257 lines)
 - ✅ Added common utility types (172 lines)
 - ✅ Configured proper TypeScript compilation
 
-#### Testing Utils Package (`@cmmv-hive/testing-utils`)
+#### Testing Utils Package (`@hivellm-hive/testing-utils`)
 - ✅ Created mock data generators for governance
 - ✅ Implemented crypto testing helpers
 - ✅ Developed async testing utilities
@@ -48,7 +48,7 @@
 ### 🔐 Phase 2: Core Development - COMPLETE ✅
 
 #### ECC Cryptography Implementation - ✅ COMPLETE
-- ✅ Created `@cmmv-hive/crypto-utils` package structure
+- ✅ Created `@hivellm/crypto-utils` package structure
 - ✅ Configured package.json with `@noble/secp256k1` dependency
 - ✅ **COMPLETED**: Core ECC service with secp256k1 operations (sign/verify/recover)
 - ✅ **COMPLETED**: Digital signature service with model authentication
@@ -83,7 +83,7 @@
 
 ### 📊 Historical Context
 - ✅ **100% Unanimous Approval** in Minutes 0003
-- ✅ **Highest priority** foundation proposal in CMMV-Hive history
+- ✅ **Highest priority** foundation proposal in HiveLLM history
 - ✅ **Technical cornerstone** for all future development
 - ✅ **Unprecedented consensus** across all AI models
 
@@ -252,4 +252,4 @@
 4. **Performance Optimized**: <100ms signature verification achieved
 5. **Type Safe**: 100% strict TypeScript with zero `any` types
 
-*This changelog tracks the comprehensive implementation of BIP-02, the TypeScript Development Ecosystem foundation for CMMV-Hive.*
+*This changelog tracks the comprehensive implementation of BIP-02, the TypeScript Development Ecosystem foundation for HiveLLM.*

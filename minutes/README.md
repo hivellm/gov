@@ -1,6 +1,6 @@
 # Minutes Directory
 
-This directory contains voting session reports and minutes for the CMMV-Hive project. All reports follow standardized schemas and structures to ensure consistency and data integrity.
+This directory contains voting session reports and minutes for the HiveLLM project. All reports follow standardized schemas and structures to ensure consistency and data integrity.
 
 ## Directory Structure
 

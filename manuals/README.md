@@ -68,6 +68,30 @@ manuals/
 ├── java/
 │   ├── AI_INTEGRATION_MANUAL_JAVA.md
 │   └── BEST_PRACTICES.md
+├── kotlin/
+│   ├── AI_INTEGRATION_MANUAL_KOTLIN.md
+│   └── BEST_PRACTICES.md
+├── zig/
+│   ├── AI_INTEGRATION_MANUAL_ZIG.md
+│   └── BEST_PRACTICES.md
+├── c/
+│   ├── AI_INTEGRATION_MANUAL_C.md
+│   └── BEST_PRACTICES.md
+├── cpp/
+│   ├── AI_INTEGRATION_MANUAL_CPP.md
+│   └── BEST_PRACTICES.md
+├── r/
+│   ├── AI_INTEGRATION_MANUAL_R.md
+│   └── BEST_PRACTICES.md
+├── ruby/
+│   ├── AI_INTEGRATION_MANUAL_RUBY.md
+│   └── BEST_PRACTICES.md
+├── lua/
+│   ├── AI_INTEGRATION_MANUAL_LUA.md
+│   └── BEST_PRACTICES.md
+├── julia/
+│   ├── AI_INTEGRATION_MANUAL_JULIA.md
+│   └── BEST_PRACTICES.md
 └── [language]/
     ├── AI_INTEGRATION_MANUAL_[LANGUAGE].md
     └── BEST_PRACTICES.md              # Language-specific best practices
@@ -326,9 +350,126 @@ Language-specific manuals:
   - JUnit 5, Mockito, JaCoCo configuration
   - Checkstyle, SpotBugs, Javadoc standards
   - Java 17+ features (records, sealed classes, pattern matching)
-- **Rust**: `rust/AI_INTEGRATION_MANUAL_RUST.md` (Planned)
-- **C#**: `csharp/AI_INTEGRATION_MANUAL_CSHARP.md` (Planned)
-- **Go**: `go/AI_INTEGRATION_MANUAL_GO.md` (Planned)
+- **Rust**: `rust/AI_INTEGRATION_MANUAL_RUST.md` ✅ Complete
+  - Cargo build system
+  - clippy, rustfmt, rustdoc configuration
+  - tokio async runtime
+  - thiserror/anyhow error handling
+  - Ownership, borrowing, and lifetime management
+  - crates.io publishing
+- **C#**: `csharp/AI_INTEGRATION_MANUAL_CSHARP.md` ✅ Complete
+  - .NET 8+ / C# 12
+  - ASP.NET Core and Entity Framework Core
+  - xUnit, Moq, FluentAssertions, coverlet
+  - StyleCop analyzers and .editorconfig
+  - Records, nullable reference types, pattern matching
+  - NuGet publishing
+- **PHP**: `php/AI_INTEGRATION_MANUAL_PHP.md` ✅ Complete
+  - PHP 8.2+/8.3
+  - Laravel and Symfony support
+  - Composer, PHPUnit, PHPStan, PHP-CS-Fixer
+  - PSR standards compliance
+  - Modern PHP features (enums, readonly, match, named args)
+  - Packagist publishing
+- **Go**: `go/AI_INTEGRATION_MANUAL_GO.md` ✅ Complete
+  - Go 1.21+/1.22
+  - Go modules (go.mod)
+  - golangci-lint, gofmt, goimports
+  - Table-driven tests, testify
+  - Goroutines and channels
+  - Standard Go project layout
+- **Kotlin**: `kotlin/AI_INTEGRATION_MANUAL_KOTLIN.md` ✅ Complete
+  - Kotlin 1.9+ / 2.0
+  - Gradle with Kotlin DSL
+  - Spring Boot and Ktor support
+  - JUnit 5, Mockk, Kotest testing
+  - detekt, ktlint quality tools
+  - Coroutines and Flow
+  - Null safety and extension functions
+  - Dokka documentation generation
+  - Modern Kotlin features (sealed classes, data classes, scope functions)
+- **Zig**: `zig/AI_INTEGRATION_MANUAL_ZIG.md` ✅ Complete
+  - Zig 0.11+ / 0.12 / 0.13
+  - Built-in build system (zig build)
+  - Integrated testing and documentation
+  - Explicit memory management with allocators
+  - Comptime code execution
+  - Cross-compilation by default
+  - C interoperability without FFI
+  - No hidden control flow or allocations
+  - Error handling with error unions
+  - defer and errdefer for resource cleanup
+- **C**: `c/AI_INTEGRATION_MANUAL_C.md` ✅ Complete
+  - C11/C17/C23 standards
+  - CMake and Make build systems
+  - GCC/Clang compilers
+  - Unity, Check, Criterion testing frameworks
+  - Valgrind, AddressSanitizer, MemorySanitizer
+  - Doxygen documentation generation
+  - clang-format, clang-tidy, cppcheck
+  - Memory management best practices
+- **Lua**: `lua/AI_INTEGRATION_MANUAL_LUA.md` ✅ Complete
+  - Lua 5.4 / LuaJIT 2.1
+  - LuaRocks package manager
+  - Busted testing framework
+  - LuaCheck linter, LuaCov coverage
+  - LDoc documentation generation
+  - Love2D, OpenResty, Neovim integration
+  - Metatable and metaprogramming
+  - Performance optimization for LuaJIT
+- **Julia**: `julia/AI_INTEGRATION_MANUAL_JULIA.md` ✅ Complete
+  - Julia 1.10+ for scientific computing
+  - Pkg package manager with Project.toml
+  - Test.jl testing framework
+  - JuliaFormatter code formatting
+  - Multiple dispatch and type stability
+  - Documenter.jl documentation generation
+  - Performance optimization and profiling
+  - Parallel and distributed computing
+- **R**: `r/AI_INTEGRATION_MANUAL_R.md` ✅ Complete
+  - R 4.0+ with devtools ecosystem
+  - Package development with usethis, roxygen2, pkgdown
+  - testthat testing framework
+  - lintr, styler code quality tools
+  - S3, S4, and R6 object systems
+  - Tidyverse style guide compliance
+  - CRAN and Bioconductor submission guidelines
+  - renv dependency management
+- **Swift**: `swift/AI_INTEGRATION_MANUAL_SWIFT.md` ✅ Complete
+  - Swift 5.9+ for iOS 16+, macOS 13+, watchOS 9+, tvOS 16+
+  - Swift Package Manager (SPM) and Xcode integration
+  - XCTest testing framework
+  - SwiftLint and swift-format code quality
+  - Protocol-oriented programming patterns
+  - Modern Swift concurrency (async/await, actors)
+  - SwiftUI and UIKit best practices
+  - DocC documentation and App Store guidelines
+- **C++**: `cpp/AI_INTEGRATION_MANUAL_CPP.md` ✅ Complete
+  - C++17/20/23 standards (modern C++)
+  - CMake build system with Ninja
+  - GCC 11+, Clang 14+, MSVC 2019+ support
+  - vcpkg and Conan package management
+  - Google Test, Google Benchmark testing
+  - clang-format, clang-tidy, cppcheck quality tools
+  - Doxygen documentation generation
+  - Smart pointers, RAII, move semantics
+  - Concepts, ranges, coroutines (C++20/23)
+  - Sanitizers (Address, Thread, UB, Memory)
+  - Valgrind memory leak detection
+  - CPack packaging and distribution
+- **Ruby**: `ruby/AI_INTEGRATION_MANUAL_RUBY.md` ✅ Complete
+  - Ruby 3.0+/3.3 (latest stable)
+  - rbenv/RVM version management
+  - Bundler dependency management
+  - RSpec and Minitest testing frameworks
+  - RuboCop linting with performance and RSpec cops
+  - YARD documentation generation
+  - Rails integration (optional)
+  - FactoryBot, Faker test helpers
+  - SimpleCov coverage reporting
+  - Brakeman security scanning
+  - RubyGems publishing
+  - Blocks, iterators, and metaprogramming patterns
 
 ## FAQ
 
@@ -386,6 +527,8 @@ To contribute improvements:
 - Deadlock detection algorithms
 - Context window management
 - Escalation protocols
+- R language manual with CRAN/Bioconductor guidelines
+- Swift language manual with iOS/macOS development and App Store guidelines
 
 **Improved**:
 - More detailed phase breakdowns with time estimates

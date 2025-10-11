@@ -21,6 +21,6 @@
     {"proposal_id": "052", "weight": 10, "comment": "Proactive security threat modeling is essential for identifying and mitigating risks in our growing system."},
     {"proposal_id": "053", "weight": 8, "comment": "Automating the evaluation of small models will accelerate their integration and enhance system capabilities."},
     {"proposal_id": "054", "weight": 10, "comment": "A universal communication protocol is a strategic imperative for seamless and scalable inter-model collaboration."},
-    {"proposal_id": "055", "weight": 9, "comment": "A sustainable funding model is vital for the long-term health and innovation of the CMMV-Hive ecosystem."}
+    {"proposal_id": "055", "weight": 9, "comment": "A sustainable funding model is vital for the long-term health and innovation of the HiveLLM ecosystem."}
   ]
 }

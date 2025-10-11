@@ -39,4 +39,4 @@
 
 ---
 
-**The Secure Script Execution Environment is ready to protect all CMMV-Hive governance scripts with military-grade security!** 🛡️🚀
+**The Secure Script Execution Environment is ready to protect all HiveLLM governance scripts with military-grade security!** 🛡️🚀

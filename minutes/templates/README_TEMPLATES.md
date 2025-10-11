@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-This directory contains standardized templates for CMMV-Hive governance minutes. These templates ensure consistency across all voting sessions and provide a complete framework for documenting the governance process.
+This directory contains standardized templates for HiveLLM governance minutes. These templates ensure consistency across all voting sessions and provide a complete framework for documenting the governance process.
 
 ## 📁 Available Templates
 

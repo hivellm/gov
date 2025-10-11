@@ -25,7 +25,7 @@ The `VoteHashService` is the primary service for generating standardized SHA256 
 
 **Via TypeScript/JavaScript:**
 ```typescript
-import { VoteHashService } from '@cmmv-hive/crypto-utils';
+import { VoteHashService } from '@hivellm/crypto-utils';
 
 const vote = {
   proposalId: 'proposal-123',
@@ -42,7 +42,7 @@ console.log(hash); // SHA256 hash as hex string
 **Via Bash (Binário Compilado):**
 ```bash
 # Install globally via npm
-npm install -g @cmmv-hive/crypto-utils
+npm install -g @HiveLLM/crypto-utils
 
 # Or download binary from GitHub releases
 # Example: vote-hash-linux-x64, vote-hash-win32-x64, etc.
@@ -59,7 +59,7 @@ The CLI tool provides a command-line interface for hash generation, suitable for
 
 ```bash
 # Install globally via npm
-npm install -g @cmmv-hive/crypto-utils
+npm install -g @hivellm/crypto-utils
 
 # Or download pre-compiled binaries from releases
 ```
@@ -69,29 +69,10 @@ npm install -g @cmmv-hive/crypto-utils
 **Via npm (Recommended):**
 ```bash
 # Install globally
-npm install -g @cmmv-hive/crypto-utils
+npm install -g @hivellm/crypto-utils
 
 # Or use via npx (no installation)
 npx @cmmv/hive-crypto-utils vote-hash --help
-```
-
-**Via Binários (Standalone):**
-```bash
-# Download from GitHub releases page
-# https://github.com/cmmv/cmmv-hive/releases
-
-# Linux
-wget https://github.com/cmmv/cmmv-hive/releases/download/v1.0.0/vote-hash-linux-x64
-chmod +x vote-hash-linux-x64
-sudo mv vote-hash-linux-x64 /usr/local/bin/vote-hash
-
-# Windows (PowerShell)
-# Baixe vote-hash-win32-x64.exe e adicione ao PATH
-
-# macOS
-wget https://github.com/cmmv/cmmv-hive/releases/download/v1.0.0/vote-hash-macos-x64
-chmod +x vote-hash-macos-x64
-sudo mv vote-hash-macos-x64 /usr/local/bin/vote-hash
 ```
 
 #### Usage Examples
@@ -226,7 +207,7 @@ const isValid = VoteHashService.verifyVoteHash(vote, expectedHash);
 
 1. **Import the Service**:
    ```typescript
-   import { VoteHashService } from '@cmmv-hive/crypto-utils';
+   import { VoteHashService } from '@hivellm/crypto-utils';
    ```
 
 2. **Generate Hashes**:
@@ -377,10 +358,10 @@ vote-hash --vote --input '{"proposalId":"123","modelId":"456","weight":8,"timest
    npm cache clean --force
 
    # Install globally with permissions
-   sudo npm install -g @cmmv-hive/crypto-utils
+   sudo npm install -g @hivellm/crypto-utils
 
    # Or install locally and use npx
-   npm install @cmmv-hive/crypto-utils
+   npm install @hivellm/crypto-utils
    npx vote-hash --help
    ```
 
@@ -418,14 +399,6 @@ node --version
 sudo chown -R $(whoami) ~/.npm
 sudo chown -R $(whoami) /usr/local/lib/node_modules
     ```
-
-### Support
-
-For issues related to the Vote Hash Standard:
-
-1. Check the [GitHub Issues](https://github.com/cmmv/cmmv-hive/issues)
-2. Review the [Governance Guidelines](../gov/guidelines/MASTER_GUIDELINES.md)
-3. Contact the governance team
 
 ## Version History
 

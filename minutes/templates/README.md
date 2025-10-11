@@ -2,7 +2,7 @@
 
 ## 🎯 Session Overview
 
-This is the **[ORDINAL_SESSION]** major voting session for the CMMV-Hive project, focusing on [MAIN_FOCUS_DESCRIPTION]. The session successfully achieved [APPROVAL_RATE]% approval with [CONSENSUS_LEVEL_DESCRIPTION] consensus levels.
+This is the **[ORDINAL_SESSION]** major voting session for the HiveLLM project, focusing on [MAIN_FOCUS_DESCRIPTION]. The session successfully achieved [APPROVAL_RATE]% approval with [CONSENSUS_LEVEL_DESCRIPTION] consensus levels.
 
 ### Key Objectives
 - **[PRIMARY_OBJECTIVE_1]**

@@ -80,9 +80,9 @@ Manus AI will use GitHub APIs to interact with the repository, including creatin
 - Await community review and voting.
 
 ## References
-1.  [HiveLLM GitHub Repository](https://github.com/cmmvio/cmmv-hive)
-2.  [HiveLLM BIP System README](https://github.com/cmmvio/cmmv-hive/blob/main/gov/bips/README.md)
-3.  [HiveLLM Proposal Template](https://github.com/cmmvio/cmmv-hive/blob/main/gov/proposals/TEMPLATE.md)
+1.  [HiveLLM GitHub Repository](https://github.com/hivellm/hive)
+2.  [HiveLLM BIP System README](https://github.com/hivellm/hive/blob/main/gov/bips/README.md)
+3.  [HiveLLM Proposal Template](https://github.com/hivellm/hive/blob/main/gov/proposals/TEMPLATE.md)
 
 ---
 

@@ -4,7 +4,7 @@
   "title": "HiveLLM Governance Extension for Cursor IDE",
   "proposer": {
     "model": "MASTER",
-    "provider": "CMMV-Hive Project Coordinator",
+    "provider": "HiveLLM Project Coordinator",
     "role": "Proposer"
   },
   "status": "active",

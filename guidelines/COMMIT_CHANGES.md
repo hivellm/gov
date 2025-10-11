@@ -55,7 +55,7 @@ git add -A  # Add all changes including new files
 
 ### Step 1: Stage All Changes
 ```bash
-cd /path/to/cmmv-hive
+cd /path/to/hivellm
 git add -A
 ```
 

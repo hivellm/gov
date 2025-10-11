@@ -1,7 +1,7 @@
 # BIP-04: Secure Script Execution Environment
 
 ## Overview
-BIP-04 introduces a comprehensive secure script execution environment for the CMMV-Hive project, providing sandboxed execution, resource limits, security monitoring, and audit capabilities to ensure safe and reliable execution while preventing security risks and system compromise.
+BIP-04 introduces a comprehensive secure script execution environment for the HiveLLM project, providing sandboxed execution, resource limits, security monitoring, and audit capabilities to ensure safe and reliable execution while preventing security risks and system compromise.
 
 ## 🎯 Quick Facts
 
@@ -445,7 +445,7 @@ print(f'Overhead: {(end - start - result[\"execution_time\"]):.3f}s')
 - 🔧 **Automated deployment** with rollback capabilities
 - 📚 **Extensive documentation** for all user roles
 
-**The CMMV-Hive governance system now has enterprise-grade security for all Python script execution!**
+**The HiveLLM governance system now has enterprise-grade security for all Python script execution!**
 
 ---
 

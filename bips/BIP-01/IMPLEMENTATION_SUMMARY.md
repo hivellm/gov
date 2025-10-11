@@ -26,7 +26,7 @@ BIP-01 implements a **proposal implementation tracking system** for managing the
 
 ### Core Components Delivered
 
-#### 1. TypeScript Package (`@cmmv-hive/bip-system`)
+#### 1. TypeScript Package (`@hivellm/bip-system`)
 - **Location**: `packages/bip-system/`
 - **Version**: 1.0.0
 - **Status**: ✅ Complete and functional
