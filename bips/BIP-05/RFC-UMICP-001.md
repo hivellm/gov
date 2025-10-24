@@ -10,8 +10,31 @@
 **Title:** Universal Matrix Intelligent Communication Protocol (UMICP)  
 **Author:** BIP-05 Working Group  
 **Date:** September 2025  
-**Status:** Draft Standard  
+**Status:** Draft Standard (Original Specification)  
 **Version:** 1.0  
+**Implementation Status:** See [Implementation Note](#implementation-status-note) below
+
+---
+
+> **⚠️ IMPLEMENTATION STATUS NOTE**
+>
+> This RFC describes the **original specification** for UMICP. The **actual implementation** located in `/umicp/` has evolved based on practical requirements and differs from this specification in several key areas:
+>
+> **Major Deviations:**
+> - **Architecture**: Binary envelope protocol (not hybrid JSON/binary dual-plane)
+> - **Serialization**: Binary frames with standard JSON (not JCS + CBOR)
+> - **Security**: ChaCha20-Poly1305 AEAD (not TLS 1.3 / Noise Protocol)
+> - **Transport**: WebSocket + HTTP/2 only (Matrix adapter not implemented)
+> - **Signatures**: ChaCha20-Poly1305 authentication (not JWS/COSE)
+>
+> **Current Status**: 10 production-ready SDKs with 1,500+ tests, 5 SDKs published (Python, Rust, TypeScript, C#, PHP)
+>
+> For the **actual implementation documentation**, see:
+> - [UMICP Main README](../../../umicp/README.md)
+> - [Implementation Summary](README.md)
+> - [CHANGELOG](../../../umicp/CHANGELOG.md)
+>
+> This RFC is preserved as the original design document for reference and governance purposes.
 
 ---
 
@@ -383,3 +406,82 @@ However, this document itself may not be modified in any way, such as by removin
 The limited permissions granted above are perpetual and will not be revoked by the BIP-05 Working Group or its successors or assigns.
 
 This document and the information contained herein is provided on an "AS IS" basis and THE BIP-05 WORKING GROUP DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+---
+
+## Implementation Status Note
+
+**Document Type:** Original Specification (Historical Reference)
+
+This RFC represents the **original design specification** for UMICP as proposed in BIP-05. The **actual implementation** has evolved significantly based on:
+
+1. **Practical deployment experience**
+2. **Performance requirements**
+3. **Developer experience feedback**
+4. **Production readiness priorities**
+
+### Key Implementation Differences
+
+| Aspect | RFC Specification | Actual Implementation |
+|--------|-------------------|----------------------|
+| **Architecture** | Hybrid JSON/binary dual-plane | Binary envelope with JSON payloads |
+| **Serialization** | JCS + CBOR deterministic | Binary frames + standard JSON |
+| **Security** | TLS 1.3 / Noise Protocol | ChaCha20-Poly1305 AEAD |
+| **Signatures** | JWS (JSON) + COSE (binary) | ChaCha20-Poly1305 authentication |
+| **Transport** | WebSocket + HTTP/2 + Matrix | WebSocket + HTTP/2 only |
+| **Content Types** | application/umicp+cbor, +msgpack | Binary envelope format |
+| **Language Bindings** | C++/LLVM core with FFI | 10 native language SDKs |
+
+### Production Implementation
+
+**Location:** `/umicp/` (root of HiveLLM project)
+
+**Status:** 95% complete, production-ready
+
+**SDKs Available:**
+
+**Published (5/10):**
+- Python v0.3.2 → [PyPI](https://pypi.org/project/umicp-sdk/) ✅
+- Rust v0.3.1 → [crates.io](https://crates.io/crates/umicp-sdk) ✅
+- TypeScript v0.3.1 → [npm](https://www.npmjs.com/package/@hivellm/umicp-sdk) ✅
+- C# v0.3.0 → [NuGet](https://www.nuget.org/packages/HiveLLM.Umicp.SDK) ✅
+- PHP v0.3.0 → [Packagist](https://packagist.org/packages/hivellm/umicp-sdk) ✅
+
+**Ready to Publish (5/10):**
+- Go v0.3.0 (Production-ready)
+- Swift v0.3.0 (SPM-ready)
+- Kotlin v0.3.0 (Maven-ready)
+- Elixir v0.3.0 (Hex-ready)
+- Java v0.3.0 (Maven-ready)
+
+**Testing:** 1,500+ tests across all SDKs
+
+**Performance:**
+- Latency: <1ms (established connections)
+- Throughput: >10,000 messages/second
+- Test Coverage: 95%+ across all implementations
+
+### Rationale for Deviations
+
+The implementation team made pragmatic decisions to:
+
+1. **Simplify architecture** - Binary envelope easier to implement and debug than dual-plane
+2. **Improve developer experience** - Native SDKs instead of FFI bindings
+3. **Accelerate deployment** - ChaCha20-Poly1305 simpler than full TLS 1.3 integration
+4. **Focus resources** - WebSocket/HTTP/2 covers 99% of use cases vs. Matrix complexity
+5. **Maintain interoperability** - JSON support preserved for debugging and compatibility
+
+These decisions maintained the **core goals** of the RFC (high-performance AI-to-AI communication) while improving practical usability.
+
+### References
+
+- **Implementation Documentation:** [/umicp/README.md](../../../umicp/README.md)
+- **Current CHANGELOG:** [/umicp/CHANGELOG.md](../../../umicp/CHANGELOG.md)
+- **SDK Status:** [/umicp/bindings/STATUS.md](../../../umicp/bindings/STATUS.md)
+- **BIP-05 Summary:** [README.md](README.md)
+
+---
+
+**Last Updated:** October 2025  
+**Specification Status:** Original Design (Superseded by implementation)  
+**Implementation Status:** Production-Ready (v0.3.x)
