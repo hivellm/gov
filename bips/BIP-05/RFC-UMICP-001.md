@@ -27,7 +27,7 @@
 > - **Transport**: WebSocket + HTTP/2 only (Matrix adapter not implemented)
 > - **Signatures**: ChaCha20-Poly1305 authentication (not JWS/COSE)
 >
-> **Current Status**: 10 production-ready SDKs with 1,500+ tests, 5 SDKs published (Python, Rust, TypeScript, C#, PHP)
+> **Current Status**: 10 production-ready SDKs with 1,500+ tests, 6 SDKs published (Python, Rust, TypeScript, C#, PHP, Elixir)
 >
 > For the **actual implementation documentation**, see:
 > - [UMICP Main README](../../../umicp/README.md)
@@ -440,18 +440,18 @@ This RFC represents the **original design specification** for UMICP as proposed 
 
 **SDKs Available:**
 
-**Published (5/10):**
+**Published (6/10):**
 - Python v0.3.2 → [PyPI](https://pypi.org/project/umicp-sdk/) ✅
 - Rust v0.3.1 → [crates.io](https://crates.io/crates/umicp-sdk) ✅
 - TypeScript v0.3.1 → [npm](https://www.npmjs.com/package/@hivellm/umicp-sdk) ✅
 - C# v0.3.0 → [NuGet](https://www.nuget.org/packages/HiveLLM.Umicp.SDK) ✅
 - PHP v0.3.0 → [Packagist](https://packagist.org/packages/hivellm/umicp-sdk) ✅
+- Elixir v0.3.0 → [Hex.pm](https://hex.pm/packages/umicp) ✅
 
-**Ready to Publish (5/10):**
+**Ready to Publish (4/10):**
 - Go v0.3.0 (Production-ready)
 - Swift v0.3.0 (SPM-ready)
 - Kotlin v0.3.0 (Maven-ready)
-- Elixir v0.3.0 (Hex-ready)
 - Java v0.3.0 (Maven-ready)
 
 **Testing:** 1,500+ tests across all SDKs

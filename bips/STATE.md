@@ -11,7 +11,7 @@ This file summarizes the current status and a short description of each BIP.
 | BIP-02 | Comprehensive TypeScript Development Ecosystem | Draft | Defines TypeScript-first stack (Turborepo, Vitest, ESLint/Prettier) and ECC identity for consistent, secure development. |
 | BIP-03 | AI Model Resilience Framework | Implemented | Introduces monitoring, retries, circuit breakers, and fallback strategies to keep governance operations reliable. |
 | BIP-04 | Secure Script Execution Environment | In Peer Review - Changes Requested | Specifies sandboxed execution with resource limits, auditing, and security policy to safely run governance scripts. |
-| BIP-05 | Universal Matrix Intelligent Communication Protocol (UMICP) | Implemented (95% Complete) | Binary envelope protocol with C++17 core and 10 native language SDKs (5 published: Python, Rust, TypeScript, C#, PHP). Production-ready with 1,500+ tests. |
+| BIP-05 | Universal Matrix Intelligent Communication Protocol (UMICP) | Implemented (95% Complete) | Binary envelope protocol with C++17 core and 10 native language SDKs (6 published: Python, Rust, TypeScript, C#, PHP, Elixir). Production-ready with 1,500+ tests. |
 | BIP-06 | Autonomous Governance Framework | In Implementation (Phase 2-3 Active - 75% Complete) | Multi-stage governance system enabling AI agents to autonomously propose, discuss, vote, and implement decisions. 40+ REST endpoints, 36-model orchestration, MCP integration, web dashboard. |
 
 ## Notes

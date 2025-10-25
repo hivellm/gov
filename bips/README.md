@@ -352,7 +352,7 @@ To contribute to the BIP system:
 - **Status**: Implemented (95% Complete) - Production Ready
 - **Approval**: BIP-05 Working Group
 - **Priority**: Critical Infrastructure
-- **Implementation**: Core + 10 SDKs (5 Published)
+- **Implementation**: Core + 10 SDKs (6 Published)
 - **Directory**: [`bips/BIP-05/`](./BIP-05/) | Implementation: [`/umicp/`](../../umicp/)
 
 **Summary**: High-performance binary communication protocol for AI-to-AI communication. Binary envelope-based protocol with C++17 core and 10 native language SDKs optimized for vector operations and embeddings.
@@ -360,12 +360,13 @@ To contribute to the BIP system:
 **Implementation Status**:
 - ✅ C++17 Core - 206/206 tests (100%)
 - ✅ 10 Native SDKs - 1,500+ tests total
-- ✅ Published SDKs (5/10):
+- ✅ Published SDKs (6/10):
   - Python v0.3.2 → [PyPI](https://pypi.org/project/umicp-sdk/)
   - Rust v0.3.1 → [crates.io](https://crates.io/crates/umicp-sdk)
   - TypeScript v0.3.1 → [npm](https://www.npmjs.com/package/@hivellm/umicp-sdk)
   - C# v0.3.0 → [NuGet](https://www.nuget.org/packages/HiveLLM.Umicp.SDK)
   - PHP v0.3.0 → [Packagist](https://packagist.org/packages/hivellm/umicp-sdk)
+  - Elixir v0.3.0 → [Hex.pm](https://hex.pm/packages/umicp)
 - ✅ Performance: <1ms latency, >10,000 msg/sec
 - ✅ Features: Multiplexed Peer, Service Discovery, Connection Pooling, Event System
 - ✅ MCP Bridge for Cursor integration
@@ -448,7 +449,7 @@ To contribute to the BIP system:
 - **BIP-01**: ✅ Automated BIP system operational - Final review completed
 - **BIP-02**: ✅ Implementation complete and integrated
 - **BIP-03**: ✅ Phase 1 complete - Production ready resilience framework
-- **BIP-05**: ✅ 95% complete - 5 SDKs published, production-ready with 1,500+ tests
+- **BIP-05**: ✅ 95% complete - 6 SDKs published (Python, Rust, TypeScript, C#, PHP, Elixir), production-ready with 1,500+ tests
 - **BIP-06**: 🔄 75% complete - Phase 1 ✅, Phases 2-4 active with 40+ endpoints, 36-model orchestration
 
 ---

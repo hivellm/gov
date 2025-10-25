@@ -117,13 +117,13 @@ graph TB
 - [x] **TypeScript SDK v0.3.1** - Published to npm ✅
 - [x] **C# SDK v0.3.0** - Published to NuGet ✅
 - [x] **PHP SDK v0.3.0** - Published to Packagist ✅
+- [x] **Elixir SDK v0.3.0** - Published to Hex.pm ✅
 - [x] **Go SDK v0.3.0** - Production-ready, 85 tests
 - [x] **Swift SDK v0.3.0** - SPM-ready, 100+ tests
 - [x] **Kotlin SDK v0.3.0** - Maven-ready, 140+ tests
-- [x] **Elixir SDK v0.3.0** - Hex-ready, 100+ tests
 - [x] **Java SDK v0.3.0** - Maven-ready, 380+ tests
 - [x] **Total**: 1,500+ tests across all SDKs
-- [x] **Published**: 5/10 SDKs (Python, Rust, TypeScript, C#, PHP)
+- [x] **Published**: 6/10 SDKs (Python, Rust, TypeScript, C#, PHP, Elixir)
 
 #### Phase 3: Advanced Features (Complete)
 - [x] Multiplexed Peer architecture (server AND client simultaneously)
@@ -159,8 +159,8 @@ graph TB
 ### 🎯 Current Status
 **Overall Completion**: 95% (core protocol & SDKs production-ready)  
 **Production Status**: ✅ Ready for deployment  
-**Published SDKs**: 5/10 (Python, Rust, TypeScript, C#, PHP) ✅  
-**Next Steps**: Publish remaining SDKs (Go, Swift, Kotlin, Elixir, Java), ecosystem integration, Matrix adapter (optional)
+**Published SDKs**: 6/10 (Python, Rust, TypeScript, C#, PHP, Elixir) ✅  
+**Next Steps**: Publish remaining SDKs (Go, Swift, Kotlin, Java), ecosystem integration, Matrix adapter (optional)
 
 ## 🖥️ Real-Time Monitoring System
 
@@ -209,7 +209,7 @@ Then open `http://localhost:3000` in your browser to see live updates.
 
 ### SDK Installation
 
-**Published Packages (5/10):**
+**Published Packages (6/10):**
 
 ```bash
 # Python (Published to PyPI ✅)
@@ -231,15 +231,19 @@ dotnet add package HiveLLM.Umicp.SDK
 # PHP (Published to Packagist ✅)
 composer require hivellm/umicp-sdk
 # https://packagist.org/packages/hivellm/umicp-sdk
+
+# Elixir (Published to Hex.pm ✅)
+# Add to mix.exs: {:umicp, "~> 0.3.0"}
+# https://hex.pm/packages/umicp
 ```
 
-**Ready to Publish (5/10):**
+**Ready to Publish (4/10):**
 
 ```bash
 # Go (auto-indexed)
 go get github.com/hivellm/umicp-sdk
 
-# Swift, Kotlin, Elixir, Java
+# Swift, Kotlin, Java
 # See /umicp/bindings/{language}/ for installation
 ```
 
@@ -260,7 +264,7 @@ Based on practical development and real-world requirements, the following implem
 1. ✅ **Specification**: Technical requirements and architecture design (BIP-05 docs)
 2. ✅ **Implementation**: C++17 core + 10 native language SDKs
 3. ✅ **Testing**: 1,500+ tests across all SDKs with 95%+ coverage
-4. 🔄 **Deployment**: 5 SDKs published (Python, Rust, TypeScript, C#, PHP), 5 ready to publish
+4. 🔄 **Deployment**: 6 SDKs published (Python, Rust, TypeScript, C#, PHP, Elixir), 4 ready to publish
 5. 📋 **Integration**: Ecosystem integration with Vectorizer, Task Queue, Agent Framework
 
 ## 📂 Implementation Location
@@ -304,12 +308,13 @@ This project follows the BIP-05 governance model with community-driven developme
 
 ### Quick Links
 
-**Published SDKs (5/10):**
+**Published SDKs (6/10):**
 - **Python SDK**: https://pypi.org/project/umicp-sdk/
 - **Rust SDK**: https://crates.io/crates/umicp-sdk
 - **TypeScript SDK**: https://www.npmjs.com/package/@hivellm/umicp-sdk
 - **C# SDK**: https://www.nuget.org/packages/HiveLLM.Umicp.SDK
 - **PHP SDK**: https://packagist.org/packages/hivellm/umicp-sdk
+- **Elixir SDK**: https://hex.pm/packages/umicp
 
 **Documentation:**
 - **Installation**: See `/umicp/README.md` for all SDKs
